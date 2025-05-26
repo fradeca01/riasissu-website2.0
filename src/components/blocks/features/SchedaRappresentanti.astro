@@ -1,0 +1,67 @@
+---
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+import Feature from '../../ui/Feature.astro'
+
+// Data
+import features from '../../../data/json-files/featuresData.json'
+
+import Card from '../../ui/cards/FeatureCard.astro'
+
+import Badge from '../../ui/Badge.astro'
+
+
+import StickySidebar from '../basic/StickySidebar.astro'
+
+// Props
+type RapprData = {
+	nome: string
+	cognome: string
+	email: string
+}
+type Props = {
+	scuola: string
+	luogo?: string
+	data: RapprData[]
+	classes?: string
+}
+const { scuola, luogo, data, classes } = Astro.props
+---
+
+<StickySidebar>
+	<header slot="sidebar">
+		<h3 class="text-3xl">{scuola}</h3>
+		<p class="text-lg leading-relaxed">{luogo}</p>
+	</header>
+
+	<Row>
+		{
+			(
+				<>
+					<Col span="6">
+						<Feature
+							title={`${data[0].nome} ${data[0].cognome}`}
+							icon="user"
+							align="center"
+							classes="mb-12"
+						>
+							<a href={`mailto:${data[0].email}`}>{data[0].email}</a>
+						</Feature>
+					</Col>
+					<Col span="6">
+						<Feature
+							title={`${data[1].nome} ${data[1].cognome}`}
+							icon="user"
+							align="center"
+							classes="mb-12"
+						>
+							<a href={`mailto:${data[1].email}`}>{data[1].email}</a>
+						</Feature>
+					</Col>
+				</>
+			)
+		}
+	</Row>
+</StickySidebar>

@@ -32,18 +32,18 @@ export default {
       colors: {
         transparent: "transparent",
         primary: {
-          50: "#fdf2f8",
-          100: "#fce7f3",
-          200: "#fbcfe8",
-          300: "#f9a8d4",
-          400: "#f472b6",
-          500: "#E2187D",
-          600: "#db2777",
-          700: "#be185d",
-          800: "#9d174d",
-          900: "#831843",
-          950: "#500724",
-        },
+          50:  '#eaf4fb',
+          100: '#d2e5f6',
+          200: '#a6cbea',
+          300: '#79b1de',
+          400: '#4d97d2',
+          500: '#145785', // base color
+          600: '#114c74',
+          700: '#0e4063',
+          800: '#0a3452',
+          900: '#072841',
+          950: '#041c30',
+        },  
         neutral: {
           50: "#f8fafc",
           100: "#f1f5f9",
@@ -92,5 +92,6 @@ export default {
     require("tailwindcss/plugin")(function ({ addVariant }) {
       addVariant("dark-me", ".dark_&");
     }),
+    require('flowbite/plugin'),
   ],
 };
