@@ -38,7 +38,7 @@ const rapprUdine = [
 ]
 ---
 
-<Section id="features" >
+<Section id="features">
 	<!-- <Row>
 		<Col span="12" align="center" classes="mb-12 max-w-4xl mx-auto">
 			<h2 class="text-pretty">Whats included on <strong>all</strong> foxi plans</h2>
@@ -78,18 +78,18 @@ const rapprUdine = [
 		>
 			<div class="p-6 md:flex">
 				<ul
-					class="flex-column space-y mb-4 space-y-4 text-sm font-medium text-gray-500 md:mb-0 md:me-4 dark:text-gray-400"
+					class="flex-column space-y mb-4 min-w-[220px] space-y-4 text-sm font-medium text-gray-500 md:mb-0 md:me-4 dark:text-gray-400"
 					id="default-tab"
 					data-tabs-toggle="#default-tab-content"
 					role="tablist"
 				>
 					<li>
 						<button
-							id="profile-tab"
-							data-tabs-target="#dashboard"
+							id="coordinatore-tab"
+							data-tabs-target="#coordinatore"
 							type="button"
 							role="tab"
-							aria-controls="profile"
+							aria-controls="coordinatore"
 							aria-selected="false"
 							class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white"
 						>
@@ -99,20 +99,21 @@ const rapprUdine = [
 								xmlns="http://www.w3.org/2000/svg"
 								fill="currentColor"
 								viewBox="0 0 18 18"
-								><path
-									d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"
-								></path></svg
 							>
-							Dashboard
+								<path
+									d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"
+								></path>
+							</svg>
+							Coordinatore nazionale
 						</button>
 					</li>
 					<li>
 						<button
-							id="profile-tab"
-							data-tabs-target="#dashboard"
+							id="tesoriere-tab"
+							data-tabs-target="#tesoriere"
 							type="button"
 							role="tab"
-							aria-controls="profile"
+							aria-controls="tesoriere"
 							aria-selected="false"
 							class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white"
 						>
@@ -122,20 +123,21 @@ const rapprUdine = [
 								xmlns="http://www.w3.org/2000/svg"
 								fill="currentColor"
 								viewBox="0 0 18 18"
-								><path
-									d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"
-								></path></svg
 							>
-							Dashboard
+								<path
+									d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"
+								></path>
+							</svg>
+							Tesoriere
 						</button>
 					</li>
 					<li>
 						<button
-							id="profile-tab"
-							data-tabs-target="#dashboard"
+							id="vicario-tab"
+							data-tabs-target="#vicario"
 							type="button"
 							role="tab"
-							aria-controls="profile"
+							aria-controls="vicario"
 							aria-selected="false"
 							class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white"
 						>
@@ -145,88 +147,127 @@ const rapprUdine = [
 								xmlns="http://www.w3.org/2000/svg"
 								fill="currentColor"
 								viewBox="0 0 18 18"
-								><path
-									d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"
-								></path></svg
 							>
-							Dashboard
+								<path
+									d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"
+								></path>
+							</svg>
+							Coordinatore Vicario
 						</button>
 					</li>
-					<li role="presentation">
+					<li>
 						<button
-							class="inline-block rounded-t-lg border-b-2 p-4 hover:border-gray-300 hover:text-gray-600 dark:hover:text-gray-300"
-							id="contacts-tab"
-							data-tabs-target="#contacts"
+							id="vice-tab"
+							data-tabs-target="#vice"
 							type="button"
 							role="tab"
-							aria-controls="contacts"
-							aria-selected="false">Tesoriere</button
+							aria-controls="vice"
+							aria-selected="false"
+							class="inline-flex w-full items-center rounded-lg bg-gray-50 px-4 py-3 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white"
 						>
+							<svg
+								class="me-2 h-4 w-4 text-gray-500 dark:text-gray-400"
+								aria-hidden="true"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="currentColor"
+								viewBox="0 0 18 18"
+							>
+								<path
+									d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831
+								8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0
+								6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169
+								10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857
+								0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0
+								17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857
+								1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10
+								11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0
+								18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"
+								></path>
+							</svg>
+							Vice Coordinatore
+						</button>
 					</li>
 				</ul>
 
-				<div
-					id="default-tab-content"
-					class="text-medium w-full rounded-lg bg-gray-50 p-6 text-gray-500 dark:bg-gray-800 dark:text-gray-400"
-				>
+				<div id="default-tab-content" class="flex flex-1 items-center justify-center">
 					<div
-						class="hidden rounded-lg bg-gray-50 p-4 dark:bg-gray-800"
-						id="profile"
+						class="text-medium flex flex-col items-center justify-center rounded-lg bg-gray-50 p-6 text-gray-500 dark:bg-gray-800 dark:text-gray-400"
+						id="coordinatore"
 						role="tabpanel"
-						aria-labelledby="profile-tab"
+						aria-labelledby="coordinatore-tab"
 					>
-						<p class="text-sm text-gray-500 dark:text-gray-400">
-							This is some placeholder content the <strong
-								class="font-medium text-gray-800 dark:text-white"
-								>Profile tab's associated content</strong
-							>. Clicking another tab will toggle the visibility of this one for the
-							next. The tab JavaScript swaps classes to control the content visibility
-							and styling.
+						<img
+							src="/images/coordinatore.jpg"
+							alt="Coordinatore nazionale"
+							class="mx-auto mb-4 h-32 w-32 rounded-full object-cover"
+						/>
+						<p
+							class="mb-2 text-center text-xl font-semibold text-gray-800 dark:text-white"
+						>
+							Nome Cognome Coordinatore
+						</p>
+						<p class="text-center text-sm text-gray-500 dark:text-gray-400">
+							Contenuto del Coordinatore nazionale.
 						</p>
 					</div>
 					<div
-						class="hidden rounded-lg bg-gray-50 p-4 dark:bg-gray-800"
-						id="dashboard"
+						class="flex flex-col items-center justify-center rounded-lg bg-gray-50 p-4 dark:bg-gray-800"
+						id="tesoriere"
 						role="tabpanel"
-						aria-labelledby="dashboard-tab"
+						aria-labelledby="tesoriere-tab"
 					>
-						<p class="text-sm text-gray-500 dark:text-gray-400">
-							This is some placeholder content the <strong
-								class="font-medium text-gray-800 dark:text-white"
-								>Dashboard tab's associated content</strong
-							>. Clicking another tab will toggle the visibility of this one for the
-							next. The tab JavaScript swaps classes to control the content visibility
-							and styling.
+						<img
+							src="/images/tesoriere.jpg"
+							alt="Tesoriere"
+							class="mx-auto mb-4 h-32 w-32 rounded-full object-cover"
+						/>
+						<p
+							class="mb-2 text-center text-xl font-semibold text-gray-800 dark:text-white"
+						>
+							Nome Cognome Tesoriere
+						</p>
+						<p class="text-center text-sm text-gray-500 dark:text-gray-400">
+							Contenuto del Tesoriere.
 						</p>
 					</div>
 					<div
-						class="hidden rounded-lg bg-gray-50 p-4 dark:bg-gray-800"
-						id="settings"
+						class="flex hidden flex-col items-center justify-center rounded-lg bg-gray-50 p-4 dark:bg-gray-800"
+						id="vicario"
 						role="tabpanel"
-						aria-labelledby="settings-tab"
+						aria-labelledby="vicario-tab"
 					>
-						<p class="text-sm text-gray-500 dark:text-gray-400">
-							This is some placeholder content the <strong
-								class="font-medium text-gray-800 dark:text-white"
-								>Settings tab's associated content</strong
-							>. Clicking another tab will toggle the visibility of this one for the
-							next. The tab JavaScript swaps classes to control the content visibility
-							and styling.
+						<img
+							src="/images/vicario.jpg"
+							alt="Coordinatore Vicario"
+							class="mx-auto mb-4 h-32 w-32 rounded-full object-cover"
+						/>
+						<p
+							class="mb-2 text-center text-xl font-semibold text-gray-800 dark:text-white"
+						>
+							Nome Cognome Coordinatore Vicario
+						</p>
+						<p class="text-center text-sm text-gray-500 dark:text-gray-400">
+							Contenuto del Coordinatore Vicario.
 						</p>
 					</div>
 					<div
-						class="hidden rounded-lg bg-gray-50 p-4 dark:bg-gray-800"
-						id="contacts"
+						class="flex hidden flex-col items-center justify-center rounded-lg bg-gray-50 p-4 dark:bg-gray-800"
+						id="vice"
 						role="tabpanel"
-						aria-labelledby="contacts-tab"
+						aria-labelledby="vice-tab"
 					>
-						<p class="text-sm text-gray-500 dark:text-gray-400">
-							This is some placeholder content the <strong
-								class="font-medium text-gray-800 dark:text-white"
-								>Contacts tab's associated content</strong
-							>. Clicking another tab will toggle the visibility of this one for the
-							next. The tab JavaScript swaps classes to control the content visibility
-							and styling.
+						<img
+							src="/images/vice.jpg"
+							alt="Vice Coordinatore"
+							class="mx-auto mb-4 h-32 w-32 rounded-full object-cover"
+						/>
+						<p
+							class="mb-2 text-center text-xl font-semibold text-gray-800 dark:text-white"
+						>
+							Nome Cognome Vice Coordinatore
+						</p>
+						<p class="text-center text-sm text-gray-500 dark:text-gray-400">
+							Contenuto del Vice Coordinatore.
 						</p>
 					</div>
 				</div>
@@ -234,3 +275,16 @@ const rapprUdine = [
 		</Col>
 	</Row>
 </Section>
+
+<script>
+	// For Flowbite (if loaded globally via CDN)
+	document.addEventListener('astro:after-swap', () => {
+		if (window.Flowbite) {
+			// Re-initialize Flowbite components if needed
+			// Flowbite auto-initializes on DOMContentLoaded, but not on swaps
+			// You may need to call Flowbite.init() or reload the script
+			// Example for Flowbite 2.x:
+			if (window.initFlowbite) window.initFlowbite()
+		}
+	})
+</script>
