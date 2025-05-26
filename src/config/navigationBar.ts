@@ -23,6 +23,7 @@ export interface NavAction {
 	link: string
 	style: string
 	size: string
+	target?: string
 }
 
 export interface NavData {
@@ -62,5 +63,5 @@ export const navigationBarData: NavData = {
 		{ name: '5X1000', link: '/5x1000' },
 		{ name: 'Contatti', link: '/contatti' }
 	],
-	navActions: [{ name: 'Area Riservata', link: 'https://riasissu.sharepoint.com/sites/RETEITALIANADELL3ALLIEV3DELLESCUOLEEDEGLIISTITUTIDISTUDISUPE', style: 'primary', size: 'lg' }]
+	navActions: [{ name: 'Area Riservata', link: 'https://riasissu.sharepoint.com/sites/RETEITALIANADELL3ALLIEV3DELLESCUOLEEDEGLIISTITUTIDISTUDISUPE', target: '_blank', style: 'primary', size: 'lg' }]
 }
