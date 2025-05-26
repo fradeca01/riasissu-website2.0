@@ -6,7 +6,6 @@ dist/
 .vercel/
 # dependencies
 node_modules/
-,vscode/
 
 # logs
 npm-debug.log*
@@ -23,3 +22,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+#VScode folder
+.vscode/
