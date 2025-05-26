@@ -34,24 +34,33 @@ export interface NavData {
 export const navigationBarData: NavData = {
 	logo: {
 		src: '/logo.svg',
-		alt: 'The tailwind astro theme',
-		text: 'Foxi.'
+		alt: 'RIASISSU logo',
+		text: 'RIASISSU'
 	},
 	navItems: [
-		{ name: 'Home', link: '/' },
-		{ name: 'Pricing', link: '/pricing' },
-		{ name: 'Features', link: '/features' },
+		{name: 'XCOOL', link: 'https://riasissu.it/xcool/'},
+		{ name: 'Le Scuole', link: '/scuole' },
 		{
-			name: 'Resources',
+			name: 'L\'associazione',
 			link: '#',
 			submenu: [
-				{ name: 'Blog', link: '/blog' },
-				{ name: 'Changelog', link: '/changelog' },
-				{ name: 'FAQ', link: '/faq' },
-				{ name: 'Terms', link: '/terms' }
+				{ name: 'Organigramma', link: '/organigramma' },
+				{ name: 'Commissioni', link: '/commissioni' },
+				{ name: 'Statuto', link: '/satuto' }
 			]
 		},
-		{ name: 'Contact', link: '/contact' }
+		{
+			name: 'Eventi e attività',
+			link: '#',
+			submenu: [
+				{ name: 'Il Chiasmo', link: 'https://www.treccani.it/magazine/chiasmo/' },
+				{ name: 'Rete di Idee', link: '/reteidee' },
+				{ name: 'Open Day', link: '/openday' },
+				{ name: 'Scambi Interscuola', link: '/scambi' },
+			]
+		},
+		{ name: '5X1000', link: '/5x1000' },
+		{ name: 'Contatti', link: '/contatti' }
 	],
-	navActions: [{ name: 'Try it now', link: '/', style: 'primary', size: 'lg' }]
+	navActions: [{ name: 'Area Riservata', link: 'https://riasissu.sharepoint.com/sites/RETEITALIANADELL3ALLIEV3DELLESCUOLEEDEGLIISTITUTIDISTUDISUPE', style: 'primary', size: 'lg' }]
 }
