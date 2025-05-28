@@ -1,0 +1,81 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import SidebarContent from '../components/blocks/basic/StickySidebar.astro'
+import Hero from '../components/blocks/hero/PageHeader.astro'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'RIASISSU | Dona il 5x1000',
+	description: 'Dona il 5x1000 alla RIASISSU!'
+}
+// - Page Header
+const header = {
+	title: 'Dona il 5x1000 alla <strong>RIASISSU</strong>',
+	text: 'Sostieni la nostra associazione!'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={header.title} text={header.text} />
+	<SidebarContent>
+		<div slot="sidebar">
+			<h3>Come Fare?</h3>
+		</div>
+		<div class="basic-text">
+			<p>
+				Basta indicare e chiedere di indicare il Codice Fiscale della <strong>RIASISSU</strong>
+				nella sezione preposta nella propria <strong>dichiarazione dei redditi</strong>, riepilogato
+				nella sintesi che segue:
+			</p>
+			<table>
+				<thead>
+					<tr>
+						<th>Campo</th>
+						<th>Valore</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr
+						><td>Regione sociale associazione</td><td
+							>“RETE ITALIANA DELL3 ALLIEV3 DELLE SCUOLE E DEGLI ISTITUTI DI STUDI SUPERIORI
+							UNIVERSITARI - APS”</td
+						></tr
+					>
+					<tr><td>Codice fiscale Associazione</td><td>93086750507</td></tr>
+				</tbody>
+			</table>
+		</div>
+	</SidebarContent>
+</Layout>
+
+<style>
+	table{
+		max-width: 800px;
+		border-spacing: 2px	;
+		vertical-align: baseline;
+	}
+	thead{
+		display: table-header-group;
+		vertical-align: middle;
+		unicode-bidi: isolate;
+		border-bottom-width: 2px;
+	}
+	td{
+		padding-right: 1em;
+	}
+	tbody{
+		display: table-row-group;
+		vertical-align: middle;
+		unicode-bidi: isolate;
+	}
+	tr:last-child{
+		border-bottom-width: 0px;	
+	}
+	tr{
+		border-bottom-width: 1px;	
+	}
+</style>

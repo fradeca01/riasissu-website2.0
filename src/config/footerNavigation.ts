@@ -16,6 +16,7 @@ export interface FooterAbout {
 export interface SubCategory {
 	subCategory: string
 	subCategoryLink: string
+	subCategoryTarget: string
 }
 
 export interface FooterColumn {
@@ -50,23 +51,28 @@ export const footerNavigationData: FooterData = {
 			subCategories: [
 				{
 					subCategory: 'Features',
-					subCategoryLink: '/features'
+					subCategoryLink: '/features',
+					subCategoryTarget: '_self'
 				},
 				{
 					subCategory: 'FAQ',
-					subCategoryLink: '/faq'
+					subCategoryLink: '/faq',
+					subCategoryTarget: '_self'
 				},
 				{
 					subCategory: 'Pricing',
-					subCategoryLink: '/pricing'
+					subCategoryLink: '/pricing',
+					subCategoryTarget: '_self'
 				},
 				{
 					subCategory: 'Changelog',
-					subCategoryLink: '/changelog'
+					subCategoryLink: '/changelog',
+					subCategoryTarget: '_self'
 				},
 				{
 					subCategory: 'Terms',
-					subCategoryLink: '/terms'
+					subCategoryLink: '/terms',
+					subCategoryTarget: '_self'
 				}
 			]
 		},
@@ -75,17 +81,20 @@ export const footerNavigationData: FooterData = {
 			subCategories: [
 				{
 					subCategory: 'About us',
-					subCategoryLink: '/'
+					subCategoryLink: '/',
+					subCategoryTarget: '_self'
 				},
 				{
 					subCategory: 'News',
-					subCategoryLink: '/blog'
+					subCategoryLink: '/blog',
+					subCategoryTarget: '_self'
 				},
 				{
 					subCategory: 'Careers',
-					subCategoryLink: '/blog'
+					subCategoryLink: '/blog',
+					subCategoryTarget: '_self'
 				},
-				
+
 			]
 		},
 		{
@@ -93,15 +102,18 @@ export const footerNavigationData: FooterData = {
 			subCategories: [
 				{
 					subCategory: 'Privacy Policy',
-					subCategoryLink: 'https://www.iubenda.com/privacy-policy/88846827'
+					subCategoryLink: 'https://www.iubenda.com/privacy-policy/88846827',
+					subCategoryTarget: '_blank'
 				},
 				{
 					subCategory: 'Cookie Policy',
-					subCategoryLink: 'https://www.iubenda.com/privacy-policy/88846827/cookie-policy'
+					subCategoryLink: 'https://www.iubenda.com/privacy-policy/88846827/cookie-policy',
+					subCategoryTarget: '_blank'
 				},
 				{
 					subCategory: 'Licenze di Terze Parti',
-					subCategoryLink: '/licenses'
+					subCategoryLink: '/licenses',
+					subCategoryTarget: '_self'
 				}
 			]
 		}
