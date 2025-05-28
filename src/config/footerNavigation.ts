@@ -84,7 +84,8 @@ export const footerNavigationData: FooterData = {
 				{
 					subCategory: 'Careers',
 					subCategoryLink: '/blog'
-				}
+				},
+				
 			]
 		},
 		{
