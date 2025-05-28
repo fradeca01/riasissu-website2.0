@@ -1,0 +1,45 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [22.x]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+      # Install dependencies
+      - name: npm ci
+        run: npm ci
+
+      # Run tests, always succeed so we can inspect the log
+      - name: Run tests (capture output)
+        run: |
+          npm test 2>&1 | tee test-output.log
+        continue-on-error: true
+
+      # Fail if “n errors” appears with n > 0
+      - name: Fail on npm errors
+        run: |
+          # extract the number before " errors"
+          errors=$(grep -oP '\d+(?= errors?)' test-output.log | head -n1 || echo 0)
+          echo "Detected $errors errors."
+          if [ "$errors" -gt 0 ]; then
+            echo "::error ::Found $errors errors in npm test output. Failing the job."
+            exit 1
+          fi

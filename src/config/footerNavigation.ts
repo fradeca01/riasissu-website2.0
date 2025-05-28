@@ -16,6 +16,7 @@ export interface FooterAbout {
 export interface SubCategory {
 	subCategory: string
 	subCategoryLink: string
+	subCategoryTarget: string
 }
 
 export interface FooterColumn {
@@ -50,23 +51,28 @@ export const footerNavigationData: FooterData = {
 			subCategories: [
 				{
 					subCategory: 'Features',
-					subCategoryLink: '/features'
+					subCategoryLink: '/features',
+					subCategoryTarget: '_self'
 				},
 				{
 					subCategory: 'FAQ',
-					subCategoryLink: '/faq'
+					subCategoryLink: '/faq',
+					subCategoryTarget: '_self'
 				},
 				{
 					subCategory: 'Pricing',
-					subCategoryLink: '/pricing'
+					subCategoryLink: '/pricing',
+					subCategoryTarget: '_self'
 				},
 				{
 					subCategory: 'Changelog',
-					subCategoryLink: '/changelog'
+					subCategoryLink: '/changelog',
+					subCategoryTarget: '_self'
 				},
 				{
 					subCategory: 'Terms',
-					subCategoryLink: '/terms'
+					subCategoryLink: '/terms',
+					subCategoryTarget: '_self'
 				}
 			]
 		},
@@ -75,37 +81,44 @@ export const footerNavigationData: FooterData = {
 			subCategories: [
 				{
 					subCategory: 'About us',
-					subCategoryLink: '/'
+					subCategoryLink: '/',
+					subCategoryTarget: '_self'
 				},
 				{
 					subCategory: 'News',
-					subCategoryLink: '/blog'
+					subCategoryLink: '/blog',
+					subCategoryTarget: '_self'
 				},
 				{
 					subCategory: 'Careers',
-					subCategoryLink: '/blog'
-				}
+					subCategoryLink: '/blog',
+					subCategoryTarget: '_self'
+				},
+
 			]
 		},
 		{
-			category: 'Get in touch',
+			category: 'Area Legale',
 			subCategories: [
 				{
-					subCategory: 'Contact',
-					subCategoryLink: '/contact'
+					subCategory: 'Privacy Policy',
+					subCategoryLink: 'https://www.iubenda.com/privacy-policy/88846827',
+					subCategoryTarget: '_blank'
 				},
 				{
-					subCategory: 'Support',
-					subCategoryLink: '/contact'
+					subCategory: 'Cookie Policy',
+					subCategoryLink: 'https://www.iubenda.com/privacy-policy/88846827/cookie-policy',
+					subCategoryTarget: '_blank'
 				},
 				{
-					subCategory: 'Join us',
-					subCategoryLink: '/contact'
+					subCategory: 'Licenze di Terze Parti',
+					subCategoryLink: '/licenses',
+					subCategoryTarget: '_self'
 				}
 			]
 		}
 	],
 	subFooter: {
-		copywriteText: '© Foxi 2024.'
+		copywriteText: '© RIASISSU 2025.'
 	}
 }

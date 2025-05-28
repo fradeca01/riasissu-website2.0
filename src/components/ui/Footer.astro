@@ -36,7 +36,7 @@ const { footerAbout, footerColumns, subFooter } = footerNavigationData
 							<ul>
 								{column.subCategories.map((subCategory) => (
 									<li>
-										<a href={subCategory.subCategoryLink}> {subCategory.subCategory} </a>
+										<a href={subCategory.subCategoryLink} target={subCategory.subCategoryTarget}> {subCategory.subCategory} </a>
 									</li>
 								))}
 							</ul>

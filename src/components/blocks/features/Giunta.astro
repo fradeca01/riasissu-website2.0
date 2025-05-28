@@ -9,18 +9,18 @@ import Section from '../../ui/Section.astro'
 import Row from '../../ui/Row.astro'
 import Col from '../../ui/Col.astro'
 // - UI
-import Feature from '../../ui/Feature.astro'
+// import Feature from '../../ui/Feature.astro'
 
 // Data
-import features from '../../../data/json-files/featuresData.json'
+// import features from '../../../data/json-files/featuresData.json'
 
-import Card from '../../ui/cards/FeatureCard.astro'
+// import Card from '../../ui/cards/FeatureCard.astro'
 
-import Badge from '../../ui/Badge.astro'
+// import Badge from '../../ui/Badge.astro'
 
-import Feature2 from '../../ui/Feature.astro'
+// import Feature2 from '../../ui/Feature.astro'
 
-import StickySidebar from '../basic/StickySidebar.astro'
+// import StickySidebar from '../basic/StickySidebar.astro'
 
 import RappresentantiScuola from './SchedaRappresentanti.astro'
 
@@ -275,16 +275,3 @@ const rapprUdine = [
 		</Col>
 	</Row>
 </Section>
-
-<script>
-	// For Flowbite (if loaded globally via CDN)
-	document.addEventListener('astro:after-swap', () => {
-		if (window.Flowbite) {
-			// Re-initialize Flowbite components if needed
-			// Flowbite auto-initializes on DOMContentLoaded, but not on swaps
-			// You may need to call Flowbite.init() or reload the script
-			// Example for Flowbite 2.x:
-			if (window.initFlowbite) window.initFlowbite()
-		}
-	})
-</script>
