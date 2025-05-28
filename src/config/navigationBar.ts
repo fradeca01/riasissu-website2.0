@@ -47,7 +47,7 @@ export const navigationBarData: NavData = {
 			submenu: [
 				{ name: 'Organigramma', link: '/organigramma' },
 				{ name: 'Commissioni', link: '/commissioni' },
-				{ name: 'Statuto', link: '/satuto' }
+				{ name: 'Statuto', link: '/statuto' }
 			]
 		},
 		{
