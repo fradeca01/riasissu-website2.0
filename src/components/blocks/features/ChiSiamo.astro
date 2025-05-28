@@ -31,11 +31,12 @@ import feature05 from '../../../assets/cards/feature-05.svg'
 			</p>
 		</Col>
 	</Row>
-	<Row>
+	<Row classes="lg:mx-12">
 		<Col span="4" classes="mx-12 lg:m-0 flex flex-col gap-6 ">
 			<Card
-				title="Collegio Internazionale Ca’ Foscari di Venezia"
+				title="Collegio Internazionale di Venezia"
 				subtitle="Città: Venezia"
+				image={feature02}
 				link="/scuole/venezia"
 			/>
 			<Card
@@ -52,12 +53,12 @@ import feature05 from '../../../assets/cards/feature-05.svg'
 			/>
 			<Card
 				title="Scuola di Studi Superiori Carlo Urbani di Camerino"
-				subtitle="Città: Camerino"
-				image={feature03}
+				subtitle="Citta: Camerino"
+				image={feature04}
 				link="/scuole/camerino"
 			/>
 		</Col>
-		<Col span="4" classes="mx-12 lg:m-0 flex flex-col gap-6 extra-cards hidden lg:flex">
+		<Col span="4" classes="mx-12 lg:m-0 hidden lg:flex flex-col gap-6 extra-cards">
 			<Card
 				title="Collegio Superiore di Bologna"
 				subtitle="Città: Bologna"
@@ -112,58 +113,58 @@ import feature05 from '../../../assets/cards/feature-05.svg'
 	</Row>
 	<Row>
 		<Col span="12" classes="text-center">
-			<div class="mt-6 flex justify-center sm:hidden">
+			<div class="mt-6 flex justify-center lg:hidden">
 				<my-button>
 					<Button style="primary" size="lg"> Mostra Altro </Button>
 				</my-button>
 			</div>
 		</Col>
 	</Row>
-</Section>
 
-<script>
-	let showMore = false
+	<script>
+		let showMore = false
 
-	class MyButton extends HTMLElement {
-		connectedCallback() {
-			let b = this.querySelector('Button')
-			let extraCards = document.getElementsByClassName('extra-cards')
-			if (b) {
-				b.addEventListener('click', (e) => {
-					showMore = !showMore
+		class MyButton extends HTMLElement {
+			connectedCallback() {
+				let b = this.querySelector('Button')
+				let extraCards = document.getElementsByClassName('extra-cards')
+				if (b) {
+					b.addEventListener('click', (e) => {
+						showMore = !showMore
 
-					if (extraCards) {
-						if (showMore) {
-							// show and reset animation state
-							for (let el of extraCards) {
-								el.classList.remove('hidden')
-								el.classList.add('flex')
-								el.classList.remove('scroll-animated')
+						if (extraCards) {
+							if (showMore) {
+								// show and reset animation state
+								for (let el of extraCards) {
+									el.classList.remove('hidden')
+									el.classList.add('flex')
+									el.classList.remove('scroll-animated')
+								}
+								// force reflow to reset animations
+								void document.body.offsetWidth
+								// re-apply animation with staggered delays
+								Array.from(extraCards).forEach((el, i) => {
+									setTimeout(() => el.classList.add('scroll-animated'), i * 100)
+								})
+								b.textContent = 'Mostra Meno'
+							} else {
+								// hide and clear animation classes
+								for (let el of extraCards) {
+									el.classList.remove('scroll-animated')
+									el.classList.add('hidden')
+									el.classList.remove('flex')
+								}
+								b.textContent = 'Mostra Altro'
 							}
-							// force reflow to reset animations
-							void document.body.offsetWidth
-							// re-apply animation with staggered delays
-							Array.from(extraCards).forEach((el, i) => {
-								setTimeout(() => el.classList.add('scroll-animated'), i * 100)
-							})
-							b.textContent = 'Mostra Meno'
-						} else {
-							// hide and clear animation classes
-							for (let el of extraCards) {
-								el.classList.remove('scroll-animated')
-								el.classList.add('hidden')
-								el.classList.remove('flex')
-							}
-							b.textContent = 'Mostra Altro'
 						}
-					}
 
-					;(b as HTMLElement).blur()
-					e.preventDefault()
-				})
+						;(b as HTMLElement).blur()
+						e.preventDefault()
+					})
+				}
 			}
 		}
-	}
 
-	customElements.define('my-button', MyButton)
-</script>
+		customElements.define('my-button', MyButton)
+	</script>
+</Section>
