@@ -88,24 +88,24 @@ export const footerNavigationData: FooterData = {
 			]
 		},
 		{
-			category: 'Get in touch',
+			category: 'Area Legale',
 			subCategories: [
 				{
-					subCategory: 'Contact',
-					subCategoryLink: '/contact'
+					subCategory: 'Privacy Policy',
+					subCategoryLink: 'https://www.iubenda.com/privacy-policy/88846827'
 				},
 				{
-					subCategory: 'Support',
-					subCategoryLink: '/contact'
+					subCategory: 'Cookie Policy',
+					subCategoryLink: 'https://www.iubenda.com/privacy-policy/88846827/cookie-policy'
 				},
 				{
-					subCategory: 'Join us',
-					subCategoryLink: '/contact'
+					subCategory: 'Licenze di Terze Parti',
+					subCategoryLink: '/licenses'
 				}
 			]
 		}
 	],
 	subFooter: {
-		copywriteText: '© Foxi 2024.'
+		copywriteText: '© RIASISSU 2025.'
 	}
 }
