@@ -1,0 +1,172 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import SidebarContent from '../components/blocks/basic/StickySidebar.astro'
+import Hero from '../components/blocks/hero/PageHeader.astro'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'RIASISSU | Statuto',
+	description: "Statuto dell'associazione RIASISSU, approvato il 6 dicembre 2024."
+}
+// - Page Header
+const header = {
+	title: 'Statuto dell’Associazione RIASISSU',
+	text: ''
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={header.title} text={header.text} />
+	<SidebarContent>
+		<div slot="sidebar">
+			<h3>Disposizioni Generali</h3>
+		</div>
+		<div class="basic-text">
+			<h4>Art. 1 - Costituzione</h4>
+			<div class="paragraph">
+				È costituita l’associazione del Terzo settore “Rete Italiana degl3 Alliev3 delle Scuole e
+				degli Istituti di Studi Superiori Universitari - APS” (di seguito “Associazione”). È
+				un’associazione di promozione sociale, con durata illimitata nel tempo e senza scopo di
+				lucro, di cui fanno parte, previa richiesta di adesione, gli Alliev3 delle Scuole e Istituti
+				di Studi Superiori Universitari italiani che soddisfano i requisiti di cui all’Allegato 1
+				(di seguito “Scuole”).
+			</div>
+			<h4>Art. 2 - Sede</h4>
+			<div class="paragraph">
+				La sede dell’Associazione è stabilita presso la Scuola Superiore Sant’Anna di Studi
+				Universitari e di Perfezionamento, Piazza Martiri della Libertà 33, Pisa - 56127.
+			</div>
+			<h4>Art. 3 - Finalità</h4>
+			<div class="paragraph">
+				L’Associazione persegue finalità civiche, solidaristiche e di utilità sociale. In
+				particolare, si prefigge i seguenti scopi di carattere culturale:
+				<ul>
+					<li>costruire ponti fra gli Allievi delle diverse Scuole;</li>
+					<li>condividere e scambiare informazioni sulla vita e le attività delle Scuole;</li>
+					<li>formare una comunità di studio mirata a creare sinergie tra gli Allievi;</li>
+					<li>incentivare la mobilità degli Allievi tra le Scuole;</li>
+					<li>promuovere eventi formativi, culturali e sportivi comuni;</li>
+					<li>incrementare la visibilità delle Scuole;</li>
+					<li>promuovere il merito a partire dalle scuole secondarie di secondo grado;</li>
+					<li>tutelare e coordinare la formazione universitaria di eccellenza in Italia;</li>
+					<li>
+						promuovere il valore dell’internazionalizzazione all’interno dell’Università italiana;
+					</li>
+					<li>
+						valorizzare l’interdisciplinarità e l’apertura degli Allievi verso la collettività e le
+						problematiche contemporanee;
+					</li>
+					<li>contribuire alla formazione degli Allievi delle Scuole.</li>
+				</ul>
+			</div>
+			<h4>Art. 4 - Attività</h4>
+			<div class="paragraph">
+				Per il raggiungimento degli scopi di cui all’art. 3, l’Associazione opera nei settori:
+				<ul>
+					<li>formazione universitaria;</li>
+					<li>
+						organizzazione e gestione di attività culturali, artistiche o ricreative di interesse
+						sociale.
+					</li>
+				</ul>
+				In via esemplificativa, l’Associazione potrà:
+				<ul>
+					<li>
+						organizzare conferenze, incontri, seminari, scambi culturali, orientamento universitario
+						ed eventi formativi, culturali o sportivi;
+					</li>
+					<li>partecipare ad eventi culturali organizzati da terzi;</li>
+					<li>
+						fornire sostegno (anche materiale) a progetti formativi in scuole secondarie e
+						Università;
+					</li>
+					<li>raccogliere risorse tramite donazioni di Soci o enti;</li>
+					<li>istituire premi e benemerenze per Allievi in gare o selezioni culturali/sportive;</li>
+					<li>
+						acquisire, locare o cedere beni immobili e mobili strumentali alle attività associative;
+					</li>
+					<li>istituire fondi destinati a specifiche attività coerenti con gli scopi sociali;</li>
+					<li>
+						creare reti di contatti con persone, associazioni, enti pubblici e privati nei settori
+						di ricerca, impresa e cultura;
+					</li>
+					<li>
+						gestire dati personali di Soci ed ex-Soci tramite piattaforme elettroniche, nel rispetto
+						della normativa vigente;
+					</li>
+					<li>promuovere rapporti con gli Alumni delle Scuole;</li>
+					<li>
+						svolgere ogni attività necessaria al perseguimento delle finalità statutarie nei limiti
+						della normativa sul Terzo settore.
+					</li>
+				</ul>
+				L’Associazione si avvale prevalentemente del volontariato; può avvalersi di lavoratori e svolgere
+				attività secondarie e strumentali nei limiti di legge, come individuato dalla Giunta esecutiva.
+			</div>
+			<h4>Art. 5 - Ambito di attività</h4>
+			<div class="paragraph">
+				L’Associazione può operare in Italia e all’estero, aderire o affiliarsi a enti pubblici o
+				privati, nazionali o internazionali, e collaborare con movimenti, associazioni ed enti in
+				conformità alla normativa sulle APS. Le modalità di affiliazione sono approvate
+				dall’Assemblea dei Rappresentanti (art. 17).
+			</div>
+			<h4>Art. 6 - Accesso agli Atti</h4>
+			<div class="paragraph">
+				Atto costitutivo, statuto, regolamenti, verbali e bilanci annuali sono consultabili da tutti
+				i Soci. Altri documenti (incluso il libro Soci) sono accessibili previa richiesta motivata
+				alla Giunta esecutiva.
+			</div>
+			<h4>Art. 7 - Controversie</h4>
+			<div class="paragraph">
+				Ogni controversia sull’esecuzione o interpretazione del presente Statuto è devoluta alla
+				maggioranza dei due terzi dell’Assemblea dei Rappresentanti o, in mancanza di accordo, a un
+				arbitrato secondo equità. L’arbitro è scelto di comune accordo o, in difetto, dalla
+				maggioranza semplice dell’Assemblea dei Rappresentanti.
+			</div>
+		</div>
+	</SidebarContent>
+	<SidebarContent>
+		<div slot="sidebar">
+			<h3>Associati</h3>
+		</div>
+		<div class="basic-text">
+			<h4>Art. 8 - Soci Ordinari</h4>
+			<div class="paragraph">
+				Possono essere Soci tutti gli Allievi di corsi di laurea, laurea magistrale o ciclo unico
+				delle Scuole idonee (Allegato 1) che si iscrivono formalmente. La perdita dei requisiti o il
+				recesso comportano la perdita dello status di Socio dal 1 gennaio dell’anno successivo. Il
+				libro Soci è aggiornato dai Rappresentanti. L’esclusione è deliberata dall’Assemblea dei
+				Rappresentanti, con effetto immediato, per gravi motivi.
+			</div>
+			<h4>Art. 9 - Ammissione e recesso dei soci ordinari</h4>
+			<div class="paragraph">
+				L’adesione avviene tramite domanda scritta o telematica, con accettazione dello Statuto. Il
+				Socio può recedere in qualsiasi momento con dichiarazione a un Rappresentante.
+			</div>
+			<h4>Art. 10 - Diritti e obblighi dei Soci Ordinari</h4>
+			<div class="paragraph">
+				I Soci ordinari hanno il diritto di:
+				<ul>
+					<li>partecipare e votare all’Assemblea dei Soci;</li>
+					<li>ricoprire ruoli di Rappresentanti;</li>
+					<li>partecipare a tutte le attività associative.</li>
+				</ul>
+				Devono rispettare Statuto, regolamenti e principi legali/civili. Comportamenti lesivi delle finalità
+				o del patrimonio possono essere sanzionati, fino all’esclusione (art. 7).
+			</div>
+		</div>
+	</SidebarContent>
+</Layout>
+
+<style>
+	ul {
+		margin: 1em;
+	}
+	.paragraph {
+		@extend p;
+	}
+</style>
