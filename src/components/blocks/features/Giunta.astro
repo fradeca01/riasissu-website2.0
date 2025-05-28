@@ -279,12 +279,12 @@ const rapprUdine = [
 <script>
 	// For Flowbite (if loaded globally via CDN)
 	document.addEventListener('astro:after-swap', () => {
-		if ((window).Flowbite) {
+		if ((window as any).Flowbite) {
 			// Re-initialize Flowbite components if needed
 			// Flowbite auto-initializes on DOMContentLoaded, but not on swaps
 			// You may need to call Flowbite.init() or reload the script
 			// Example for Flowbite 2.x:
-			if ((window).initFlowbite) (window as any).initFlowbite()
+			if ((window as any).initFlowbite) (window as any).initFlowbite()
 		}
 	})
 </script>
