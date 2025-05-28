@@ -22,7 +22,7 @@ import Col from '../../ui/Col.astro'
 
 // import StickySidebar from '../basic/StickySidebar.astro'
 
-// import RappresentantiScuola from './SchedaRappresentanti.astro'
+import RappresentantiScuola from './SchedaRappresentanti.astro'
 
 const rapprUdine = [
 	{
@@ -279,12 +279,12 @@ const rapprUdine = [
 <script>
 	// For Flowbite (if loaded globally via CDN)
 	document.addEventListener('astro:after-swap', () => {
-		if ((window as any).Flowbite) {
+		if ((window).Flowbite) {
 			// Re-initialize Flowbite components if needed
 			// Flowbite auto-initializes on DOMContentLoaded, but not on swaps
 			// You may need to call Flowbite.init() or reload the script
 			// Example for Flowbite 2.x:
-			if ((window as any).initFlowbite) (window as any).initFlowbite()
+			if ((window).initFlowbite) (window).initFlowbite()
 		}
 	})
 </script>
