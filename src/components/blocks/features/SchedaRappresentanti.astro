@@ -21,12 +21,13 @@ type RapprData = {
 	email: string
 }
 type Props = {
+	tabId: string
 	scuola: string
 	luogo?: string
 	data: RapprData[]
 	classes?: string
 }
-const { scuola, luogo, data, classes } = Astro.props
+const { tabId, scuola, luogo, data, classes } = Astro.props
 ---
 
 <StickySidebar classes={classes}>
@@ -35,32 +36,27 @@ const { scuola, luogo, data, classes } = Astro.props
 		<p class="text-lg leading-relaxed">{luogo}</p>
 	</header>
 
-	<Row>
-		{
-			(
-				<>
-					<Col span="6">
-						<Feature
-							title={`${data[0].nome} ${data[0].cognome}`}
-							icon="user"
-							align="center"
-							classes="mb-12"
-						>
-							<a href={`mailto:${data[0].email}`}>{data[0].email}</a>
-						</Feature>
-					</Col>
-					<Col span="6">
-						<Feature
-							title={`${data[1].nome} ${data[1].cognome}`}
-							icon="user"
-							align="center"
-							classes="mb-12"
-						>
-							<a href={`mailto:${data[1].email}`}>{data[1].email}</a>
-						</Feature>
-					</Col>
-				</>
-			)
-		}
+	<Row classes="h-full items-center">
+		<Col span="6">
+			<Feature
+				title={`${data[0].nome} ${data[0].cognome}`}
+				icon="user"
+				iconStyle="normal"
+				align="center"
+				classes="mb-12"
+			>
+				<a href={`mailto:${data[0].email}`}>{data[0].email}</a>
+			</Feature>
+		</Col>
+		<Col span="6">
+			<Feature
+				title={`${data[1].nome} ${data[1].cognome}`}
+				icon="user"
+				align="center"
+				classes="mb-12"
+			>
+				<a href={`mailto:${data[1].email}`}>{data[1].email}</a>
+			</Feature>
+		</Col>
 	</Row>
 </StickySidebar>

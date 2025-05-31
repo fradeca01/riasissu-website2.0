@@ -1,0 +1,41 @@
+---
+import Card from '../../ui/cards/BasicCard.astro'
+import Feature from '../../ui/Feature.astro'
+
+type Props = {
+	nome: string
+	cognome: string
+	ruolo: string
+	contenuto: string
+	image?: any
+}
+
+const { nome, cognome, ruolo, contenuto, image } = Astro.props
+---
+
+<!-- <div
+	class="text-medium flex flex-col items-center justify-center rounded-lg bg-gray-50 p-6 text-gray-500 dark:bg-gray-800 dark:text-gray-400"
+	id="coordinatore"
+	role="tabpanel"
+	aria-labelledby="coordinatore-tab"
+>
+	<img
+		src="/images/coordinatore.jpg"
+		alt="Coordinatore nazionale"
+		class="mx-auto mb-4 h-32 w-32 rounded-full object-cover"
+	/>
+	<p class="mb-2 text-center text-xl font-semibold text-gray-800 dark:text-white">
+		{nome} {cognome}
+	</p>
+	<p class="text-center text-sm text-gray-500 dark:text-gray-400">
+		{contenuto}
+	</p>
+</div> -->
+<Card
+	title=`${nome} ${cognome}`
+	subtitle={contenuto}
+	titleSize="xl"
+	image={image}
+	type="image-top"
+	classes="!bg-neutral-50 !shadow-none dark:!bg-neutral-900 md:h-full justify-between border border-neutral-100 dark:border-neutral-800"
+/>

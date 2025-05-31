@@ -18,6 +18,7 @@ type Props = {
 	type?: 'link' | 'button' | 'submit' | 'reset'
 	size?: 'lg' | 'base' | 'sm'
 	link?: string
+	onClick?: any
 	modal?: string
 	style?: 'primary' | 'secondary' | 'neutral'
 	variation?: 'outline' | 'link'
@@ -34,7 +35,8 @@ const {
 	variation,
 	elevated,
 	classes,
-	target
+	target,
+	onClick
 } = Astro.props
 ---
 
@@ -57,6 +59,7 @@ const {
 	) : (
 		<button
 			type={type}
+			@click={onClick}
 			class:list={[
 				'button',
 				{ ['button--' + `${size}`]: size },
