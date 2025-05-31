@@ -9,9 +9,10 @@
 // Props
 type Props = {
 	link?: string
+	horizontal?: boolean
 	classes?: string
 }
-const { link, classes } = Astro.props
+const { link, classes, horizontal } = Astro.props
 ---
 
 {
@@ -20,7 +21,7 @@ const { link, classes } = Astro.props
 			<slot />
 		</a>
 	) : (
-		<div class:list={['card', { [`${classes}`]: classes }]}>
+		<div class:list={['card', { [`${classes}`]: classes }, { 'card--horizontal': horizontal }]}>
 			<slot />
 		</div>
 	)
@@ -28,5 +29,9 @@ const { link, classes } = Astro.props
 <style>
 	.card {
 		@apply flex flex-col overflow-hidden rounded border border-neutral-100 bg-white text-neutral-500 shadow-lg shadow-neutral-700/5 dark:border-neutral-800 dark:bg-neutral-900 dark:shadow-neutral-950/50;
+	}
+
+	.card--horizontal {
+		@apply items-start justify-center gap-0 sm:flex-row;
 	}
 </style>

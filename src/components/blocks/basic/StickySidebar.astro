@@ -19,7 +19,7 @@ type Props = {
 	type?: 'left' | 'right'
 	classes?: string
 }
-const { id, type = 'left'	, classes } = Astro.props
+const { id, type = 'left', classes } = Astro.props
 ---
 
 <Section {...id ? { id } : {}} classes={classes} stickyCol>

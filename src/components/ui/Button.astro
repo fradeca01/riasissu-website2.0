@@ -20,7 +20,7 @@ type Props = {
 	link?: string
 	onClick?: any
 	modal?: string
-	style?: 'primary' | 'secondary' | 'neutral'
+	style?: 'primary' | 'secondary' | 'neutral' | 'card'
 	variation?: 'outline' | 'link'
 	elevated?: boolean
 	classes?: string
@@ -106,5 +106,9 @@ const {
 
 	.button--neutral {
 		@apply bg-neutral-700 text-white hover:bg-neutral-800 focus:bg-neutral-900 disabled:border-neutral-300 disabled:bg-neutral-300 [&.button--elevated]:shadow-neutral-500/30 [&.button--elevated]:hover:shadow-neutral-500/30 [&.button--elevated]:focus:shadow-neutral-500/30 [&.button--link]:bg-transparent [&.button--link]:text-neutral-700 hover:[&.button--link]:text-neutral-800 focus:[&.button--link]:text-neutral-900 [&.button--outline]:border-neutral-700 [&.button--outline]:bg-transparent [&.button--outline]:text-neutral-700 [&.button--outline]:hover:border-neutral-800 [&.button--outline]:hover:text-neutral-800;
+	}
+
+	.button--card {
+		@apply border border-neutral-100 bg-neutral-100 text-neutral-800 hover:bg-neutral-200 dark:border-neutral-800 dark:!bg-neutral-900 dark:text-white;
 	}
 </style>

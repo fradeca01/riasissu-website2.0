@@ -10,7 +10,6 @@ import Section from '../../ui/Section.astro'
 import Row from '../../ui/Row.astro'
 import Col from '../../ui/Col.astro'
 // - UI
-import Feature from '../../ui/Feature.astro'
 
 // Data
 import tabs from '../../../data/json-files/schoolsData.json'
@@ -18,10 +17,11 @@ import tabs from '../../../data/json-files/schoolsData.json'
 import RawCard from '../../ui/cards/partials/Card.astro'
 
 import RappresentantiScuola from './SchedaRappresentanti.astro'
-import InteractiveTabs from './InteractiveTab.jsx'
 ---
 
-<Section id="features" classes="">
+<Section id="rappresentanti" classes="bg-neutral-50 dark:bg-neutral-900">
+	<Section>
+		
 	<Row>
 		<Col span="12" align="center" classes="mb-12 max-w-4xl mx-auto">
 			<h2 class="text-pretty">I Rappresentanti</h2>
@@ -34,100 +34,106 @@ import InteractiveTabs from './InteractiveTab.jsx'
 
 	<Row>
 		<Col span="12" align="center" classes="w-full p-0 m-0">
-			<div class="relative inline-block text-left">
-				<div class="flex flex-row justify-center gap-6">
-					<h3>Scuola:</h3>
-					<button
-						type="button"
-						class="shadow-xs inline-flex h-full w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-						id="menu-button"
-						aria-expanded="true"
-						aria-haspopup="true"
-					>
-						<span id="school-dropdown-label">{tabs[0].label}</span>
-						<svg
-							class="-mr-1 size-5 text-gray-400"
-							viewBox="0 0 20 20"
-							fill="currentColor"
-							data-slot="icon"
-						>
-							<path
-								fill-rule="evenodd"
-								d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-								clip-rule="evenodd"></path>
-						</svg>
-					</button>
-				</div>
-
-				<!--
-    Dropdown menu, show/hide based on menu state.
-
-    Entering: "transition ease-out duration-100"
-      From: "transform opacity-0 scale-95"
-      To: "transform opacity-100 scale-100"
-    Leaving: "transition ease-in duration-75"
-      From: "transform opacity-100 scale-100"
-      To: "transform opacity-0 scale-95"
-  -->
+			<div x-data="{ panel: 'venezia', label: 'Venezia' }">
 				<div
-					class="focus:outline-hidden absolute right-0 z-10 mt-2 hidden w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5"
-					role="menu"
-					aria-orientation="vertical"
-					aria-labelledby="menu-button"
-					tabindex="-1"
-				>
-					<div class="py-1" role="none">
-						<!-- Active: "bg-gray-100 text-gray-900 outline-hidden", Not Active: "text-gray-700" -->
-						{
-							tabs.map((tab) => (
-								<a
-									class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-									role="menuitem"
-									data-value={tab.id}
-									data-label={tab.label}
-									tabindex="-1"
-									id={`menu-item-${tab.id}`}
-								>
-									<span class="font-semibold">{tab.label}</span>
-								</a>
-							))
+					x-data="{
+						open: false,
+						toggle() {
+							if (this.open) {
+								return this.close()
+							}
+			
+							this.$refs.button.focus()
+			
+							this.open = true
+						},
+						close(focusAfter) {
+							if (! this.open) return
+			
+							this.open = false
+			
+							focusAfter && focusAfter.focus()
 						}
+					}"
+					x-on:keydown.escape.prevent.stop="close($refs.button)"
+					x-on:focusin.window="! $refs.panel.contains($event.target) && close()"
+					class="relative inline-block text-left"
+				>
+					<div class="flex flex-row justify-center gap-6">
+						<h3>Scuola:</h3>
+						<button
+							x-ref="button"
+							type="button"
+							x-on:click="toggle()"
+							class="shadow-xs inline-flex h-full w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+							id="menu-button"
+						>
+							<span id="school-dropdown-label" x-text="label"></span>
+							<svg
+								class="-mr-1 size-5 text-gray-400"
+								viewBox="0 0 20 20"
+								fill="currentColor"
+								data-slot="icon"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+									clip-rule="evenodd"></path>
+							</svg>
+						</button>
+					</div>
+
+					<div
+						class="focus:outline-hidden absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5"
+						role="menu"
+						x-show="open"
+						x-ref="panel"
+						x-transition.origin.top.left
+						x-on:click.outside="close($refs.button)"
+						aria-labelledby="menu-button"
+						tabindex="-1"
+					>
+						<div class="py-1" role="none">
+							<!-- Active: "bg-gray-100 text-gray-900 outline-hidden", Not Active: "text-gray-700" -->
+							{
+								tabs.map((tab) => (
+									<a
+										class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+										role="menuitem"
+										x-on:click={`panel = '${tab.id}'; label = '${tab.label}'; close($refs.button)`}
+										data-value={tab.id}
+										data-label={tab.label}
+										tabindex="-1"
+										id={`menu-item-${tab.id}`}
+									>
+										<span class="font-semibold">{tab.label}</span>
+									</a>
+								))
+							}
+						</div>
 					</div>
 				</div>
+
+				<Section classes="lg:px-16 bg-white shadow-primary-500/30 dark:bg-neutral-950">
+					{
+						tabs.map((tab, i) => (
+							<div x-show={`panel === '${tab.id}'`}>
+								<RappresentantiScuola
+									tabId={tab.id}
+									classes=""
+									scuola={tab.scuola}
+									luogo={tab.luogo}
+									data={tab.data}
+								/>
+							</div>
+						))
+					}
+				</Section>
 			</div>
-			<!-- <div class="mb-12"> -->
-			<!-- <label
-					for="school-select"
-					class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300"
-				>
-					Seleziona la scuola
-				</label> -->
-			<!-- <select id="school-select" class="dropdown bg-neutral-900 text-gray-100">
-					{tabs.map((tab) => <option value={tab.id}>{tab.label}</option>)}
-				</select> -->
-			<!-- </div> -->
-			<RawCard classes="hidden">
-				{
-					tabs.map((tab, i) => (
-						<div
-							id={`dropdown-panel-${tab.id}`}
-							class={`dropdown-panel ${i === 0 ? '' : 'hidden'}`}
-						>
-							<RappresentantiScuola
-								tabId={tab.id}
-								classes="bg-trasparent shadow-primary-500/30 bg-neutral-50 dark:bg-neutral-900 lg:p-16"
-								scuola={tab.scuola}
-								luogo={tab.luogo}
-								data={tab.data}
-							/>
-						</div>
-					))
-				}
-			</RawCard>
 		</Col>
 	</Row>
 </Section>
-<script>
+<!-- <script>
 	function initDropdownMenu() {
 		const button = document.getElementById('menu-button')
 		const menu = button?.parentElement?.nextElementSibling
@@ -202,7 +208,7 @@ import InteractiveTabs from './InteractiveTab.jsx'
 	} else {
 		initDropdownMenu()
 	}
-</script>
+</script> -->
 
 <style>
 	.dropdown {

@@ -30,33 +30,26 @@ type Props = {
 const { tabId, scuola, luogo, data, classes } = Astro.props
 ---
 
-<StickySidebar classes={classes}>
-	<header slot="sidebar">
+<Row classes={classes}>
+	<Col span="5">
 		<h3 class="text-3xl">{scuola}</h3>
 		<p class="text-lg leading-relaxed">{luogo}</p>
-	</header>
+	</Col>
 
-	<Row classes="h-full items-center">
-		<Col span="6">
-			<Feature
-				title={`${data[0].nome} ${data[0].cognome}`}
-				icon="user"
-				iconStyle="normal"
-				align="center"
-				classes="mb-12"
-			>
-				<a href={`mailto:${data[0].email}`}>{data[0].email}</a>
-			</Feature>
-		</Col>
-		<Col span="6">
-			<Feature
-				title={`${data[1].nome} ${data[1].cognome}`}
-				icon="user"
-				align="center"
-				classes="mb-12"
-			>
-				<a href={`mailto:${data[1].email}`}>{data[1].email}</a>
-			</Feature>
-		</Col>
-	</Row>
-</StickySidebar>
+	<Col span="4">
+		<Feature
+			title={`${data[0].nome} ${data[0].cognome}`}
+			icon="user"
+			iconStyle="normal"
+			align="center"
+			classes=""
+		>
+			<a href={`mailto:${data[0].email}`}>{data[0].email}</a>
+		</Feature>
+	</Col>
+	<Col span="3">
+		<Feature title={`${data[1].nome} ${data[1].cognome}`} icon="user" align="center" classes="">
+			<a href={`mailto:${data[1].email}`}>{data[1].email}</a>
+		</Feature>
+	</Col>
+</Row>

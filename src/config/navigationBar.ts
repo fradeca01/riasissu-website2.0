@@ -39,8 +39,7 @@ export const navigationBarData: NavData = {
 		text: 'RIASISSU'
 	},
 	navItems: [
-		{name: 'XCOOL', link: 'https://riasissu.it/xcool/'},
-		{ name: 'Le Scuole', link: '/scuole' },
+		{ name: 'Xcool', link: 'https://riasissu.it/xcool/' },
 		{
 			name: 'L\'associazione',
 			link: '#',
@@ -56,11 +55,10 @@ export const navigationBarData: NavData = {
 			submenu: [
 				{ name: 'Il Chiasmo', link: 'https://www.treccani.it/magazine/chiasmo/' },
 				{ name: 'Rete di Idee', link: '/reteidee' },
-				{ name: 'Open Day', link: '/openday' },
 				{ name: 'Scambi Interscuola', link: '/scambi' },
 			]
 		},
-		{ name: '5X1000', link: '/5x1000' },
+		{ name: '5x1000', link: '/5x1000' },
 		{ name: 'Contatti', link: '/contatti' }
 	],
 	navActions: [{ name: 'Area Riservata', link: 'https://riasissu.sharepoint.com/sites/RETEITALIANADELL3ALLIEV3DELLESCUOLEEDEGLIISTITUTIDISTUDISUPE', target: '_blank', style: 'primary', size: 'lg' }]
