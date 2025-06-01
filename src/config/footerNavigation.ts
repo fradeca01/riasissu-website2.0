@@ -36,9 +36,9 @@ export interface FooterData {
 
 export const footerNavigationData: FooterData = {
 	footerAbout: {
-		title: 'Foxi.',
+		title: 'RIASISSU.',
 		aboutText:
-			'Expertly made, responsive, accessible components in React and HTML ready to be used on your website or app. Just copy and paste them on your Tailwind CSS project.',
+			'Rete Italiana dell3 Alliev3 delle Scuole e degli Istituti di Studi Superiori Universitari',
 		logo: {
 			src: '/logo.svg',
 			alt: 'The tailwind astro theme',
@@ -47,31 +47,28 @@ export const footerNavigationData: FooterData = {
 	},
 	footerColumns: [
 		{
-			category: 'Product',
+			category: 'Associazione',
 			subCategories: [
 				{
-					subCategory: 'Features',
-					subCategoryLink: '/features',
+					subCategory: 'Organigramma',
+					subCategoryLink: '/organigramma',
 					subCategoryTarget: '_self'
 				},
 				{
-					subCategory: 'FAQ',
-					subCategoryLink: '/faq',
+					subCategory: 'Statuto',
+					subCategoryLink: '/statuto',
 					subCategoryTarget: '_self'
 				},
+
 				{
-					subCategory: 'Pricing',
-					subCategoryLink: '/pricing',
-					subCategoryTarget: '_self'
-				},
-				{
-					subCategory: 'Changelog',
+					subCategory: 'Storico Giunte',
 					subCategoryLink: '/changelog',
 					subCategoryTarget: '_self'
 				},
+
 				{
-					subCategory: 'Terms',
-					subCategoryLink: '/terms',
+					subCategory: '5x1000',
+					subCategoryLink: '/5x1000',
 					subCategoryTarget: '_self'
 				}
 			]
@@ -86,11 +83,6 @@ export const footerNavigationData: FooterData = {
 				},
 				{
 					subCategory: 'News',
-					subCategoryLink: '/blog',
-					subCategoryTarget: '_self'
-				},
-				{
-					subCategory: 'Careers',
 					subCategoryLink: '/blog',
 					subCategoryTarget: '_self'
 				},

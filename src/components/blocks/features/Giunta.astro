@@ -10,10 +10,10 @@ import SchedaGiunta from './SchedaGiunta.astro'
 
 import giuntaData from '../../../data/json-files/giuntaData.json'
 
-import coordImage from '../../../assets/giunta/giorgia_pazzi.jpg'
-import tesoriereImage from '../../../assets/tesoriere.jpg'
-import vicarioImage from '../../../assets/vicario.jpg'
-import viceImage from '../../../assets/vice.jpg'
+import coordinatore_photo from '../../../assets/giunta/placeholder.png'
+import tesoriere_photo from '../../../assets/giunta/placeholder.svg'
+import vice_photo from '../../../assets/giunta/placeholder.svg'
+import segretario_photo from '../../../assets/giunta/giorgia_pazzi.png'
 ---
 
 <Section stickyCol={true}>
@@ -24,9 +24,6 @@ import viceImage from '../../../assets/vice.jpg'
 		</Col>
 	</Row>
 
-	<!-- <Row> -->
-	<!-- <Col span="12"> -->
-	<!-- <RawCard> -->
 	<div x-data="{ tab: 'coordinatore' }">
 		<StickySidebar>
 			<header slot="sidebar">
@@ -71,30 +68,34 @@ import viceImage from '../../../assets/vice.jpg'
 				</ul>
 			</header>
 
-			<Row>
-				<!-- <Col span="2" /> -->
-				<Col span="12">
-					<div class="flex flex-1 items-center justify-center">
-						{
-							giuntaData.map((item) => (
-								<div x-show={`tab === '${item.id}'`} class="">
-									<Row>
-										<Col span="12">
-											<SchedaGiunta
-												nome={item.nome}
-												cognome={item.cognome}
-												image={coordImage}
-												ruolo={item.ruolo}
-												contenuto={item.description}
-											/>
-										</Col>
-									</Row>
-								</div>
-							))
-						}
+			<!-- <Row> -->
+			<!-- <Col span="2" /> -->
+			<!-- <Col span="12"> -->
+			{
+				giuntaData.map((item) => (
+					<div
+						x-show={`tab === '${item.id}'`}
+						x-transition:enter="transition ease-out duration-1000"
+						x-transition:enter-start="opacity-0 translate-y-6"
+						x-transition:enter-end="opacity-100 translate-y-0"
+						class="flex items-center justify-center md:w-full"
+					>
+						{/* <Row> */}
+						{/* <Col span="12" animate={false}> */}
+						<SchedaGiunta
+							nome={item.nome}
+							cognome={item.cognome}
+							image={tesoriere_photo}
+							ruolo={item.ruolo}
+							contenuto={item.description}
+						/>
+						{/* </Col> */}
+						{/* // </Row> */}
 					</div>
-				</Col>
-			</Row>
+				))
+			}
+			<!-- </Col> -->
+			<!-- </Row> -->
 		</StickySidebar>
 	</div>
 </Section>

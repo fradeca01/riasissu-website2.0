@@ -31,12 +31,12 @@ const { tabId, scuola, luogo, data, classes } = Astro.props
 ---
 
 <Row classes={classes}>
-	<Col span="5">
+	<Col span="5" spanMobile="4" animate={false}>
 		<h3 class="text-3xl">{scuola}</h3>
 		<p class="text-lg leading-relaxed">{luogo}</p>
 	</Col>
 
-	<Col span="4">
+	<Col span="4" spanMobile="4" animate={false}>
 		<Feature
 			title={`${data[0].nome} ${data[0].cognome}`}
 			icon="user"
@@ -47,7 +47,7 @@ const { tabId, scuola, luogo, data, classes } = Astro.props
 			<a href={`mailto:${data[0].email}`}>{data[0].email}</a>
 		</Feature>
 	</Col>
-	<Col span="3">
+	<Col span="3" spanMobile="4" animate={false}>
 		<Feature title={`${data[1].nome} ${data[1].cognome}`} icon="user" align="center" classes="">
 			<a href={`mailto:${data[1].email}`}>{data[1].email}</a>
 		</Feature>

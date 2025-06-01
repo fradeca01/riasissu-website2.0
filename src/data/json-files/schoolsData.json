@@ -18,7 +18,7 @@
         ]
     },
     {
-        "id": "pisa",
+        "id": "pisa_normale",
         "label": "Pisa (Normale)",
         "scuola": "Scuola Normale Superiore di Pisa",
         "luogo": "Pisa",
@@ -145,8 +145,8 @@
     },
     {
         "id": "santanna",
-        "label": "Pisa (Sant'Anna)",
-        "scuola": "Scuola Superiore Sant’Anna di Pisa",
+        "label": "Pisa (SantAnna)",
+        "scuola": "Scuola Superiore SantAnna di Pisa",
         "luogo": "Pisa",
         "data": [
             {

@@ -21,9 +21,9 @@ export interface Config {
 }
 
 export const configData: Config = {
-	siteTitle: 'Foxi. Tailwind CSS Astro Starter Kit by Oxygenna',
+	siteTitle: 'RIASISSU | Rete Italiana dell3 Alliev3 delle Scuole e degli Istituti di Studi Superiori Universitari',
 	siteDescription:
-		'Foxi is a design and development agency that specializes in creating beautiful and functional websites.',
+		'La Rete Italiana dell3 Alliev3 delle Scuole e degli Istituti di Studi Superiori Universitari ha principalmente due scopi: uno interno, ovvero creare connessioni fra gli allievi soci; uno esterno, cioè promuovere la cultura del merito nella collettività',
 	ogImage: '/og.jpg',
 	logo: {
 		src: '/logo.svg',
