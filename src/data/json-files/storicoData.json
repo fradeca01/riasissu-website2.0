@@ -1,0 +1,237 @@
+[
+    {
+        "year": 2025,
+        "roles": {
+            "coordinatore": {
+                "firstName": "Maddalena",
+                "lastName": "Feltrin"
+            },
+            "vice": {
+                "firstName": "Giovanni",
+                "lastName": "Papi"
+            },
+            "tesoriere": {
+                "firstName": "Vittorio",
+                "lastName": "Magnaguagno"
+            },
+            "segretario": {
+                "firstName": "Giorgia",
+                "lastName": "Pazzi"
+            }
+        }
+    },
+    {
+        "year": 2024,
+        "roles": {
+            "coordinatore": {
+                "firstName": "Antonio",
+                "lastName": "Cariola"
+            },
+            "vice": {
+                "firstName": "Alessandro",
+                "lastName": "Augelli"
+            },
+            "tesoriere": {
+                "firstName": "Ginevra",
+                "lastName": "Barbato",
+                "note": "con riserva"
+            },
+            "segretario": {
+                "firstName": "Giorgia",
+                "lastName": "Pazzi"
+            }
+        }
+    },
+    {
+        "year": 2023,
+        "roles": {
+            "coordinatore": {
+                "firstName": "Lorenzo",
+                "lastName": "Massarenti"
+            },
+            "vice": null,
+            "tesoriere": {
+                "firstName": "Teresa",
+                "lastName": "Guarino"
+            },
+            "segretario": {
+                "firstName": "Giulio",
+                "lastName": "D'Arrigo"
+            }
+        }
+    },
+    {
+        "year": 2022,
+        "roles": {
+            "coordinatore": {
+                "firstName": "Lorenzo",
+                "lastName": "Massarenti"
+            },
+            "vice": null,
+            "tesoriere": null,
+            "segretario": {
+                "firstName": "Luigi",
+                "lastName": "Zanta Platamone"
+            }
+        }
+    },
+    {
+        "year": 2021,
+        "roles": {
+            "coordinatore": {
+                "firstName": "Giulio",
+                "lastName": "D'Arrigo"
+            },
+            "vice": null,
+            "tesoriere": {
+                "firstName": "Emanuele",
+                "lastName": "Staropoli"
+            },
+            "segretario": {
+                "firstName": "Marco",
+                "lastName": "Collatuzzo"
+            }
+        }
+    },
+    {
+        "year": 2020,
+        "roles": {
+            "coordinatore": {
+                "firstName": "Alessandra",
+                "lastName": "Mattoscio"
+            },
+            "vice": null,
+            "tesoriere": {
+                "firstName": "Francesco",
+                "lastName": "Petronio"
+            },
+            "segretario": {
+                "firstName": "Giulio",
+                "lastName": "D'Arrigo"
+            }
+        }
+    },
+    {
+        "year": 2019,
+        "roles": {
+            "coordinatore": {
+                "firstName": "Francesco",
+                "lastName": "Petronio"
+            },
+            "vice": null,
+            "tesoriere": {
+                "firstName": "Alberto",
+                "lastName": "Galasso"
+            },
+            "segretario": {
+                "firstName": "Simone",
+                "lastName": "Cataldo"
+            }
+        }
+    },
+    {
+        "year": 2018,
+        "roles": {
+            "coordinatore": {
+                "firstName": "Vittorio",
+                "lastName": "Danovi"
+            },
+            "vice": null,
+            "tesoriere": {
+                "firstName": "Andrea",
+                "lastName": "Dal Zotto"
+            },
+            "segretario": {
+                "firstName": "Piero",
+                "lastName": "Lafiosca"
+            }
+        }
+    },
+    {
+        "year": 2017,
+        "roles": {
+            "coordinatore": {
+                "firstName": "Alvise",
+                "lastName": "Renier"
+            },
+            "vice": null,
+            "tesoriere": null,
+            "segretario": null
+        }
+    },
+    {
+        "year": 2016,
+        "roles": {
+            "coordinatore": {
+                "firstName": "Luca",
+                "lastName": "Mattarolo"
+            },
+            "vice": null,
+            "tesoriere": null,
+            "segretario": null
+        }
+    },
+    {
+        "year": 2015,
+        "roles": {
+            "coordinator": null,
+            "vice": null,
+            "Tesorier": null,
+            "Segretar": null
+        }
+    },
+    {
+        "year": 2014,
+        "roles": {
+            "coordinatore": null,
+            "vice": null,
+            "tesoriere": null,
+            "segretario": null
+        }
+    },
+    {
+        "year": 2013,
+        "roles": {
+            "coordinatore": null,
+            "vice": null,
+            "tesoriere": null,
+            "segretario": null
+        }
+    },
+    {
+        "year": 2012,
+        "roles": {
+            "coordinatore": null,
+            "vice": null,
+            "tesoriere": null,
+            "segretario": null
+        }
+    },
+    {
+        "year": 2011,
+        "roles": {
+            "coordinatore": {
+                "firstName": "Giacomo",
+                "lastName": "Ragni"
+            },
+            "vice": null,
+            "tesoriere": null,
+            "segretario": null
+        }
+    },
+    {
+        "year": 2010,
+        "roles": {
+            "coordinatore": {
+                "firstName": "Alessandro",
+                "lastName": "Maserati"
+            },
+            "vice": null,
+            "tesoriere": null,
+            "segretario": {
+                "firstName": "Leone",
+                "lastName": "Cimetta"
+            }
+        }
+    }
+]

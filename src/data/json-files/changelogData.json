@@ -6,6 +6,12 @@
 		"image": "/feeds/feed-01.png"
 	},
 	{
+		"title": "",
+		"date": "2024",
+		"text": "<ul><li><strong>Coordinatore:</strong> Lorenzo Massarenti</li><li>HubSpot integration</li><li>Zoho CRM integration</li></ul>",
+		"image": ""
+	},
+	{
 		"title": "v1.0.5: User Interface Improvements",
 		"date": "2024-06-15",
 		"text": "<p>Our latest update brings a revamped user interface for a more intuitive and visually appealing experience. Navigation and usability have been greatly enhanced.</p><ul><li>Updated dashboard layout</li><li>Improved accessibility features</li><li>Streamlined navigation menus</li></ul>",

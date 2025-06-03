@@ -34,7 +34,7 @@ export interface NavData {
 
 export const navigationBarData: NavData = {
 	logo: {
-		src: '/logo.svg',
+		src: '/logo_rete.png',
 		alt: 'RIASISSU logo',
 		text: 'RIASISSU'
 	},
@@ -45,7 +45,7 @@ export const navigationBarData: NavData = {
 			link: '#',
 			submenu: [
 				{ name: 'Organigramma', link: '/organigramma' },
-				{ name: 'Commissioni', link: '/commissioni' },
+				{ name: 'Storico giunte', link: '/storicogiunte' },
 				{ name: 'Statuto', link: '/statuto' }
 			]
 		},

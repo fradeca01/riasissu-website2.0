@@ -26,7 +26,7 @@ export const configData: Config = {
 		'La Rete Italiana dell3 Alliev3 delle Scuole e degli Istituti di Studi Superiori Universitari ha principalmente due scopi: uno interno, ovvero creare connessioni fra gli allievi soci; uno esterno, cioè promuovere la cultura del merito nella collettività',
 	ogImage: '/og.jpg',
 	logo: {
-		src: '/logo.svg',
+		src: '/logo_rete.png',
 		alt: 'Foxi. logo'
 	},
 	canonical: true,
