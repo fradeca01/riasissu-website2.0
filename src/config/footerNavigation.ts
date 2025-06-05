@@ -40,9 +40,9 @@ export const footerNavigationData: FooterData = {
 		aboutText:
 			'Rete Italiana dell3 Alliev3 delle Scuole e degli Istituti di Studi Superiori Universitari',
 		logo: {
-			src: '/logo.svg',
-			alt: 'The tailwind astro theme',
-			text: 'Foxi.'
+			src: '/2riasissu.svg',
+			alt: 'RIASISSU logo',
+			text: 'RIASISSU.'
 		}
 	},
 	footerColumns: [

@@ -34,7 +34,7 @@ export interface NavData {
 
 export const navigationBarData: NavData = {
 	logo: {
-		src: '/logo_rete.png',
+		src: '/2riasissu.svg',
 		alt: 'RIASISSU logo',
 		text: 'RIASISSU'
 	},

@@ -19,6 +19,19 @@ import feature02 from '../../../assets/cards/3Logo3.svg'
 import feature03 from '../../../assets/cards/feature-03.svg'
 import feature04 from '../../../assets/cards/feature-04.svg'
 import feature05 from '../../../assets/cards/feature-05.svg'
+
+import toppo from '../../../assets/cards/3ddtw.svg'
+import iuss from '../../../assets/cards/4iuss.svg'
+import santanna from '../../../assets/cards/5santanna.svg'
+import bologna from '../../../assets/cards/6bologna.svg'
+import roma from '../../../assets/cards/7roma.svg'
+import lecce from '../../../assets/cards/8lecce.svg'
+import sns from '../../../assets/cards/9sns.svg'
+import galileiana from '../../../assets/cards/10galileiana.svg'
+import circ from '../../../assets/cards/11circ.svg'
+import catania from '../../../assets/cards/12catania.svg'
+import torino from '../../../assets/cards/13torino.svg'
+import macerata from '../../../assets/cards/14macerata.svg'
 ---
 
 <Section id="features">
@@ -57,33 +70,37 @@ import feature05 from '../../../assets/cards/feature-05.svg'
 	>
 		<Row classes="lg:mx-12">
 			<Col span="4" classes="mx-12 lg:m-0 flex flex-col gap-6 ">
-				<Card
-					title="Collegio Internazionale di Venezia"
-					subtitle="Città: Venezia"
-					image={feature01}
-					link="/scuole/venezia"
-				/>
+				<div>
+					<Card
+						title="Collegio Internazionale di Venezia"
+						subtitle="Città: Venezia"
+						image={circ}
+					/>
+				</div>
 
-				<Card
-					title="Scuola Normale Superiore di Pisa"
-					subtitle="Città: Pisa"
-					image={feature02}
-					link="/scuole/pisa"
-				/>
+				<div>
+					<Card
+						title="Scuola Normale Superiore di Pisa"
+						subtitle="Città: Pisa"
+						image={sns}
+					/>
+				</div>
 
-				<Card
-					title="IUSS Scuola Universitaria Superiore di Pavia"
-					subtitle="Città: Pavia"
-					image={feature03}
-					link="/scuole/pavia"
-				/>
+				<div>
+					<Card
+						title="IUSS Scuola Universitaria Superiore di Pavia"
+						subtitle="Città: Pavia"
+						image={iuss}
+					/>
+				</div>
 
-				<Card
-					title="Scuola di Studi Superiori Carlo Urbani di Camerino"
-					subtitle="Citta: Camerino"
-					image={feature04}
-					link="/scuole/camerino"
-				/>
+				<div>
+					<Card
+						title="Scuola Superiore Universtaria Di Toppo Wassermann"
+						subtitle="Citta: Camerino"
+						image={toppo}
+					/>
+				</div>
 			</Col>
 
 			<Col span="4" classes="mx-12 lg:m-0 flex flex-col gap-6">
@@ -100,8 +117,7 @@ import feature05 from '../../../assets/cards/feature-05.svg'
 					<Card
 						title="Collegio Superiore di Bologna"
 						subtitle="Città: Bologna"
-						image={feature02}
-						link="/scuole/bologna"
+						image={bologna}
 					/>
 				</div>
 				<div
@@ -117,8 +133,7 @@ import feature05 from '../../../assets/cards/feature-05.svg'
 					<Card
 						title="Scuola superiore ISUFI di Lecce"
 						subtitle="Città: Lecce"
-						image={feature03}
-						link="/scuole/lecce"
+						image={lecce}
 					/>
 				</div>
 				<div
@@ -134,8 +149,7 @@ import feature05 from '../../../assets/cards/feature-05.svg'
 					<Card
 						title="Scuola di Studi Superiori 'Giacomo Leopardi' di Macerata"
 						subtitle="Città: Macerata"
-						image={feature03}
-						link="/scuole/macerata"
+						image={macerata}
 					/>
 				</div>
 				<div
@@ -151,8 +165,7 @@ import feature05 from '../../../assets/cards/feature-05.svg'
 					<Card
 						title="Scuola di Studi Superiori Ferdinando Rossi di Torino"
 						subtitle="Città: Torino"
-						image={feature02}
-						link="/scuole/torino"
+						image={torino}
 					/>
 				</div>
 			</Col>
@@ -180,8 +193,7 @@ import feature05 from '../../../assets/cards/feature-05.svg'
 					<Card
 						title="Scuola Superiore Sant'Anna di Pisa"
 						subtitle="Città: Pisa"
-						image={feature04}
-						link="/scuole/santanna"
+						image={santanna}
 					/>
 				</div>
 				<div
@@ -197,8 +209,7 @@ import feature05 from '../../../assets/cards/feature-05.svg'
 					<Card
 						title="Scuola Galileiana di Studi Superiori di Padova"
 						subtitle="Città: Padova"
-						image={feature05}
-						link="/scuole/padova"
+						image={galileiana}
 					/>
 				</div>
 				<div
@@ -214,8 +225,7 @@ import feature05 from '../../../assets/cards/feature-05.svg'
 					<Card
 						title="Scuola Superiore di Catania"
 						subtitle="Città: Catania"
-						image={feature05}
-						link="/scuole/catania"
+						image={catania}
 					/>
 				</div>
 				<div
@@ -231,8 +241,7 @@ import feature05 from '../../../assets/cards/feature-05.svg'
 					<Card
 						title="Scuola di Studi Superiori della Sapienza"
 						subtitle="Città: Roma"
-						image={feature03}
-						link="/scuole/roma"
+						image={roma}
 					/>
 				</div>
 			</Col>
@@ -251,50 +260,3 @@ import feature05 from '../../../assets/cards/feature-05.svg'
 		</Row>
 	</div>
 </Section>
-
-<!-- <script>
-	let showMore = false
-
-	class MyButton extends HTMLElement {
-		connectedCallback() {
-			let b = this.querySelector('Button')
-			let extraCards = document.getElementsByClassName('extra-cards')
-			if (b) {
-				b.addEventListener('click', (e) => {
-					showMore = !showMore
-
-					if (extraCards) {
-						if (showMore) {
-							// show and reset animation state
-							for (let el of extraCards) {
-								el.classList.remove('hidden')
-								el.classList.add('flex')
-								el.classList.remove('scroll-animated')
-							}
-							// force reflow to reset animations
-							void document.body.offsetWidth
-							// re-apply animation with staggered delays
-							Array.from(extraCards).forEach((el, i) => {
-								setTimeout(() => el.classList.add('scroll-animated'), i * 100)
-							})
-							b.textContent = 'Mostra Meno'
-						} else {
-							// hide and clear animation classes
-							for (let el of extraCards) {
-								el.classList.remove('scroll-animated')
-								el.classList.add('hidden')
-								el.classList.remove('flex')
-							}
-							b.textContent = 'Mostra Altro'
-						}
-					}
-
-					;(b as HTMLElement).blur()
-					e.preventDefault()
-				})
-			}
-		}
-	}
-
-	customElements.define('my-button', MyButton)
-</script> -->
