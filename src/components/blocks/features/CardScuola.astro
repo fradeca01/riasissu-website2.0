@@ -1,0 +1,38 @@
+---
+import Card from '../../ui/cards/FeatureCard.astro'
+
+// Props
+type Props = {
+	firstColumn?: boolean
+	schoolId?: string
+	title?: string
+	subtitle?: string
+	image?: any
+	delay?: number
+}
+const { firstColumn, schoolId, title, subtitle, image, delay } = Astro.props
+---
+
+{
+	firstColumn ? (
+		<div data-modal={schoolId} class="flex-1 cursor-pointer">
+			<Card title={title} subtitle={subtitle} image={image} />
+		</div>
+	) : (
+		<div
+			x-show="open"
+			data-modal={schoolId}
+			x-transition:enter={
+				'transition ease-out duration-300' + (delay ? ` delay-${delay}` : '')
+			}
+			x-transition:enter-start="opacity-0 transform scale-95"
+			x-transition:enter-end="opacity-100 transform scale-100"
+			x-transition:leave="transition ease-in duration-200"
+			x-transition:leave-start="opacity-100 transform scale-100"
+			x-transition:leave-end="opacity-0 transform scale-95"
+			class="flex-1 cursor-pointer"
+		>
+			<Card title={title} subtitle={subtitle} image={image} />
+		</div>
+	)
+}

@@ -4,6 +4,7 @@
         "label": "Venezia",
         "scuola": "Collegio Internazionale Ca’ Foscari di Venezia",
         "luogo": "Venezia",
+        "description": "Fondato nel 2012, il Collegio Internazionale Ca’ Foscari è la Scuola Superiore Universitaria dell’Ateneo veneziano. I collegiali sono ospitati presso la residenza Camplus nel centro di Venezia. Le vocazioni primarie del Collegio sono l’interdisciplinarietà e l’internazionalità. La lingua ufficiale del Collegio è l’inglese e l’offerta formativa rimarca il modello anglosassone grazie ai tre percorsi minor che caratterizzano il percorso formativo triennale. Il programma culturale viene completato anche dai cosiddetti Lab, ovvero corsi brevi di carattere trasversale, conferenze, workshops, convegni internazionali. Inoltre ogni studente è seguito da un professore del Board Accademico del Collegio. Il Collegio consente l’ingresso anche a studenti magistrali, i quali possono scegliere di frequentare un percorso in scienze umanistiche o in scienze sociali. Il percorso Collegiale prevede anche un periodo obbligatorio all’estero per ciclo di studi, in modo da ampliare quanto più possibile gli orizzonti dei propri allievi. Le selezioni avvengono indicativamente a inizio maggio per gli allievi triennali e a luglio per gli allievi magistrali. Il bando viene pubblicato un mese prima. Alla fine del percorso quinquennale, dopo aver adempiuto ai requisiti e aver discusso una tesi finale, il Collegio rilascia un diploma equiparato a Master di II livello.",
         "data": [
             {
                 "nome": "Alessandro",
@@ -22,6 +23,7 @@
         "label": "Pisa (Normale)",
         "scuola": "Scuola Normale Superiore di Pisa",
         "luogo": "Pisa",
+        "description": "Il Collegio Internazionale Ca’ Foscari di Venezia offre un ambiente stimolante per studenti meritevoli, con un focus su ricerca e innovazione.",
         "data": [
             {
                 "nome": "Luca",
@@ -39,6 +41,7 @@
         "id": "pavia",
         "label": "Pavia",
         "scuola": "IUSS Scuola Universitaria Superiore di Pavia",
+        "description": "Il Collegio Internazionale Ca’ Foscari di Venezia offre un ambiente stimolante per studenti meritevoli, con un focus su ricerca e innovazione.",
         "luogo": "Pavia",
         "data": [
             {
@@ -54,10 +57,11 @@
         ]
     },
     {
-        "id": "camerino",
-        "label": "Camerino",
-        "scuola": "Scuola di Studi Superiori Carlo Urbani di Camerino",
-        "luogo": "Camerino",
+        "id": "toppo",
+        "label": "Udine",
+        "scuola": "Scuola Superiore Di Toppo Wassermann",
+        "description": "Il Collegio Internazionale Ca’ Foscari di Venezia offre un ambiente stimolante per studenti meritevoli, con un focus su ricerca e innovazione.",
+        "luogo": "Udine",
         "data": [
             {
                 "nome": "Paolo",
@@ -76,6 +80,7 @@
         "label": "Bologna",
         "scuola": "Collegio Superiore di Bologna",
         "luogo": "Bologna",
+        "description": "Il Collegio Internazionale Ca’ Foscari di Venezia offre un ambiente stimolante per studenti meritevoli, con un focus su ricerca e innovazione.",
         "data": [
             {
                 "nome": "Simone",
@@ -93,6 +98,7 @@
         "id": "lecce",
         "label": "Lecce",
         "scuola": "Scuola superiore ISUFI di Lecce",
+        "description": "Il Collegio Internazionale Ca’ Foscari di Venezia offre un ambiente stimolante per studenti meritevoli, con un focus su ricerca e innovazione.",
         "luogo": "Lecce",
         "data": [
             {
@@ -111,6 +117,7 @@
         "id": "macerata",
         "label": "Macerata",
         "scuola": "Scuola di Studi Superiori 'Giacomo Leopardi' di Macerata",
+        "description": "Il Collegio Internazionale Ca’ Foscari di Venezia offre un ambiente stimolante per studenti meritevoli, con un focus su ricerca e innovazione.",
         "luogo": "Macerata",
         "data": [
             {
@@ -129,6 +136,7 @@
         "id": "torino",
         "label": "Torino",
         "scuola": "Scuola di Studi Superiori Ferdinando Rossi di Torino",
+        "description": "Il Collegio Internazionale Ca’ Foscari di Venezia offre un ambiente stimolante per studenti meritevoli, con un focus su ricerca e innovazione.",
         "luogo": "Torino",
         "data": [
             {
@@ -147,6 +155,7 @@
         "id": "santanna",
         "label": "Pisa (SantAnna)",
         "scuola": "Scuola Superiore SantAnna di Pisa",
+        "description": "Il Collegio Internazionale Ca’ Foscari di Venezia offre un ambiente stimolante per studenti meritevoli, con un focus su ricerca e innovazione.",
         "luogo": "Pisa",
         "data": [
             {
@@ -165,6 +174,7 @@
         "id": "padova",
         "label": "Padova",
         "scuola": "Scuola Galileiana di Studi Superiori di Padova",
+        "description": "Il Collegio Internazionale Ca’ Foscari di Venezia offre un ambiente stimolante per studenti meritevoli, con un focus su ricerca e innovazione.",
         "luogo": "Padova",
         "data": [
             {
@@ -183,6 +193,7 @@
         "id": "catania",
         "label": "Catania",
         "scuola": "Scuola Superiore di Catania",
+        "description": "Il Collegio Internazionale Ca’ Foscari di Venezia offre un ambiente stimolante per studenti meritevoli, con un focus su ricerca e innovazione.",
         "luogo": "Catania",
         "data": [
             {
@@ -201,6 +212,7 @@
         "id": "roma",
         "label": "Roma",
         "scuola": "Scuola di Studi Superiori della Sapienza",
+        "description": "Il Collegio Internazionale Ca’ Foscari di Venezia offre un ambiente stimolante per studenti meritevoli, con un focus su ricerca e innovazione.",
         "luogo": "Roma",
         "data": [
             {

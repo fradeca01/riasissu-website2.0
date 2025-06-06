@@ -4,7 +4,7 @@
 import NavigationBar from '../components/ui/NavigationBar.astro'
 import Main from '../components/ui/Main.astro'
 import Footer from '../components/ui/Footer.astro'
-import Modal from '../components/blocks/modal/SignUp.astro'
+import Modal from '../components/ui/Modal.astro'
 import Header from '../components/blocks/head/Header.astro'
 // Scripts
 import Scripts from '../components/scripts/LocalScripts.astro'
@@ -43,7 +43,6 @@ const { title, description, ogImage, noindex } = Astro.props
 			<slot />
 		</Main>
 		<Footer />
-		<Modal />
 		<Scripts />
 	</body>
 </html>
