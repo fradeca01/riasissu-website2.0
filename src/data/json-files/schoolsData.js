@@ -1,15 +1,15 @@
-import toppo from '../../assets/cards/3ddtw.svg'
-import iuss from '../../assets/cards/4iuss.svg'
-import santanna from '../../assets/cards/5santanna.svg'
-import bologna from '../../assets/cards/6bologna.svg'
-import roma from '../../assets/cards/7roma.svg'
-import lecce from '../../assets/cards/8lecce.svg'
-import sns from '../../assets/cards/9sns.svg'
-import galileiana from '../../assets/cards/10galileiana.svg'
-import circ from '../../assets/cards/11circ.svg'
-import catania from '../../assets/cards/12catania.svg'
-import torino from '../../assets/cards/13torino.svg'
-import macerata from '../../assets/cards/14macerata.svg'
+import toppo from '../../assets/cards/1ddtw.svg'
+import iuss from '../../assets/cards/2iuss.svg'
+import santanna from '../../assets/cards/3santanna.svg'
+import bologna from '../../assets/cards/4bologna.svg'
+import roma from '../../assets/cards/5roma.svg'
+import lecce from '../../assets/cards/6lecce.svg'
+import sns from '../../assets/cards/7sns.svg'
+import galileiana from '../../assets/cards/8galileiana.svg'
+import circ from '../../assets/cards/9circ.svg'
+import catania from '../../assets/cards/10catania.svg'
+import torino from '../../assets/cards/11torino.svg'
+import macerata from '../../assets/cards/12macerata.svg'
 
 export const schoolsData = [
     {
@@ -199,7 +199,7 @@ export const schoolsData = [
         "scuola": "Scuola di Studi Superiori della Sapienza",
         "luogo": "Roma",
         "image": roma,
-        "description": "<p>Istituita nel 2011 presso “La Sapienza - Università di Roma”, la SSAS offre un percorso formativo complementare di alta qualificazione per alliev3 meritevol3 iscritti ad un corso di laurea Sapienza. Gli alliev3 sono ospitati presso la Residenza “L. Serianni”, hanno diritto ad una borsa di studio e all’esenzione da tasse universitarie. L’offerta didattica si articola in:</p> <ul> <li>due corsi disciplinari semestrali a scelta ed afferenti alle diverse classi accademiche;</li> <li>un corso interdisciplinare su una tematica condivisa, studiata collettivamente con diverse - prospettive e metodi e i cui risultati vengono presentati durante il Simposio SSAS;</li><li>un progetto di ricerca annuale. Gli allievi, inoltre, sono seguiti nel proprio percorso accademico da un tutor scelto tra i fellows della Scuola e possono partecipare a scambi nazionali e internazionali con altre Scuole. Al termine di un percorso SSAS di 5 anni la Scuola eroga un titolo equiparato ad un Master di II livello.</li>s</ul>",
+        "description": "<p>Istituita nel 2011 presso “La Sapienza - Università di Roma”, la SSAS offre un percorso formativo complementare di alta qualificazione per alliev3 meritevol3 iscritti ad un corso di laurea Sapienza. Gli alliev3 sono ospitati presso la Residenza “L. Serianni”, hanno diritto ad una borsa di studio e all’esenzione da tasse universitarie. L’offerta didattica si articola in:</p> <ul> <li>due corsi disciplinari semestrali a scelta ed afferenti alle diverse classi accademiche;</li> <li>un corso interdisciplinare su una tematica condivisa, studiata collettivamente con diverse - prospettive e metodi e i cui risultati vengono presentati durante il Simposio SSAS;</li><li>un progetto di ricerca annuale. Gli allievi, inoltre, sono seguiti nel proprio percorso accademico da un tutor scelto tra i fellows della Scuola e possono partecipare a scambi nazionali e internazionali con altre Scuole. Al termine di un percorso SSAS di 5 anni la Scuola eroga un titolo equiparato ad un Master di II livello.</li></ul>",
         "data": [
             {
                 "nome": "Riccardo",
