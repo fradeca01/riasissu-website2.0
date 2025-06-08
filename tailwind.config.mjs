@@ -92,6 +92,5 @@ export default {
     require("tailwindcss/plugin")(function ({ addVariant }) {
       addVariant("dark-me", ".dark_&");
     }),
-    require('flowbite/plugin'),
   ],
 };

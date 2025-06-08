@@ -1,7 +1,4 @@
 /* Layout rules */
-@import "flowbite/src/themes/default";
-@plugin "flowbite/plugin";
-
 html {
 	@apply scroll-smooth antialiased;
 }
