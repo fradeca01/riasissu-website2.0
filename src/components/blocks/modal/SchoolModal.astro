@@ -15,11 +15,12 @@ type Props = {
 	classes?: string
 	description?: string
 	image?: any
+	link?: string
 }
-const { id, title, description, image, classes } = Astro.props
+const { id, title, description, image, classes, link } = Astro.props
 ---
 
-<Modal id={id} classes={classes} title={title} image={image}>
+<Modal id={id} classes={classes} title={title} image={image} link={link}>
 	<!-- <Image src={image} alt="School Image" class="mb-4 h-48 w-full object-cover" /> -->
 	<div class="basic-text" set:html={description} />
 </Modal>

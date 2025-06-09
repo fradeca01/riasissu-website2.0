@@ -25,6 +25,10 @@
 			})
 		})
 
+		const button = document.getElementById('cf-button');
+
+
+
 		// Menu toggle
 		const headerToggle = document.querySelector('.header__toggle')
 		const headerMenu = document.querySelector('.header__menu')
@@ -71,6 +75,34 @@
 				closeModal(modal)
 			})
 		})
+
+		button.addEventListener('click', () => {
+			const text = document.getElementById('cf-text').textContent;
+			const icon1 = document.getElementById('icon1');
+			const icon2 = document.getElementById('icon2');
+
+			console.log(text);
+			navigator.clipboard.writeText(text)
+			.then(function() {
+				icon1.classList.add('hidden');
+				icon2.classList.remove('hidden');	
+				setTimeout(function() {
+					icon2.classList.add('hidden');
+					icon1.classList.remove('hidden');	
+				}, 3000);
+			})
+			.catch(function() {
+				alert('Failed to copy!');
+			});
+			
+		})
+
+		const scrollButton = document.getElementById('scroll-btn');
+		scrollButton.addEventListener('click', scrollToTarget);
+
+		function scrollToTarget() {
+			document.getElementById('cf-div').scrollIntoView({ behavior: 'smooth' });
+		}
 	})
 </script>
 
@@ -152,23 +184,9 @@
 	}
 </script>
 
-<script>	
-	console.log('LocalScripts loaded successfully!')
-    function copyText() {
-      var text = document.getElementById('copyText').innerText;
-      navigator.clipboard.writeText(text)
-        .then(function() {
-          var btn = document.querySelector('button[onclick="copyText()"]');
-          btn.textContent = 'Copied!';
-          setTimeout(function() {
-            btn.textContent = 'Copy';
-          }, 1000);
-        })
-        .catch(function() {
-          alert('Failed to copy!');
-        });
-    }
-	
+<script>
+
 </script>
+
 
 <script src="//unpkg.com/alpinejs" defer></script>

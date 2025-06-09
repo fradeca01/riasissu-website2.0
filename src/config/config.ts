@@ -24,7 +24,7 @@ export const configData: Config = {
 	siteTitle: 'RIASISSU | Rete Italiana dell3 Alliev3 delle Scuole e degli Istituti di Studi Superiori Universitari',
 	siteDescription:
 		'La Rete Italiana dell3 Alliev3 delle Scuole e degli Istituti di Studi Superiori Universitari ha principalmente due scopi: uno interno, ovvero creare connessioni fra gli allievi soci; uno esterno, cioè promuovere la cultura del merito nella collettività',
-	ogImage: '/og.jpg',
+	ogImage: '/og.svg',
 	logo: {
 		src: '/2riasissu.svg',
 		alt: 'RIASISSU. logo'

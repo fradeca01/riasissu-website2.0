@@ -14,6 +14,7 @@ import macerata from '../../assets/cards/12macerata.svg'
 export const schoolsData = [
     {
         "id": "catania",
+        "link" : "https://ssc.unict.it/",
         "label": "Catania",
         "scuola": "Scuola Superiore di Catania",
         "luogo": "Catania",
@@ -35,6 +36,7 @@ export const schoolsData = [
 
     {
         "id": "pisa_normale",
+        "link" : "https://www.sns.it/it",
         "label": "Pisa (Normale)",
         "scuola": "Scuola Normale Superiore di Pisa",
         "luogo": "Pisa",
@@ -55,6 +57,7 @@ export const schoolsData = [
     },
     {
         "id": "pavia",
+        "link": "https://www.iusspavia.it/",
         "label": "Pavia",
         "scuola": "IUSS Scuola Universitaria Superiore di Pavia",
         "luogo": "Pavia",
@@ -75,6 +78,7 @@ export const schoolsData = [
     },
     {
         "id": "toppo",
+        "link": "https://www.uniud.it/it/didattica/scuole/toppo-wassermann",
         "label": "Udine",
         "scuola": "Scuola Superiore Universitaria Di Toppo Wassermann",
         "description": "La Scuola Superiore Universitaria di Toppo Wassermann, attiva dal 2004, offre un percorso di formazione di eccellenza di carattere interdisciplinare, integrativo dei corsi di studio dell’Università di Udine. Essa si articola in due classi distinte: una classe Umanistica e una classe Scientifico-Economica (che comprende il corso di laurea in Medicina e Chirurgia). L’accesso è subordinato al superamento di un concorso di ammissione, il quale si rivolge ai futuri studenti del I e del IV anno. L’offerta formativa include corsi e seminari che mirano ad un apprendimento trasversale e partecipativo. La Scuola offre ai suoi studenti un approfondimento specialistico e interdisciplinare mediante laboratori, conferenze, ed eventi culturali. Da un punto di vista economico, all’esonero dal pagamento delle tasse universitarie si accompagna la possibilità di usufruire gratuitamente dei servizi mensa universitari e di un alloggio presso il palazzo settecentesco Toppo Wassermann. Gli allievi beneficiano inoltre dell’affiancamento a un tutor di alto profilo, di un bonus mobilità per studio o ricerca e di un fondo progetti. Il diploma conseguito al termine del percorso presso la Scuola è equiparato a un master di II livello.",
@@ -95,6 +99,7 @@ export const schoolsData = [
     },
     {
         "id": "bologna",
+        "link": "https://site.unibo.it/collegio-superiore/it",
         "label": "Bologna",
         "scuola": "Collegio Superiore di Bologna",
         "luogo": "Bologna",
@@ -115,6 +120,7 @@ export const schoolsData = [
     },
     {
         "id": "lecce",
+        "link": "https://www.unisalento.it/strutture/scuola-superiore-isufi",
         "label": "Lecce",
         "scuola": "Scuola superiore ISUFI di Lecce",
         "luogo": "Lecce",
@@ -135,6 +141,7 @@ export const schoolsData = [
     },
     {
         "id": "macerata",
+        "link": "https://www.unimc.it/it/didattica/scuole/scuola-di-studi-superiori-giacomo-leopardi",
         "label": "Macerata",
         "scuola": "Scuola di Studi Superiori 'Giacomo Leopardi' di Macerata",
         "luogo": "Macerata",
@@ -155,6 +162,7 @@ export const schoolsData = [
     },
     {
         "id": "torino",
+        "link": "https://ssst.campusnet.unito.it/",
         "label": "Torino",
         "scuola": "Scuola di Studi Superiori Ferdinando Rossi di Torino",
         "luogo": "Torino",
@@ -175,6 +183,7 @@ export const schoolsData = [
     },
     {
         "id": "santanna",
+        "link": "https://www.santannapisa.it/",
         "label": "Pisa (SantAnna)",
         "scuola": "Scuola Superiore SantAnna di Pisa",
         "luogo": "Pisa",
@@ -195,6 +204,7 @@ export const schoolsData = [
     },
    {
         "id": "roma",
+        "link": "https://ssas.web.uniroma1.it/",
         "label": "Roma",
         "scuola": "Scuola di Studi Superiori della Sapienza",
         "luogo": "Roma",
@@ -216,6 +226,7 @@ export const schoolsData = [
 
     {
         "id": "padova",
+        "link": "https://www.scuolagalileiana.unipd.it/",
         "label": "Padova",
         "scuola": "Scuola Galileiana di Studi Superiori di Padova",
         "luogo": "Padova",
@@ -238,6 +249,7 @@ export const schoolsData = [
  
     {
         "id": "venezia",
+        "link": "https://collegiointernazionale.unive.it/",
         "label": "Venezia",
         "scuola": "Collegio Internazionale Ca’ Foscari di Venezia",
         "luogo": "Venezia",

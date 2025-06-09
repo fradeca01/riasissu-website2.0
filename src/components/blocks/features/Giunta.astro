@@ -8,12 +8,7 @@ import Col from '../../ui/Col.astro'
 import StickySidebar from '../basic/StickySidebar.astro'
 import SchedaGiunta from './SchedaGiunta.astro'
 
-import giuntaData from '../../../data/json-files/giuntaData.json'
-
-import coordinatore_photo from '../../../assets/giunta/placeholder.png'
-import tesoriere_photo from '../../../assets/giunta/placeholder.svg'
-import vice_photo from '../../../assets/giunta/placeholder.svg'
-import segretario_photo from '../../../assets/giunta/giorgia_pazzi.png'
+import { giuntaData } from '../../../data/json-files/giuntaData.js'
 ---
 
 <Section stickyCol={true}>
@@ -85,7 +80,7 @@ import segretario_photo from '../../../assets/giunta/giorgia_pazzi.png'
 						<SchedaGiunta
 							nome={item.nome}
 							cognome={item.cognome}
-							image={tesoriere_photo}
+							image={item.picture}
 							ruolo={item.ruolo}
 							contenuto={item.description}
 						/>

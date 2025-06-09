@@ -20,8 +20,9 @@ type Props = {
 	title?: string
 	classes?: string
 	image?: any
+	link?: string 
 }
-const { id, title, classes, image } = Astro.props
+const { id, title, classes, image, link } = Astro.props
 ---
 
 <div {...id ? { id } : {}} class:list={['modal', { [`${classes}`]: classes }]}>
@@ -41,7 +42,7 @@ const { id, title, classes, image } = Astro.props
 		</div>
 		<div class="modal__footer">
 			<h2 class="modal__link">Link:</h2>
-			<a target="_blank" href="www.google.it">{title}</a>
+			<a target="_blank" href={link}>{title}</a>
 		</div>
 	</div>
 </div>
