@@ -23,6 +23,7 @@ import CardBody from './partials/CardBody.astro'
 // Props
 type Props = {
 	title?: string
+	sidetitle?: string
 	subtitle?: string
 	titleSize?: 'sm' | 'base' | 'lg' | 'xl'
 	image?: any
@@ -37,6 +38,7 @@ type Props = {
 }
 const {
 	title = '',
+	sidetitle = '',
 	subtitle,
 	titleSize = 'lg',
 	image,
@@ -75,15 +77,24 @@ const {
 			</div>
 		)
 	}
-	<CardBody classes=`max-w-[${imageWidth}px]`>
+	<CardBody classes=`flex flex-col justify-between overflow-hidden w-full max-w-[${imageWidth}px]`>
 		{
 			title && (
-				<h3 class:list={[['text-' + `${titleSize} ` + `lg:text` + `${titleSize}`]]}>
-					{title}
-				</h3>
+				<div class="flex flex-row gap-2 justify-between items-start mb-2">
+					<h3 class:list={[['text-' + `${titleSize} ` + `lg:text` + `${titleSize}`]]}>
+						{title}
+					</h3>
+					{
+						sidetitle && (
+							<p class="text-sm text-gray-500 dark:text-gray-400 text-right">{sidetitle}</p>
+						)
+					}
+				</div>
+
 			)
-		}
+		}<div class="overflow-auto">
 		{subtitle && <p class="">{subtitle}</p>}
+		</div>
 		<slot />
 	</CardBody>
 </Card>

@@ -8,9 +8,10 @@ type Props = {
 	ruolo: string
 	contenuto: string
 	image?: any
+	scuola: string
 }
 
-const { nome, cognome, ruolo, contenuto, image } = Astro.props
+const { nome, cognome, ruolo, contenuto, image, scuola } = Astro.props
 ---
 
 <!-- <div
@@ -33,6 +34,7 @@ const { nome, cognome, ruolo, contenuto, image } = Astro.props
 </div> -->
 <Card
 	title=`${nome} ${cognome}`
+	sidetitle={scuola}
 	subtitle={contenuto}
 	titleSize="xl"
 	image={image}
