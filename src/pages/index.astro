@@ -9,10 +9,12 @@ import Testimonial from '../components/blocks/testimonials/BasicDark.astro'
 import HighlightBlocks from '../components/blocks/highlights/HightlightRows.astro'
 import CTA from '../components/blocks/CTA/Dona.astro'
 import Modal from '../components/ui/Modal.astro'
-
+import BlogPosts from '../components/blocks/blog/BlogPosts.astro'
 // Content
 // - Testimonial background
 import testimonialBackground from '../assets/testimonial-bg-01.webp'
+import { getCollection } from 'astro:content'
+import HomepageBlog from '../components/blocks/blog/HomepageBlog.astro'
 // - SEO
 const SEO = {
 	title: "RIASISSU | Scuole d'eccellenza in Italia",
@@ -20,10 +22,12 @@ const SEO = {
 		'La “Rete Italiana delgli Allievi delle Scuole e degli Istituti di Studi Superiori Universitari” è un’associazione costituita nell’aprile 2016 e iscritta al RUNTS da maggio 2023. Ad essa prendono parte gli allievi di tutte le Scuole Superiori Universitarie italiane che condividono i principi dello Statuto dell’associazione. Ha principalmente due scopi: uno interno, ovvero creare connessioni fra gli allievi soci; uno esterno, cioè promuovere la cultura del merito nella collettività. '
 }
 
+
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
 	<Hero />
+	<HomepageBlog classes="bg-slate-50 dark:bg-neutral-900/40" />
 	<ChiSiamo />
 	<!-- <Testimonial bg={testimonialBackground} bgPosition="right" /> -->
 	<!-- <HighlightBlocks /> -->

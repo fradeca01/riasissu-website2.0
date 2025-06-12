@@ -59,6 +59,7 @@ export const navigationBarData: NavData = {
 				{ name: 'Scambi Interscuola', link: '/scambi' },
 			]
 		},
+		{ name: 'News', link: '/news' },
 		{ name: '5x1000', link: '/5x1000' },
 		{ name: 'Contatti', link: '/contatti' }
 	],

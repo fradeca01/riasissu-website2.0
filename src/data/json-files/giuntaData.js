@@ -1,6 +1,6 @@
-import coordinatore_photo from '../../assets/giunta/placeholder.svg'
+import coordinatore_photo from '../../assets/giunta/maddalena_feltrin.png'
 import tesoriere_photo from '../../assets/giunta/vittorio_magnaguagno.png'
-import vice_photo from '../../assets/giunta/placeholder.svg'
+import vice_photo from '../../assets/giunta/giovanni_papi.png'
 import segretario_photo from '../../assets/giunta/giorgia_pazzi.png'
 
 export const giuntaData = [
@@ -19,7 +19,7 @@ export const giuntaData = [
         cognome: "Papi",
         scuola: "Scuola Superiore Sant'Anna di Pisa",
         ruolo: "Coordinatore Nazionale Vicario",
-        description: "",
+        description: "Giovanni Papi è un Allievo del secondo anno della Scuola Superiore Sant’Anna di Pisa, dove frequenta il corso di laurea in Scienze Politiche. I suoi principali interessi accademici riguardano le relazioni internazionali, la storia e gli studi sulla sicurezza, con uno sguardo attento ai fenomeni globali e contemporanei. Vive nel collegio della Scuola, esperienza che considera centrale per la propria formazione, sia dal punto di vista umano che culturale. Giovanni crede profondamente nel valore della rete tra le Scuole di Studi Superiori Universitari e riconosce in RIASISSU uno strumento essenziale per promuovere il dialogo, la collaborazione e l’eccellenza condivisa tra lə Allievə. Per lui, contribuire alla crescita di questa comunità significa anche rafforzare il ruolo dell’università come luogo di apertura, responsabilità e innovazione.",
         picture: vice_photo
     },
     {
