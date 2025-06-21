@@ -184,7 +184,7 @@ export const schoolsData = [
     {
         "id": "santanna",
         "link": "https://www.santannapisa.it/",
-        "label": "Pisa (SantAnna)",
+        "label": "Pisa (Sant\'Anna)",
         "scuola": "Scuola Superiore SantAnna di Pisa",
         "luogo": "Pisa",
         "image": santanna,
