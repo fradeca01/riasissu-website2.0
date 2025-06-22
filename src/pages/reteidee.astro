@@ -1,0 +1,43 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+import Section from '../components/ui/Section.astro'
+import Row from '../components/ui/Row.astro'
+import Col from '../components/ui/Col.astro'
+// - UI
+import Spacer from '../components/ui/Spacer.astro'
+import Button from '../components/ui/Button.astro'
+import { Icon } from 'astro-icon/components'
+import Logo from '../assets/2riasissu.svg'
+import { Image } from 'astro:assets'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'Rete di idee | RIASISSU',
+	description:
+		"Evento rete di idee dell'asociazione RIASISSU. Scopri di più su questo evento e come partecipare."
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Section>
+		<Row flex classes="text-center mb-20">
+			<Col span="2" />
+			<Col span="8">
+				<Image src={Logo} loading="eager" alt="RIASISSU Logo" class="mx-auto h-64 w-64" />
+				<h1>Work in progress...</h1>
+			</Col>
+			<Col span="2" />
+		</Row>
+		<Row flex classes="text-center items-center justify-center">
+			<Col span="2" />
+			<Col span="8">
+				<Spacer size="2" desktopSize="4" />
+				<Button link="/"> Ritorna alla homepage <Icon name="long-arrow-right" /> </Button>
+			</Col>
+			<Col span="2" />
+		</Row>
+	</Section>
+</Layout>

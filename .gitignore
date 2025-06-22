@@ -25,3 +25,6 @@ pnpm-debug.log*
 
 #VScode folder
 .vscode/
+
+.firebaserc
+firebase.json

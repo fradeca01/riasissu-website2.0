@@ -38,7 +38,7 @@ const back = {
 	<!-- <Hero classes="h-full" title={header.title} text={header.text} /> -->
 	<Section bg={back} padding="none" classes="h-screen">
 		<div class="flex h-screen flex-col items-start justify-between gap-4 py-24">
-			<Image src={Logo} alt="RIASISSU Logo" class="h-64 w-64" />
+			<Image src={Logo} loading="eager" alt="RIASISSU Logo" class="h-64 w-64" />
 			<h1 class="text-left" set:html={header.title} />
 			<Row>
 				<Col span="12" align="" classes="max-w-4xl mx-auto">
