@@ -10,7 +10,7 @@ import Layout from '../../layouts/PostLayout.astro'
 // Data
 import { getCollection, render  } from 'astro:content'
 export async function getStaticPaths() {
-	const blogEntries = await getCollection('blog')
+	const blogEntries = await getCollection('news')
 	return blogEntries.map((entry) => ({
 		params:{ id: decodeURI( entry.id )},
 		props: { entry }

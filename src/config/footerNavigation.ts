@@ -38,7 +38,7 @@ export const footerNavigationData: FooterData = {
 	footerAbout: {
 		title: 'RIASISSU.',
 		aboutText:
-			'Rete Italiana dell3 Alliev3 delle Scuole e degli Istituti di Studi Superiori Universitari',
+			'Rete Italiana dellɜ Allievɜ delle Scuole e degli Istituti di Studi Superiori Universitari',
 		logo: {
 			src: '/2riasissu.svg',
 			alt: 'RIASISSU logo',
@@ -111,6 +111,6 @@ export const footerNavigationData: FooterData = {
 		}
 	],
 	subFooter: {
-		copywriteText: '© RIASISSU 2025.'
+		copywriteText: '© RIASISSU 2025'
 	}
 }

@@ -1,7 +1,14 @@
 /* Layout rules */
 html {
-	@apply scroll-smooth antialiased;
+	@apply scroll-smooth antialiased ;
+	
 }
+
+* {
+	@apply [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:bg-gray-100 dark:[&::-webkit-scrollbar-track]:bg-gray-800 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-thumb]:bg-gray-600 [&::-webkit-scrollbar-track]:rounded-full 
+}
+
+
 
 body {
 	@apply bg-white text-neutral-500 has-[.header\_\_menu--open]:overflow-hidden lg:has-[.header\_\_menu--open]:overflow-auto dark:bg-neutral-950 dark:text-neutral-400 [.dark_&]:text-neutral-400 [.light_&]:text-neutral-500;

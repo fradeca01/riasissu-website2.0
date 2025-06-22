@@ -46,7 +46,8 @@ export const navigationBarData: NavData = {
 			submenu: [
 				{ name: 'Organigramma', link: '/organigramma' },
 				{ name: 'Storico giunte', link: '/storicogiunte' },
-				{ name: 'Statuto', link: '/statuto' }
+				{ name: 'Statuto', link: '/statuto' },
+				{ name: 'Regolamento', link: '/regolamento' }
 			]
 		},
 		{
@@ -58,6 +59,7 @@ export const navigationBarData: NavData = {
 				{ name: 'Scambi Interscuola', link: '/scambi' },
 			]
 		},
+		{ name: 'News', link: '/news' },
 		{ name: '5x1000', link: '/5x1000' },
 		{ name: 'Contatti', link: '/contatti' }
 	],

@@ -1,0 +1,35 @@
+---
+// Blog Index Page
+// ------------
+// Description: The blog index page.
+
+// Components
+// - Layout
+import Layout from '../../layouts/Layout.astro'
+// - UI
+import Hero from '../../components/blocks/hero/PageHeader.astro'
+import BlogPosts from '../../components/blocks/blog/BlogPosts.astro'
+
+// Data
+import { getCollection } from 'astro:content'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'RIASISSU | Ultime news e aggiornamenti RIASISSU',
+	description:
+		"Esplora le ultime novita ed eventi organizzati dalla rete RIASISSU. Rimani aggiornato sulle nostre iniziative e scopri come puoi contribuire."
+}
+// - Page Header
+const header = {
+	title: 'News RIASISSU',
+	text: 'Resta informato sulle attivita RIASISSU.'
+}
+
+const allPosts = await getCollection('news')
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={header.title} text={header.text} />
+	<BlogPosts data={allPosts} />
+</Layout>
