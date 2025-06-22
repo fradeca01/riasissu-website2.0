@@ -34,38 +34,6 @@ const back = {
 }
 ---
 
-<!-- <Layout title={SEO.title} description={SEO.description}>
-	<Hero title={header.title} text={header.text} />
-	<SidebarContent>
-		<div slot="sidebar">
-			<h3>Come Fare?</h3>
-		</div>
-		<div class="basic-text">
-			<p>
-				Basta indicare e chiedere di indicare il Codice Fiscale della <strong>RIASISSU</strong>
-				nella sezione preposta nella propria <strong>dichiarazione dei redditi</strong>, riepilogato
-				nella sintesi che segue:
-			</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Campo</th>
-						<th>Valore</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr
-						><td>Regione sociale associazione</td><td
-							>“RETE ITALIANA DELL3 ALLIEV3 DELLE SCUOLE E DEGLI ISTITUTI DI STUDI SUPERIORI
-							UNIVERSITARI - APS”</td
-						></tr
-					>
-					<tr><td>Codice fiscale Associazione</td><td>93086750507</td></tr>
-				</tbody>
-			</table>
-		</div>
-	</SidebarContent>
-</Layout> -->
 <Layout title={SEO.title} description={SEO.description}>
 	<!-- <Hero classes="h-full" title={header.title} text={header.text} /> -->
 	<Section bg={back} padding="none" classes="h-screen">
@@ -74,28 +42,6 @@ const back = {
 			<h1 class="text-left" set:html={header.title} />
 			<Row>
 				<Col span="12" align="" classes="max-w-4xl mx-auto">
-						<h3 class="text-pretty">Basta indicare e chiedere di indicare il Codice Fiscale della <strong>RIASISSU</strong>
-							nella sezione preposta nella propria <strong>dichiarazione dei redditi</strong></h3>
-	
-					</Col>
-				</Row>
-				<div class="w-full flex flex-col items-center">
-					<button id="scroll-btn"><Icon class="align-center h-16 w-16 text-pretty" name="chevron-down" /></button>
-				</div>
-			
-		</div>		
-	 </Section>
-	<Section padding='none'>
-
-		</Section>
-		<Section padding='top'>
-		<Row><Col span="12" align="center" classes="max-w-4xl mx-auto">
-				<h2 class="text-pretty"><strong>RAGIONE SOCIALE</strong></h2>
-				<h4>RETE ITALIANA DELL3 ALLIEV3 DELLE SCUOLE E DEGLI ISTITUTI DI STUDI SUPERIORI
-					UNIVERSITARI - APS</h4>
-		</Col></Row>
-		</Section>
-		<Section padding='both'>
 					<h3 class="text-pretty">
 						Basta indicare e chiedere di indicare il Codice Fiscale della <strong
 							>RIASISSU</strong
@@ -113,11 +59,35 @@ const back = {
 			</div>
 		</div>
 	</Section>
-	<Section padding="none" />
+	<!-- <Section padding="top">
+		<Row
+			><Col span="12" align="center" classes="max-w-4xl mx-auto">
+				<h2 class="text-pretty"><strong>RAGIONE SOCIALE</strong></h2>
+				<h4>
+					RETE ITALIANA DELL3 ALLIEV3 DELLE SCUOLE E DEGLI ISTITUTI DI STUDI SUPERIORI
+					UNIVERSITARI - APS
+				</h4>
+			</Col></Row
+		>
+	</Section> -->
+	<!-- <Section padding="both">
+		<h3 class="text-pretty">
+			Basta indicare e chiedere di indicare il Codice Fiscale della <strong>RIASISSU</strong>
+			nella sezione preposta nella propria <strong>dichiarazione dei redditi</strong>
+		</h3>
+	</Section>
+</Layout> -->
+	<!-- <div class="flex w-full flex-col items-center">
+		<button id="scroll-btn"
+			><Icon class="align-center h-16 w-16 text-pretty" name="chevron-down" /></button
+		>
+	</div>
+
+	<Section padding="none" /> -->
 	<Section padding="top">
 		<Row
 			><Col span="12" align="center" classes="max-w-4xl mx-auto">
-				<h2 class="text-pretty"><strong>REGIONE SOCIALE</strong></h2>
+				<h2 id="soc-text" class="text-pretty"><strong>REGIONE SOCIALE</strong></h2>
 				<h4>
 					RETE ITALIANA DELL3 ALLIEV3 DELLE SCUOLE E DEGLI ISTITUTI DI STUDI SUPERIORI
 					UNIVERSITARI - APS
@@ -130,22 +100,13 @@ const back = {
 			<Col span="12" align="center" classes="mb-12 max-w-4xl mx-auto">
 				<h2 class="text-pretty"><strong>CODICE FISCALE</strong></h2>
 			</Col>
-			</Row>
-			<Row>
-				<Col span="12" align="center" classes="mb-12 max-w-4xl mx-auto">
-						<div id="cf-div" class="flex flex-row items-center gap-4">
-							<h2 id="cf-text" class="mb-0 text-pretty border-b px-2 py-2 border-neutral-600 border-l border-r border-t">93086750507</h2>
-							<button id="cf-button"><Icon id="icon1" class="h-8 w-8" name="clipboard-document-list" /><Icon id="icon2" class="h-8 w-8 hidden" name="cliboard-document-check" /></button>
-						</div>	
-					</Col>
-				</Row>
 		</Row>
 		<Row>
 			<Col span="12" align="center" classes="mb-12 max-w-4xl mx-auto">
 				<div id="cf-div" class="flex flex-row items-center gap-4">
 					<h2
 						id="cf-text"
-						class="mb-0 text-pretty border-b border-l border-r border-neutral-600 px-2 py-2"
+						class="mb-0 text-pretty border-b border-l border-r border-t border-neutral-600 px-2 py-2"
 					>
 						93086750507
 					</h2>
@@ -160,9 +121,8 @@ const back = {
 			</Col>
 		</Row>
 	</Section>
-</Layout>
 
-<!-- <style>
+	<!-- <style>
 	table{
 		max-width: 800px;
 		border-spacing: 2px	;
@@ -189,3 +149,4 @@ const back = {
 		border-bottom-width: 1px;	
 	}
 </style> -->
+</Layout>

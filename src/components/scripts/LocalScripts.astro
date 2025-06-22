@@ -25,9 +25,7 @@
 			})
 		})
 
-		const button = document.getElementById('cf-button');
-
-
+		const button = document.getElementById('cf-button')
 
 		// Menu toggle
 		const headerToggle = document.querySelector('.header__toggle')
@@ -62,7 +60,7 @@
 				openModal(modal)
 			})
 		})
-		
+
 		document.querySelectorAll('.modal').forEach(function (modal) {
 			modal.addEventListener('click', function (event) {
 				if (event.target === modal) {
@@ -77,31 +75,31 @@
 		})
 
 		button.addEventListener('click', () => {
-			const text = document.getElementById('cf-text').textContent;
-			const icon1 = document.getElementById('icon1');
-			const icon2 = document.getElementById('icon2');
+			const text = document.getElementById('cf-text').textContent
+			const icon1 = document.getElementById('icon1')
+			const icon2 = document.getElementById('icon2')
 
-			console.log(text);
-			navigator.clipboard.writeText(text)
-			.then(function() {
-				icon1.classList.add('hidden');
-				icon2.classList.remove('hidden');	
-				setTimeout(function() {
-					icon2.classList.add('hidden');
-					icon1.classList.remove('hidden');	
-				}, 3000);
-			})
-			.catch(function() {
-				alert('Failed to copy!');
-			});
-			
+			console.log(text)
+			navigator.clipboard
+				.writeText(text)
+				.then(function () {
+					icon1.classList.add('hidden')
+					icon2.classList.remove('hidden')
+					setTimeout(function () {
+						icon2.classList.add('hidden')
+						icon1.classList.remove('hidden')
+					}, 3000)
+				})
+				.catch(function () {
+					alert('Failed to copy!')
+				})
 		})
 
-		const scrollButton = document.getElementById('scroll-btn');
-		scrollButton.addEventListener('click', scrollToTarget);
+		const scrollButton = document.getElementById('scroll-btn')
+		scrollButton.addEventListener('click', scrollToTarget)
 
 		function scrollToTarget() {
-			document.getElementById('cf-div').scrollIntoView({ behavior: 'smooth' });
+			document.getElementById('soc-text').scrollIntoView({ behavior: 'smooth' })
 		}
 	})
 </script>
@@ -183,6 +181,5 @@
 		document.documentElement.classList.remove('dark')
 	}
 </script>
-
 
 <script src="//unpkg.com/alpinejs" defer></script>
