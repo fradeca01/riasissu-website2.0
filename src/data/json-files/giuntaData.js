@@ -1,4 +1,4 @@
-import coordinatore_photo from '../../assets/giunta/maddalena_feltrin.png'
+import coordinatore_photo from '../../assets/giunta/maddalena_feltrin.webp'
 import tesoriere_photo from '../../assets/giunta/vittorio_magnaguagno.png'
 import vice_photo from '../../assets/giunta/giovanni_papi.png'
 import segretario_photo from '../../assets/giunta/giorgia_pazzi.png'
