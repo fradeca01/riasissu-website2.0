@@ -49,7 +49,7 @@ const { id, title, classes, image, link } = Astro.props
 
 <style>
 	.modal {
-		@apply fixed left-0 top-0 z-30 flex h-0 w-full items-center justify-center overflow-hidden bg-white/50 lg:backdrop-blur-sm dark:bg-neutral-900/50 [&.open]:h-full;
+		@apply fixed left-0 top-0 z-30 hidden h-0 w-full items-center justify-center overflow-hidden bg-white/50 md:flex lg:backdrop-blur-sm dark:bg-neutral-900/50 [&.open]:h-full;
 	}
 	.modal__popup {
 		@apply m-6 flex max-h-[75%] w-2/3 max-w-[50%] translate-y-6 flex-col overflow-hidden rounded border border-neutral-700 bg-white text-neutral-500 opacity-0 shadow-xl shadow-neutral-700/5 transition-all duration-500 dark:border-neutral-800 dark:bg-neutral-900 dark:shadow-neutral-950/50 [.open_&]:translate-y-0 [.open_&]:opacity-100;
