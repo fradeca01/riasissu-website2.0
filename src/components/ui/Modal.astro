@@ -20,7 +20,7 @@ type Props = {
 	title?: string
 	classes?: string
 	image?: any
-	link?: string 
+	link?: string
 }
 const { id, title, classes, image, link } = Astro.props
 ---
@@ -41,7 +41,7 @@ const { id, title, classes, image, link } = Astro.props
 			<slot />
 		</div>
 		<div class="modal__footer">
-			<h2 class="modal__link">Link:</h2>
+			<h2 class="modal__link">Sito Web:</h2>
 			<a target="_blank" href={link}>{title}</a>
 		</div>
 	</div>
@@ -52,27 +52,27 @@ const { id, title, classes, image, link } = Astro.props
 		@apply fixed left-0 top-0 z-30 flex h-0 w-full items-center justify-center overflow-hidden bg-white/50 lg:backdrop-blur-sm dark:bg-neutral-900/50 [&.open]:h-full;
 	}
 	.modal__popup {
-		@apply m-6 flex max-h-[75%] w-2/3 max-w-[50%] translate-y-6 flex-col overflow-hidden rounded border border-neutral-100 bg-white text-neutral-500 opacity-0 shadow-xl shadow-neutral-700/5 transition-all duration-500 dark:border-neutral-800 dark:bg-neutral-900 dark:shadow-neutral-950/50 [.open_&]:translate-y-0 [.open_&]:opacity-100;
+		@apply m-6 flex max-h-[75%] w-2/3 max-w-[50%] translate-y-6 flex-col overflow-hidden rounded border border-neutral-700 bg-white text-neutral-500 opacity-0 shadow-xl shadow-neutral-700/5 transition-all duration-500 dark:border-neutral-800 dark:bg-neutral-900 dark:shadow-neutral-950/50 [.open_&]:translate-y-0 [.open_&]:opacity-100;
 	}
 	.modal__header {
-		@apply flex items-center justify-between gap-6 px-6 py-6 text-lg font-medium border-b border-neutral-300 border-double;
+		@apply flex items-center justify-between gap-6 border-b border-double border-neutral-700 px-6 py-6 text-lg font-medium;
 	}
 	.modal__image {
 		@apply h-1/2 w-1/2 rounded-full py-6;
 	}
 	.modal__footer {
-		@apply flex items-end justify-start gap-6 border-t border-neutral-300 px-6 py-6 text-base font-medium;
+		@apply flex items-end justify-start gap-6 border-t border-neutral-700 px-6 py-6 text-base font-medium;
 	}
 	.modal__close {
 		@apply !rounded-full !px-2.5;
 	}
 	.modal__title {
-		@apply mb-0 truncate text-4xl flex-1 text-center;
+		@apply mb-0 flex-1 truncate text-center text-2xl;
 	}
 	.modal__link {
 		@apply mb-0 truncate text-lg;
 	}
 	.modal__body {
-		@apply mx-6 pb-6 overflow-auto;
+		@apply mx-6 overflow-auto pb-6;
 	}
 </style>

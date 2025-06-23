@@ -13,5 +13,5 @@ tags: ['IT']
 
 Questa sezione del sito può essere usata per pubblicare novità riguardanti la RIASISSU, per informazioni riguardanti la pubblicazione contattarci a:
 
-[Contatta servizi informatici](mailto://webmasters@riasissu.it)
+[Contatta servizi informatici](mailto://servizi.informatici@riasissu.it)
 

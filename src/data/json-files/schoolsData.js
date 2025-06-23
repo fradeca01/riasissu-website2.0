@@ -249,7 +249,7 @@ export const schoolsData = [
  
     {
         "id": "venezia",
-        "link": "https://collegiointernazionale.unive.it/",
+        "link": "https://www.unive.it/pag/13880",
         "label": "Venezia",
         "scuola": "Collegio Internazionale Ca’ Foscari di Venezia",
         "luogo": "Venezia",

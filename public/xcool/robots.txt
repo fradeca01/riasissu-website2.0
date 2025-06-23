@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://riasissu.it/xcool/sitemap-index.xml

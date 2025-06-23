@@ -5,23 +5,25 @@ import Card from '../../ui/cards/FeatureCard.astro'
 type Props = {
 	firstColumn?: boolean
 	schoolId?: string
+	link?: string
 	title?: string
 	subtitle?: string
 	image?: any
 	delay?: number
 }
-const { firstColumn, schoolId, title, subtitle, image, delay } = Astro.props
+const { firstColumn, schoolId, link, title, subtitle, image, delay } = Astro.props
 ---
 
 {
 	firstColumn ? (
-		<div data-modal={schoolId} class="flex-1 cursor-pointer">
+		<div data-modal={schoolId} data-modal-link={link} class="flex-1 cursor-pointer">
 			<Card title={title} subtitle={subtitle} image={image} />
 		</div>
 	) : (
 		<div
 			x-show="open"
 			data-modal={schoolId}
+			data-modal-link={link}
 			x-transition:enter={
 				'transition ease-out duration-300' + (delay ? ` delay-${delay}` : '')
 			}

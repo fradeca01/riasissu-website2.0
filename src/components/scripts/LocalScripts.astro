@@ -54,10 +54,21 @@
 		const modalButtons = document.querySelectorAll('[data-modal]')
 
 		modalButtons.forEach(function (button) {
-			button.addEventListener('click', function () {
+			button.addEventListener('click', function (event) {
 				const modalId = button.getAttribute('data-modal')
 				const modal = document.getElementById(modalId)
-				openModal(modal)
+				console.log(`Opening modal with ID: ${modalId}`)
+				// Check if screen is large (lg: min-width 1024px)
+				if (window.matchMedia('(min-width: 768px)').matches) {
+					openModal(modal)
+				} else {
+					const link = button.getAttribute('data-modal-link')
+					console.log(link)
+					if (link) {
+						console.log(`Opening link: ${link}`)
+						window.open(link, '_blank')
+					}
+				}
 			})
 		})
 
