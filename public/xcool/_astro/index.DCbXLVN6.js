@@ -1,4 +1,4 @@
-import{c as t}from"./emotion-styled.browser.esm.LcliuljZ.js";const e={white:"#FFFFFF",dark:"#101118",darkLighter:"#20222e"};t`
+import{c as t}from"./emotion-styled.browser.esm.XV-wAueI.js";const e={white:"#FFFFFF",dark:"#101118",darkLighter:"#20222e"};t`
     :root {
         --primary: ${e.white};
         --secondary: ${e.darkLighter};
