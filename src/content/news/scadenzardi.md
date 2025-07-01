@@ -4,7 +4,7 @@ pubDate: 2025-06-30T17:00:00Z
 description: È online il bando di Rete di Idee 2025. La data di scadenza per la presentazione degli elaborati è il 12 luglio.  
 author: 'Organizzatori Rete di Idee'
 image: ''
-tags: ['ReteDiIdee']  
+tags: ['Rete Di Idee']  
 ---  
 
   
