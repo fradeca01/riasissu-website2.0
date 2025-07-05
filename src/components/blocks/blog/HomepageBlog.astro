@@ -1,15 +1,19 @@
 ---
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+import { getCollection } from 'astro:content'
+import BlogPosts from './BlogPosts.astro'
 
-import Section from '../../ui/Section.astro';
-import Row from '../../ui/Row.astro';
-import Col from '../../ui/Col.astro';
-import { getCollection } from 'astro:content';
-import BlogPosts from './BlogPosts.astro';
+const allPosts = await getCollection('news')
 
-const allPosts = (await getCollection('news')).slice(0, 3)
-
-
+const sortedPosts = allPosts
+	.sort((a: any, b: any) => {
+		return new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+	})
+	.slice(0, 3)
 ---
+
 <Section padding="top" stickyCol={true}>
 	<Row>
 		<Col span="12" align="center" classes="max-w-4xl mx-auto">
@@ -17,5 +21,5 @@ const allPosts = (await getCollection('news')).slice(0, 3)
 			<!-- <p class="pb-0 text-lg">Ecco le ultime novità riguardanti la RIASISSU</p> -->
 		</Col>
 	</Row>
-    <BlogPosts data={allPosts}  />
+	<BlogPosts data={sortedPosts} />
 </Section>
