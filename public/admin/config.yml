@@ -1,7 +1,7 @@
 backend:
   name: github # Or gitlab
   repo: fradeca01/riasissu-website2.0 # Your username and repository
-  branch: main # Branch to use
+  branch: news # Branch to use
   base_url: https://us-central1-riasissu-7c453.cloudfunctions.net # The base URL for your Firebase Function
   auth_endpoint: /oauth/auth # The path to the OAuth endpoint of the function
 
