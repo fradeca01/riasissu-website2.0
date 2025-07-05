@@ -1,0 +1,24 @@
+backend:
+  name: github # Or gitlab
+  repo: fradeca01/riasissu-website2.0 # Your username and repository
+  branch: main # Branch to use
+  base_url: https://us-central1-riasissu-7c453.cloudfunctions.net # The base URL for your Firebase Function
+  auth_endpoint: /oauth/auth # The path to the OAuth endpoint of the function
+
+media_folder: "src/assets/news"
+public_folder: "src/assets/news"
+
+collections:
+  - name: "news" # Used in routes, e.g., /admin/collections/blog
+    label: "News" # Used in the UI
+    folder: "src/content/news" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "pubDate", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Body", name: "body", widget: "markdown" }
