@@ -7,6 +7,8 @@ import sitemap from "@astrojs/sitemap";
 
 import react from "@astrojs/react";
 
+import sanity from "@sanity/astro";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://foxi.netlify.app/",
@@ -14,5 +16,9 @@ export default defineConfig({
     config: {
       forward: ["dataLayer.push"],
     },
-  }), react()],
+  }), react(), sanity({
+    projectId:"riasissu-news",
+    dataset: "production",
+    useCdn: false,
+  })],
 });
