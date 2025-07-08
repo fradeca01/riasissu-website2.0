@@ -55,7 +55,7 @@ export const navigationBarData: NavData = {
 			link: '#',
 			submenu: [
 				{ name: 'Il Chiasmo', link: 'https://www.treccani.it/magazine/chiasmo/' },
-				{ name: 'Rete di Idee', link: '/reteidee' },
+				{ name: 'Rete di Idee', link: 'https://ssc.unict.it/rete-di-idee/' },
 				// { name: 'Scambi Interscuola', link: '/scambi' },
 			]
 		},
