@@ -1,6 +1,6 @@
 ---  
 title: 'Proroga scadenza Rete di Idee 2025 Catania'  
-pubDate: 2025-07-37T19:00:00Z  
+pubDate: 2025-07-07T19:00:00Z  
 description: Data di scadenza per la presentazione degli elaborati prorogata al 31 luglio.  
 author: 'Organizzatori Rete di Idee'
 image: ''
