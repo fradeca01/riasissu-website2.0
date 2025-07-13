@@ -3,7 +3,7 @@ title: 'Nuova competizione XCool 2025: Coppa ADMO'
 pubDate: 2025-06-23T05:00:00Z
 description: "Il team XCool presenta una nuova competizione per l'edizione 2025, la coppa ADMO!"
 author: 'Team XCool'
-image: '/blog/admo.png'
+image: '/news/admo.png'
 tags: ['XCool']
 ---
 
