@@ -1,8 +1,6 @@
-// The Cloud Functions for Firebase SDK to create Cloud Functions and triggers.
 import { Request, Response } from "express";
 const { logger } = require("firebase-functions");
 const { onRequest } = require("firebase-functions/v2/https");
-// The Firebase Admin SDK to access Firestore.
 const { initializeApp } = require("firebase-admin/app");
 
 initializeApp();
@@ -25,8 +23,6 @@ exports.auth = onRequest({ secrets: ["AZURE_CLIENT_ID", "AZURE_CLIENT_SECRET", "
     const CLIENT_ID = process.env.AZURE_CLIENT_ID;
     const CLIENT_SECRET = process.env.AZURE_CLIENT_SECRET;
     const TENANT_ID = process.env.AZURE_TENANT_ID;
-
-    logger.info("Microsoft login function triggered", CLIENT_ID, TENANT_ID);
 
     if (CLIENT_ID && CLIENT_SECRET && TENANT_ID) {
         try {
@@ -82,8 +78,6 @@ exports.callback = onRequest({ secrets: ["AZURE_CLIENT_ID", "AZURE_CLIENT_SECRET
     const TENANT_ID = process.env.AZURE_TENANT_ID;
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 
-    logger.info("Microsoft login function triggered", CLIENT_ID, TENANT_ID);
-
     if (CLIENT_ID && CLIENT_SECRET && TENANT_ID) {
         try {
             const tokenResponse = await fetch(`https://login.microsoftonline.com/${TENANT_ID}/oauth2/v2.0/token`, {
@@ -109,11 +103,13 @@ exports.callback = onRequest({ secrets: ["AZURE_CLIENT_ID", "AZURE_CLIENT_SECRET
 
             const user = await userResponse.json() as userResponse;
             const email = user.mail || user.userPrincipalName;
-            logger.info("User data response status", user);
 
-            logger.info("User data retrieved", email);
+            const allowedEmails = ["francesco.decataldo@riasissu.it", "admin@company.com"];
 
-            // const allowedEmails = ["francesco.decataldo@riasissu.it", "admin@company.com"];
+            if (!allowedEmails.includes(email)) {
+                logger.error("Unauthorized email", email);
+                return res.status(403).send("Unauthorized email");
+            }
 
             if (!GITHUB_TOKEN) {
                 logger.error("GITHUB_TOKEN is not defined");
