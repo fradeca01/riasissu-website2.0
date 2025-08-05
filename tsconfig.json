@@ -12,6 +12,7 @@
     "src/types/*"
   ],
   "exclude": [
-    "dist"
+    "dist",
+    "functions"
   ]
 }
