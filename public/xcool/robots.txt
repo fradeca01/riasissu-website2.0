@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://riasissu.it/xcool/sitemap-index.xml
+Sitemap: https://riasissu.it/sitemap-index.xml
