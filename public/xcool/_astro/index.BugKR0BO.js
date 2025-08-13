@@ -1,0 +1,7 @@
+import{c as a}from"./emotion-styled.browser.esm.CkZZZ6ql.js";const r={white:"#FFFFFF",dark:"#101118",darkLighter:"#262626"};a`
+    :root {
+        --primary: ${r.white};
+        --secondary: ${r.darkLighter};
+        --tertiary: ${r.dark};
+    }
+`;const e={primary:"var(--primary)",secondary:"var(--secondary)",tertiary:"var(--tertiary)"};export{e as T};
