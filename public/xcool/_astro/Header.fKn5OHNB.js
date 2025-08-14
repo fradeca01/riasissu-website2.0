@@ -177,7 +177,7 @@ import{n as r,j as e,c as s}from"./emotion-styled.browser.esm.BVmeO7Kq.js";impor
     ${o.min("lg")} {
         display: none;
     }
-`,c=r.span`
+`,p=r.span`
     background: ${i.secondary};
     position: absolute;
     left: 50%;
@@ -208,4 +208,4 @@ import{n as r,j as e,c as s}from"./emotion-styled.browser.esm.BVmeO7Kq.js";impor
                       top: calc(50% + 4px);
                   `}
     }
-`,k=({state:n})=>{const{open:t,setOpen:a}=n,x=()=>{a(!t)},d=g=>{const p=g.target;!p.closest("nav")&&t&&p.tagName!=="BUTTON"&&a(!1)};return l.useEffect(()=>{if(t)return document.addEventListener("click",d),()=>{document.removeEventListener("click",d)}},[t]),e.jsxs($,{$open:t,onClick:x,"aria-label":"Menu","aria-expanded":t,role:"button",tabIndex:0,children:[e.jsx(c,{$open:t}),e.jsx(c,{$open:t})]})},L=()=>{const[n,t]=l.useState(!1);return e.jsxs(j,{children:[e.jsx(w,{$isOpen:n,children:e.jsxs(v,{children:[e.jsx("li",{children:e.jsx("a",{href:"/",children:"RIASISSU"})}),e.jsx("li",{children:e.jsx("a",{href:"/xcool/info#program",children:"Programma"})})]})}),e.jsx(k,{state:{open:n,setOpen:t}})]})},M=({headerClass:n})=>(l.useEffect(()=>{const t=document.querySelector("header"),a=()=>{window.scrollY>0?t?.classList.add("scrolled"):t?.classList.remove("scrolled")};return window.addEventListener("scroll",a),()=>{window.removeEventListener("scroll",a)}},[]),e.jsx(y,{className:n,children:e.jsxs(b,{children:[e.jsx(u,{}),e.jsx(L,{})]})}));export{M as Header};
+`,k=({state:n})=>{const{open:t,setOpen:a}=n,x=()=>{a(!t)},d=g=>{const c=g.target;!c.closest("nav")&&t&&c.tagName!=="BUTTON"&&a(!1)};return l.useEffect(()=>{if(t)return document.addEventListener("click",d),()=>{document.removeEventListener("click",d)}},[t]),e.jsxs($,{$open:t,onClick:x,"aria-label":"Menu","aria-expanded":t,role:"button",tabIndex:0,children:[e.jsx(p,{$open:t}),e.jsx(p,{$open:t})]})},L=()=>{const[n,t]=l.useState(!1);return e.jsxs(j,{children:[e.jsx(w,{$isOpen:n,children:e.jsxs(v,{children:[e.jsx("li",{children:e.jsx("a",{href:"/",children:"RIASISSU"})}),e.jsx("li",{children:e.jsx("a",{href:"/xcool/info",children:"Info E Programma"})}),e.jsx("li",{children:e.jsx("a",{href:"/xcool/tabelloni",children:"Gironi E Tabelloni"})})]})}),e.jsx(k,{state:{open:n,setOpen:t}})]})},M=({headerClass:n})=>(l.useEffect(()=>{const t=document.querySelector("header"),a=()=>{window.scrollY>0?t?.classList.add("scrolled"):t?.classList.remove("scrolled")};return window.addEventListener("scroll",a),()=>{window.removeEventListener("scroll",a)}},[]),e.jsx(y,{className:n,children:e.jsxs(b,{children:[e.jsx(u,{}),e.jsx(L,{})]})}));export{M as Header};
