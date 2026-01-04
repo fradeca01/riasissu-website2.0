@@ -111,6 +111,6 @@ export const footerNavigationData: FooterData = {
 		}
 	],
 	subFooter: {
-		copywriteText: '© RIASISSU 2025'
+		copywriteText: '© RIASISSU 2026'
 	}
 }
