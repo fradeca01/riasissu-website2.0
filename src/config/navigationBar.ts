@@ -39,7 +39,7 @@ export const navigationBarData: NavData = {
 		text: 'RIASISSU'
 	},
 	navItems: [
-		{ name: 'XCool', link: '/xcool/' },
+		{ name: 'XCool', link: 'https://xcool.riasissu.it' },
 		{
 			name: 'L\'associazione',
 			link: '#',
