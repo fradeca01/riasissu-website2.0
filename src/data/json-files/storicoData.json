@@ -1,5 +1,26 @@
 [
     {
+        "year": 2026,
+        "roles": {
+            "coordinatore": {
+                "firstName": "Vittorio",
+                "lastName": "Magnaguagno"
+            },
+            "vice": {
+                "firstName": "Lara",
+                "lastName": "Guglielmucci"
+            },
+            "tesoriere": {
+                "firstName": "Paride",
+                "lastName": "Brogiolo"
+            },
+            "segretario": {
+                "firstName": "Niccolò",
+                "lastName": "Gaspari"
+            }
+        }
+    },
+    {
         "year": 2025,
         "roles": {
             "coordinatore": {
