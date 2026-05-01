@@ -22,9 +22,9 @@ export const schoolsData = [
         "description": "La Scuola Superiore di Catania è stata fondata nel 1998 all’interno dell’Università degli Studi di Catania. Le prove del concorso di ammissione - rivolto agli studenti iscritti al I anno di un CdL triennale o magistrale a ciclo unico - si articolano in due Classi: la Classe delle Scienze umanistiche e sociali e la Classe delle Scienze sperimentali. Il superamento delle prove di concorso garantisce agli Allievi vitto e alloggio gratuiti presso Villa San Saverio, nonché sussidi finanziari per esperienze di mobilità. L’offerta formativa della Scuola si articola in una serie di corsi, differenziati negli anni: strumentali, interdisciplinari e di laboratorio (rivolti a studenti di primo e secondo anno); specialistici (affiancati all’attività di ricerca a partire dal terzo anno); corsi certificati di lingua straniera. A partire dal secondo anno, gli Allievi individuano un docente tutor, che coordina l’attività di ricerca attraverso progetti di formazione negli ambiti disciplinari designati dall’Allievo. La Scuola promuove periodi di soggiorno all’estero attraverso specifici contributi finanziari, nonché scambi presso le Università e istituzioni convenzionate. Il percorso formativo si conclude mediante la stesura di una tesi di diploma, valevole come Master accademico di II livello.",
         "data": [
             {
-                "nome": "Giuseppe Stefano",
-                "cognome": "Basile",
-                "email": "giuseppe.stefano.basile@riasissu.it"
+                "nome": "Bruno",
+                "cognome": "D'Arrigo",
+                "email": "bruno.darrigo@riasissu.it"
             },
             {
                 "nome": "Marco",
@@ -65,20 +65,20 @@ export const schoolsData = [
         "description": "",
         "data": [
         {
-            "nome": "Alberto",
-            "cognome": "Anelli",
-            "email": "alberto.anelli@riasissu.it"
-        },
-        {
             "nome": "Paride",
             "cognome": "Brogiolo",
             "email": "paride.brogiolo@riasissu.it"
-        }
+        },
+                    {
+                "nome":"",
+                "cognome": "",
+                "email": ""
+            }
         ]
     },
     {
         "id": "toppo",
-        "link": "https://www.uniud.it/it/didattica/scuole/toppo-wassermann",
+        "link": "https://superiore.uniud.it/it",
         "label": "Udine",
         "scuola": "Scuola Superiore Universitaria Di Toppo Wassermann",
         "description": "La Scuola Superiore Universitaria di Toppo Wassermann, attiva dal 2004, offre un percorso di formazione di eccellenza di carattere interdisciplinare, integrativo dei corsi di studio dell’Università di Udine. Essa si articola in due classi distinte: una classe Umanistica e una classe Scientifico-Economica (che comprende il corso di laurea in Medicina e Chirurgia). L’accesso è subordinato al superamento di un concorso di ammissione, il quale si rivolge ai futuri studenti del I e del IV anno. L’offerta formativa include corsi e seminari che mirano ad un apprendimento trasversale e partecipativo. La Scuola offre ai suoi studenti un approfondimento specialistico e interdisciplinare mediante laboratori, conferenze, ed eventi culturali. Da un punto di vista economico, all’esonero dal pagamento delle tasse universitarie si accompagna la possibilità di usufruire gratuitamente dei servizi mensa universitari e di un alloggio presso il palazzo settecentesco Toppo Wassermann. Gli allievi beneficiano inoltre dell’affiancamento a un tutor di alto profilo, di un bonus mobilità per studio o ricerca e di un fondo progetti. Il diploma conseguito al termine del percorso presso la Scuola è equiparato a un master di II livello.",
@@ -86,14 +86,14 @@ export const schoolsData = [
         "image": toppo,
         "data": [
         {
-            "nome": "Maddalena",
-            "cognome": "Feltrin",
-            "email": "maddalena.feltrin@riasissu.it"
+            "nome": "Giulia Maria",
+            "cognome": "Giacchetto",
+            "email": "giuliamaria.giacchetto@riasissu.it"
         },
         {
             "nome": "Niccolò",
             "cognome": "Gaspari",
-            "email": "niccolò.gaspari@riasissu.it"
+            "email": "niccolo.gaspari@riasissu.it"
         }
         ]
     },
@@ -107,14 +107,14 @@ export const schoolsData = [
         "description": "Il Collegio Superiore, fondato nel 1998 presso l’Alma Mater Studiorum — Università di Bologna, offre percorsi formativi interdisciplinari avanzati a studentɜ selezionatɜ dell’Università. La didattica si articola in corsi integrati, tenuti da docenti di discipline diverse, e seminari. Lɜ collegiali sono ospitatɜ nella residenza Irnerio, nel centro di Bologna, possono partecipare a scambi con Scuole di eccellenza italiane ed estere e ricevono benefici economici (borsa di studio ed esenzione tasse) decisi annualmente. Ogni collegiale è inoltre seguitɜ da un tutor di alto profilo. Al termine dei 5 anni di Collegio e in seguito alla presentazione di un elaborato finale, lɜ collegiali ricevono un titolo equiparato a Master di II livello. Ogni anno vengono banditi posti per studentɜ di area umanistico-economica e di area scientifico-tecnica, in procinto di iniziare il primo anno di un corso di laurea triennale, magistrale o magistrale a ciclo unico.",
         "data": [
             {
-                "nome": "Lorenzo",
-                "cognome": "Ciaffi",
-                "email": "lorenzo.ciaffi@riasissu.it"
+                "nome": "Leda",
+                "cognome": "Rossi",
+                "email": "leda.rossi@riasissu.it"
             },
             {
-                "nome": "Ginevra",
-                "cognome": "Barbato",
-                "email": "ginevra.barbato@riasissu.it"
+                "nome": "Arturo",
+                "cognome": "Nutta",
+                "email": "arturo.nutta@riasissu.it"
             }
         ]
     },
@@ -128,9 +128,9 @@ export const schoolsData = [
         "description": "Fondata nel 1999, la Scuola Superiore ISUFI è un Istituto Superiore Universitario di Formazione Interdisciplinare incardinato nell’Università del Salento. Alla Scuola si accede tramite concorso per merito che viene bandito annualmente per le tre aree disciplinari (economico-giuridica, tecnico-scientifica ed umanistico-sociale). È possibile accedere al primo e secondo anno di Laurea Triennale/Magistrale a Ciclo Unico e al primo anno di Laurea Magistrale. Agli allievi selezionati, la Scuola offre l’alloggio presso il College, l’esenzione dalle tasse universitarie e un contributo mensile. L’offerta didattica è costituita da 2 corsi semestrali da 30 ore cadauno affiancati da diverse attività seminariali. Gli studenti inoltre hanno la possibilità di seguire i lettorati di lingue e devono svolgere un semestre di studi all’estero. Al termine del percorso, in seguito alla discussione di una tesi finale, la Scuola rilascia un titolo equiparato ad un Master di II livello.",
         "data": [
             {
-                "nome": "Edoardo",
-                "cognome": "Presicce",
-                "email": "edoardo.presicce@riasissu.it"
+                "nome": "Matteo",
+                "cognome": "D'Amico",
+                "email": "matteo.damico@riasissu.it"
             },
             {
                 "nome": "Sabrina",
@@ -149,9 +149,9 @@ export const schoolsData = [
         "description": "Fondata nel 2008 presso l’Università degli Studi di Macerata, la “Scuola di Studi Superiori Giacomo Leopardi” è un istituto di alta formazione che si affianca ai corsi universitari e coltiva il talento di studentɜ selezionatɜ sulla base del solo merito. Ogni anno vengono banditi 10 posti per l’accesso al primo anno di un corso di laurea triennale o magistrale a ciclo unico e 2 posti per l’accesso al primo anno di un corso di laurea magistrale, ripartiti fra le due classi di Scienze Umanistiche e Scienze Sociali. L’offerta formativa si articola in seminari disciplinari e interdisciplinari tenuti da docenti di fama nazionale e internazionale, che consentono allɜ allievɜ di costruire un bagaglio di conoscenze ampio e trasversale avviandolɜ all’attività di ricerca. Lɜ allievɜ godono di una serie di benefici, fra i quali: esenzione dalle tasse universitarie, vitto gratuito presso le mense universitarie della città e alloggio gratuito presso la residenza Lombroso, situata all’interno del Collegio Universitario Matteo Ricci-Li Madou e immersa nel verde. Lɜ allievɜ hanno inoltre la possibilità di partecipare a scambi-mobilità con Scuole d’eccellenza italiane ed estere e sono seguitɜ da un tutor individuale. Al termine del percorso quinquennale, in seguito all’adempimento dei requisiti richiesti e alla discussione di una tesi finale, la Scuola rilascia un diploma equiparato a Master di II livello.",
         "data": [
             {
-                "nome": "Giorgia",
-                "cognome": "Pazzi",
-                "email": "giorgia.pazzi@riasissu.it"
+                "nome": "Barbara",
+                "cognome": "Perello Moscetti",
+                "email": "barbara.perellomoscetti@riasissu.it"
             },
             {
                 "nome": "Serena",
@@ -184,21 +184,21 @@ export const schoolsData = [
     {
         "id": "santanna",
         "link": "https://www.santannapisa.it/",
-        "label": "Pisa (Sant\'Anna)",
+        "label": "Pisa (Sant’Anna)",
         "scuola": "Scuola Superiore SantAnna di Pisa",
         "luogo": "Pisa",
         "image": santanna,
         "description": "",
         "data": [
             {
-                "nome": "Edoardo",
-                "cognome": "Spataro",
-                "email": "edoardo.spataro@riasissu.it"
-            },
-            {
                 "nome": "Giovanni",
                 "cognome": "Papi",
                 "email": "giovanni.papi@riasissu.it"
+            },
+                        {
+                "nome":"",
+                "cognome": "",
+                "email": ""
             }
         ]
     },
@@ -212,14 +212,14 @@ export const schoolsData = [
         "description": "<p>Istituita nel 2011 presso “La Sapienza - Università di Roma”, la SSAS offre un percorso formativo complementare di alta qualificazione per alliev3 meritevol3 iscritti ad un corso di laurea Sapienza. Gli alliev3 sono ospitati presso la Residenza “L. Serianni”, hanno diritto ad una borsa di studio e all’esenzione da tasse universitarie. L’offerta didattica si articola in:</p> <ul> <li>due corsi disciplinari semestrali a scelta ed afferenti alle diverse classi accademiche;</li> <li>un corso interdisciplinare su una tematica condivisa, studiata collettivamente con diverse - prospettive e metodi e i cui risultati vengono presentati durante il Simposio SSAS;</li><li>un progetto di ricerca annuale. Gli allievi, inoltre, sono seguiti nel proprio percorso accademico da un tutor scelto tra i fellows della Scuola e possono partecipare a scambi nazionali e internazionali con altre Scuole. Al termine di un percorso SSAS di 5 anni la Scuola eroga un titolo equiparato ad un Master di II livello.</li></ul>",
         "data": [
             {
-                "nome": "Daniele",
-                "cognome": "Calogero",
-                "email": "daniele.calogero@riasissu.it"
+                "nome": "Lara",
+                "cognome": "Guglielmucci",
+                "email": "lara.guglielmucci@riasissu.it"
             },
             {
                 "nome": "Alessandro",
-                "cognome": "Modesto",
-                "email": "alessandro.modesto@riasissu.it"
+                "cognome": "Blanco",
+                "email": "alessandro.blanco@riasissu.it"
             }
         ]
     },
@@ -257,14 +257,14 @@ export const schoolsData = [
         "description": "Fondato nel 2012, il Collegio Internazionale Ca’ Foscari è la Scuola Superiore Universitaria dell’Ateneo veneziano. I collegiali sono ospitati presso la residenza Camplus nel centro di Venezia. Le vocazioni primarie del Collegio sono l’interdisciplinarietà e l’internazionalità. La lingua ufficiale del Collegio è l’inglese e l’offerta formativa rimarca il modello anglosassone grazie ai tre percorsi minor che caratterizzano il percorso formativo triennale. Il programma culturale viene completato anche dai cosiddetti Lab, ovvero corsi brevi di carattere trasversale, conferenze, workshops, convegni internazionali. Inoltre ogni studente è seguito da un professore del Board Accademico del Collegio. Il Collegio consente l’ingresso anche a studenti magistrali, i quali possono scegliere di frequentare un percorso in scienze umanistiche o in scienze sociali. Il percorso Collegiale prevede anche un periodo obbligatorio all’estero per ciclo di studi, in modo da ampliare quanto più possibile gli orizzonti dei propri allievi. Le selezioni avvengono indicativamente a inizio maggio per gli allievi triennali e a luglio per gli allievi magistrali. Il bando viene pubblicato un mese prima. Alla fine del percorso quinquennale, dopo aver adempiuto ai requisiti e aver discusso una tesi finale, il Collegio rilascia un diploma equiparato a Master di II livello.",
         "data": [
             {
-                "nome": "Giuseppe",
-                "cognome": "Romeo",
-                "email": "giuseppe.romeo@riasissu.it"
+                "nome": "Valeria",
+                "cognome": "Cusinato",
+                "email": "valeria.cusinato@riasissu.it"
             },
             {
-                "nome": "Matilde",
-                "cognome": "Mori",
-                "email": "matilde.mori@riasissu.it"
+                "nome": "Anna",
+                "cognome": "Larice",
+                "email": "anna.larice@riasissu.it"
             }
         ]
     },
