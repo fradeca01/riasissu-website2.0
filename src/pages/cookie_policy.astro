@@ -1,0 +1,162 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import SidebarContent from '../components/blocks/basic/StickySidebar.astro'
+import Hero from '../components/blocks/hero/PageHeader.astro'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'RIASISSU | Cookie Policy',
+	description: "Informativa sull'uso dei cookie e tecnologie simili sul sito riasissu.it."
+}
+// - Page Header
+const header = {
+	title: 'Cookie Policy',
+	text: ''
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={header.title} text={header.text} />
+
+	<SidebarContent>
+		<div slot="sidebar">
+			<h3>Informazioni generali</h3>
+		</div>
+		<div class="basic-text">
+			<h4>1. Che cosa sono i cookie</h4>
+			<div class="paragraph">
+				I cookie sono piccoli file di testo che i siti visitati dall&apos;utente inviano al
+				suo dispositivo (computer, smartphone, tablet), dove vengono memorizzati per essere poi
+				ritrasmessi agli stessi siti alla visita successiva. I cookie possono svolgere diverse
+				funzioni, come consentire una navigazione efficiente, ricordare le preferenze e migliorare
+				l&apos;esperienza d&apos;uso del sito.
+			</div>
+
+			<h4>2. Ambito di applicazione</h4>
+			<div class="paragraph">
+				La presente Cookie Policy si applica al sito <strong>riasissu.it</strong>, ospitato su
+				infrastruttura <strong>Firebase Hosting</strong>. Il sito utilizza esclusivamente cookie
+				tecnici necessari al suo funzionamento e non impiega cookie di profilazione o per finalità
+				marketing.
+			</div>
+
+			<h4>3. Ultimo aggiornamento</h4>
+			<div class="paragraph">
+				Ultimo aggiornamento: <em>06/12/2025</em>.
+			</div>
+		</div>
+	</SidebarContent>
+
+	<SidebarContent>
+		<div slot="sidebar">
+			<h3>Tipologie di cookie</h3>
+		</div>
+		<div class="basic-text">
+			<h4>4. Cookie tecnici (necessari)</h4>
+			<div class="paragraph">
+				Il sito <strong>riasissu.it</strong> utilizza esclusivamente
+				<strong> cookie tecnici</strong>, necessari al funzionamento del sito stesso e
+				dell&apos;infrastruttura di hosting. In particolare, tramite
+				<strong> Firebase Hosting</strong> possono essere utilizzati cookie o tecnologie
+				equivalenti per:
+				<ul>
+					<li>consentire il corretto instradamento delle richieste verso i server;</li>
+					<li>garantire prestazioni stabili e tempi di risposta adeguati;</li>
+					<li>mantenere la sicurezza e l&apos;affidabilità della piattaforma.</li>
+				</ul>
+				Questi cookie non vengono utilizzati per tracciare il comportamento degli utenti a fini
+				di marketing o profilazione.
+			</div>
+
+			<h4>5. Cookie di profilazione e di terze parti</h4>
+			<div class="paragraph">
+				Il sito <strong>non utilizza</strong>:
+				<ul>
+					<li>cookie di profilazione;</li>
+					<li>cookie pubblicitari o di marketing;</li>
+					<li>cookie analitici di terze parti (es. Google Analytics);</li>
+					<li>altri strumenti di tracciamento del comportamento dell&apos;utente.</li>
+				</ul>
+				Per questo motivo, non è richiesto l&apos;utilizzo di un banner di consenso per i
+				cookie e non viene richiesto alcun consenso preventivo all&apos;utente.
+			</div>
+		</div>
+	</SidebarContent>
+
+	<SidebarContent>
+		<div slot="sidebar">
+			<h3>Gestione dei cookie</h3>
+		</div>
+		<div class="basic-text">
+			<h4>6. Consenso ai cookie</h4>
+			<div class="paragraph">
+				Poiché il sito utilizza unicamente cookie tecnici necessari al funzionamento del sito e
+				non ricorre a cookie di profilazione o terze parti per finalità pubblicitarie o di
+				tracciamento, <strong>non è richiesto il consenso esplicito dell&apos;utente</strong>.
+			</div>
+
+			<h4>7. Gestione tramite browser</h4>
+			<div class="paragraph">
+				L&apos;utente può, in ogni caso, configurare il proprio browser per limitare o bloccare
+				l&apos;uso dei cookie. Le impostazioni possono differire a seconda del browser
+				utilizzato; a titolo esemplificativo:
+				<ul>
+					<li>gestione cookie in Chrome;</li>
+					<li>gestione cookie in Firefox;</li>
+					<li>gestione cookie in Safari;</li>
+					<li>gestione cookie in Microsoft Edge.</li>
+				</ul>
+				La disattivazione dei cookie tecnici potrebbe compromettere, in tutto o in parte, il
+				corretti funzionamento del sito.
+			</div>
+
+			<h4>8. Servizio di hosting: Firebase Hosting</h4>
+			<div class="paragraph">
+				Per l&apos;erogazione del sito viene utilizzato il servizio
+				<strong> Firebase Hosting</strong>, fornito da Google LLC, che può utilizzare cookie e
+				tecnologie simili necessari a garantire la sicurezza e le prestazioni della piattaforma.
+				<br />
+				<br />
+				Per maggiori informazioni:
+				<br />
+				<a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">
+					https://firebase.google.com/support/privacy
+				</a>
+				.
+			</div>
+		</div>
+	</SidebarContent>
+
+	<SidebarContent>
+		<div slot="sidebar">
+			<h3>Modifiche</h3>
+		</div>
+		<div class="basic-text">
+			<h4>9. Modifiche alla Cookie Policy</h4>
+			<div class="paragraph">
+				La presente Cookie Policy può essere oggetto di modifiche o aggiornamenti, anche in
+				seguito a cambi normativi o all&apos;introduzione di nuove funzionalità sul sito. Le
+				eventuali modifiche saranno pubblicate su questa pagina. Si invita l&apos;utente a
+				consultarla periodicamente.
+			</div>
+
+			<style>
+				ul,
+				ol {
+					margin: 1em;
+				}
+				.paragraph {
+					margin-bottom: 1.5em;
+				}
+				li {
+					display: list-item;
+					list-style-position: inside;
+				}
+			</style>
+		</div>
+	</SidebarContent>
+</Layout>
