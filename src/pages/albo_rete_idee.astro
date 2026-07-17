@@ -5,6 +5,9 @@ import Layout from '../layouts/Layout.astro'
 // - UI
 import Hero from '../components/blocks/hero/PageHeader.astro'
 import SimpleFeed from '../components/blocks/feeds/BasicFeed.astro'
+import Section from '../components/ui/Section.astro'
+import Row from '../components/ui/Row.astro'
+import Col from '../components/ui/Col.astro'
 
 // Data
 import giunteData from '../data/json-files/alboReteIdeeData.json'
@@ -19,7 +22,7 @@ const SEO = {
 // - Page Header
 const header = {
 	title: 'Albo della <strong>Rete d\'Idee</strong> della RIASISSU',
-	text: 'Sezione iniziale con la descrizione'
+	text: ''
 }
 
 const processData = giunteData.map((item) => {
@@ -50,6 +53,13 @@ const processData = giunteData.map((item) => {
 
 <Layout title={SEO.title} description={SEO.description}>
 	<Hero title={header.title} text={header.text} />
+	<Section stickyCol={true}>
+	<Row>
+		<Col span="12" align="center" classes="max-w-4xl mx-auto">
+			<p class="pb-0 text-lg">Sezione iniziale con la descrizione</p>
+		</Col>
+	</Row>
+	</Section>
 	<SimpleFeed data={processData} />
 	<!-- <CTA /> -->
 </Layout>
