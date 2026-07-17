@@ -1,0 +1,55 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import SimpleFeed from '../components/blocks/feeds/BasicFeed.astro'
+
+// Data
+import giunteData from '../data/json-files/alboReteIdeeData.json'
+
+// Content
+// - SEO
+const SEO = {
+	title: "RIASISSU | Scuole d'eccellenza in Italia",
+	description:
+		"Esplora la storia delle giunte della RIASISSU, con dettagli sui coordinatori, vice, tesorieri e segretari che hanno guidato l'associazione nel corso degli anni."
+}
+// - Page Header
+const header = {
+	title: 'Albo della <strong>Rete d\'Idee</strong> della RIASISSU',
+	text: ''
+}
+
+const processData = giunteData.map((item) => {
+	return {
+		title: '',
+		date: `${item.year}`,
+		text: `<ul>${
+			item.school
+				? `<li><strong>Scuola Organizzatrice:</strong> ${item.school}</li>`
+				: ''
+		}
+		${
+			item.place
+				? `<li><strong>Luogo:</strong>${item.place}</li>`
+				: ''
+		}
+		${
+			item.website
+				? `<li><strong>Sito dell'evento:</strong> <a href="${item.website}" target="_blank">${item.website}</a></li>`
+				: ''
+		}		
+		
+		</ul>`,
+		image: ''
+	}
+})
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={header.title} text={header.text} />
+	<SimpleFeed data={processData} />
+	<!-- <CTA /> -->
+</Layout>
