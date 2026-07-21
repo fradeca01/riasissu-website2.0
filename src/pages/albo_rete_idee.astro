@@ -35,6 +35,11 @@ const processData = giunteData.map((item) => {
 				: ''
 		}
 		${
+			item.schools
+				? `<li><strong>Scuole Organizzatrici:</strong> ${item.schools}</li>`
+				: ''
+		}
+		${
 			item.place
 				? `<li><strong>Luogo:</strong> ${item.place}</li>`
 				: ''

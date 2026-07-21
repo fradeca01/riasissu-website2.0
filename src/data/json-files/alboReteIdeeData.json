@@ -10,7 +10,7 @@
         "year": 2022,
         "school" : "Scuola Superiore Universitaria di Toppo Wassermann",
         "place" : "Udine",
-        "report" : ""
+        "report" : "/report_rete_idee/report2022.pdf"
     },
     {
         "year": 2020,
@@ -44,7 +44,7 @@
     },
     {
         "year": 2015,
-        "school" : "Scuola Normale Superiore e Scuola Superiore Sant'Anna",
+        "schools" : "Scuola Normale Superiore e Scuola Superiore Sant'Anna",
         "place" : "Pisa",
         "report" : ""
     },
