@@ -3,7 +3,57 @@
         "year": 2025,
         "school" : "Scuola Superiore di Catania",
         "place" : "Catania",
-        "website" : "https://ssc.unict.it/rete-di-idee/"
+        "website" : "https://ssc.unict.it/rete-di-idee/",
+        "report" : "/report_rete_idee/report2025.pdf"
+    },
+    {
+        "year": 2022,
+        "school" : "Scuola Superiore Universitaria di Toppo Wassermann",
+        "place" : "Udine",
+        "report" : ""
+    },
+    {
+        "year": 2020,
+        "school" : "Istituto Superiore Universitario di Formazione Interdisciplinare",
+        "place" : "Online (causa Covid-19)",
+        "report" : ""
+    },
+    {
+        "year": 2019,
+        "school" : "Scuola Superiore di Studi Avanzati Sapienza",
+        "place" : "Roma",
+        "report" : ""
+    },
+    {
+        "year": 2018,
+        "school" : "Scuola Superiore di Catania",
+        "place" : "Catania",
+        "report" : ""
+    },
+    {
+        "year": 2017,
+        "school" : "Istituto Superiore Universitario di Formazione Interdisciplinare",
+        "place" : "Macerata",
+        "report" : "/report_rete_idee/report2017.pdf"
+    },
+    {
+        "year": 2016,
+        "school" : "Istituto Universitario di Studi Superiori",
+        "place" : "Pavia",
+        "report" : "/report_rete_idee/report2016.pdf"
+    },
+    {
+        "year": 2015,
+        "school" : "Scuola Normale Superiore e Scuola Superiore Sant'Anna",
+        "place" : "Pisa",
+        "report" : ""
+    },
+    {
+        "year": 2014,
+        "school" : "Scuola Superiore Universitaria di Toppo Wassermann",
+        "place" : "Udine",
+        "report" : ""
     }
+
     
 ]
