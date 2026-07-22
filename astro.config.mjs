@@ -5,8 +5,6 @@ import icon from "astro-icon";
 
 import sitemap from "@astrojs/sitemap";
 
-import react from "@astrojs/react";
-
 // https://astro.build/config
 export default defineConfig({
   site: "https://riasissu.it",
@@ -14,5 +12,5 @@ export default defineConfig({
     config: {
       forward: ["dataLayer.push"],
     },
-  }), react()],
+  })],
 });
