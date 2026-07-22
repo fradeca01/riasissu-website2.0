@@ -5,198 +5,43 @@ import Layout from '../layouts/Layout.astro'
 // - UI
 import SidebarContent from '../components/blocks/basic/StickySidebar.astro'
 import Hero from '../components/blocks/hero/PageHeader.astro'
+// - Content
+// L'informativa vive in un Markdown separato: `compiledContent()` la rende in HTML e la
+// spezziamo sul marcatore `<!--SECTION-->`, iniettando ogni gruppo di paragrafi accanto alla
+// sua etichetta di sidebar. `sidebarLabels` segue l'ordine delle sezioni nel .md.
+// La classe `legal-body--spaced` aggiunge la spaziatura tra paragrafi propria di questa pagina.
+import { compiledContent } from '../data/markdown-files/privacy.md'
 
 // Content
 // - SEO
 const SEO = {
 	title: 'RIASISSU | Privacy Policy',
-	description: "Informativa sul trattamento dei dati personali per il sito riasissu.it."
+	description: 'Informativa sul trattamento dei dati personali per il sito riasissu.it.'
 }
 // - Page Header
 const header = {
 	title: 'Informativa privacy',
 	text: ''
 }
+const sidebarLabels = [
+	'Informazioni generali',
+	'Dati trattati e finalità',
+	'Servizi di terze parti',
+	'Diritti degli interessati'
+]
+const sections = (await compiledContent()).split('<!--SECTION-->')
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
 	<Hero title={header.title} text={header.text} />
-
-	<SidebarContent>
-		<div slot="sidebar">
-			<h3>Informazioni generali</h3>
-		</div>
-		<div class="basic-text">
-			<h4>1. Titolare del trattamento</h4>
-			<div class="paragraph">
-				Il Titolare del trattamento dei dati personali è:
-				<br />
-				<br />
-				<strong>
-					Rete Italiana dell3 Alliev3 delle Scuole e degli Istituti di Studi Superiori
-					Universitari APS (RIASISSU)
-				</strong>
-				<br />
-				c/o <strong>Scuola Superiore Sant&apos;Anna di Studi Universitari e di Perfezionamento</strong>
-				<br />
-				Piazza Martiri della Libertà 33, 56127 Pisa (PI), Italia
-				<br />
-				Email: <a href="mailto:servizi.informatici@riasissu.it">servizi.informatici@riasissu.it</a>
-			</div>
-
-			<h4>2. Ambito di applicazione</h4>
-			<div class="paragraph">
-				La presente informativa descrive il trattamento dei dati personali degli utenti che
-				visitano il sito <strong>riasissu.it</strong>, ospitato su infrastruttura
-				<strong> Firebase Hosting</strong>. Il sito non prevede la creazione di account
-				personali né la raccolta diretta di dati identificativi tramite form (salvo diversa
-				integrazione futura).
-			</div>
-
-			<h4>3. Ultimo aggiornamento</h4>
-			<div class="paragraph">
-				Ultimo aggiornamento: <em>06/12/2025</em>.
-			</div>
-		</div>
-	</SidebarContent>
-
-	<SidebarContent>
-		<div slot="sidebar">
-			<h3>Dati trattati e finalità</h3>
-		</div>
-		<div class="basic-text">
-			<h4>4. Tipologie di dati raccolti</h4>
-			<div class="paragraph">
-				Visitando il sito <strong>riasissu.it</strong> vengono raccolti automaticamente alcuni
-				dati tecnici necessari al funzionamento del sito stesso, tra cui:
-				<ul>
-					<li>indirizzo IP;</li>
-					<li>tipo e versione del browser;</li>
-					<li>sistema operativo;</li>
-					<li>pagine visitate e data/ora della visita;</li>
-					<li>informazioni sul dispositivo e sulla connessione;</li>
-					<li>eventuali log tecnici o di errore generati dal sistema.</li>
-				</ul>
-				Tali dati sono di natura tecnica, non consentono, di regola, l&apos;identificazione
-				diretta dell&apos;utente e non vengono utilizzati per finalità di profilazione.
-			</div>
-
-			<h4>5. Finalità del trattamento</h4>
-			<div class="paragraph">
-				I dati tecnici sopra indicati sono trattati esclusivamente per le seguenti finalità:
-				<ul>
-					<li>garantire la visualizzazione e il corretto funzionamento del sito;</li>
-					<li>
-						assicurare la sicurezza del sito, anche mediante prevenzione e rilevamento di
-						abusi o attacchi informatici;
-					</li>
-					<li>effettuare manutenzione tecnica e diagnostica dell&apos;infrastruttura.</li>
-				</ul>
-			</div>
-
-			<h4>6. Base giuridica del trattamento</h4>
-			<div class="paragraph">
-				La base giuridica del trattamento dei dati tecnici è il
-				<strong> legittimo interesse</strong> del Titolare a garantire la sicurezza e il
-				corretto funzionamento del sito web, ai sensi dell&apos;art. 6, par. 1, lett. f) del
-				GDPR.
-			</div>
-		</div>
-	</SidebarContent>
-
-	<SidebarContent>
-		<div slot="sidebar">
-			<h3>Servizi di terze parti</h3>
-		</div>
-		<div class="basic-text">
-			<h4>7. Servizio di hosting: Firebase Hosting</h4>
-			<div class="paragraph">
-				Il sito è ospitato tramite <strong>Firebase Hosting</strong>, un servizio fornito da
-				Google LLC. Firebase Hosting può raccogliere automaticamente dati tecnici e log
-				necessari alla sicurezza, alla manutenzione e alla fornitura del servizio di hosting.
-				<br />
-				<br />
-				Per maggiori informazioni sulle pratiche di trattamento dati di Firebase, si rimanda
-				alla pagina dedicata:
-				<br />
-				<a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">
-					https://firebase.google.com/support/privacy
-				</a>
-				.
-			</div>
-
-			<h4>8. Trasferimento dei dati fuori dall&apos;Unione Europea</h4>
-			<div class="paragraph">
-				Google LLC può trattare dati raccolti tramite Firebase Hosting anche in Paesi extra UE,
-				tra cui gli Stati Uniti. Il trasferimento dei dati avviene sulla base di adeguate
-				garanzie, tra cui le
-				<strong> Clausole Contrattuali Standard (Standard Contractual Clauses - SCC)</strong>
-				approvate dalla Commissione Europea, ai sensi degli artt. 44 e seguenti del GDPR.
-			</div>
-
-			<h4>9. Modalità del trattamento e sicurezza</h4>
-			<div class="paragraph">
-				Il trattamento dei dati avviene prevalentemente con strumenti informatici e telematici,
-				nel rispetto delle misure di sicurezza previste dalla normativa applicabile. I dati
-				tecnici e di log non sono utilizzati per finalità commerciali né comunicati a terzi,
-				salvo che ciò sia richiesto dalla legge o necessario per la gestione tecnica
-				dell&apos;infrastruttura.
-			</div>
-
-			<h4>10. Periodo di conservazione</h4>
-			<div class="paragraph">
-				I dati tecnici raccolti tramite Firebase Hosting vengono conservati per un periodo
-				limitato, proporzionato alle finalità di sicurezza, corretto funzionamento del sito e
-				diagnosi di eventuali problemi. I dettagli sui tempi di conservazione sono determinati
-				dalle policy di gestione dei log di Google LLC.
-			</div>
-		</div>
-	</SidebarContent>
-
-	<SidebarContent>
-		<div slot="sidebar">
-			<h3>Diritti degli interessati</h3>
-		</div>
-		<div class="basic-text">
-			<h4>11. Diritti dell&apos;utente</h4>
-			<div class="paragraph">
-				L&apos;utente, in qualità di interessato, può esercitare in qualsiasi momento i diritti
-				previsti dagli artt. 15–22 del GDPR, tra cui:
-				<ul>
-					<li>diritto di accesso ai dati personali;</li>
-					<li>diritto di rettifica dei dati inesatti o incompleti;</li>
-					<li>diritto alla cancellazione (&quot;diritto all&apos;oblio&quot;), nei casi previsti;</li>
-					<li>diritto alla limitazione del trattamento;</li>
-					<li>
-						<br />
-						<li>diritto di proporre reclamo a un&apos;autorità di controllo, in particolare al Garante per la
-						Protezione dei Dati Personali (www.garanteprivacy.it).</li>
-				</ul>
-				Per esercitare tali diritti, è possibile contattare il Titolare all&apos;indirizzo email:
-				<br />
-				<a href="mailto:servizi.informatici@riasissu.it">servizi.informatici@riasissu.it</a>.
-			</div>
-
-			<h4>12. Modifiche alla presente informativa</h4>
-			<div class="paragraph">
-				La presente informativa privacy può essere soggetta a modifiche o aggiornamenti. Eventuali
-				aggiornamenti saranno pubblicati su questa pagina. Si invita pertanto l&apos;utente a
-				consultare periodicamente questa sezione per essere informato su eventuali novità.
-			</div>
-		</div>
-
-		<style>
-			ul,
-			ol {
-				margin: 1em;
-			}
-			.paragraph {
-				margin-bottom: 1.5em;
-			}
-			li {
-				display: list-item;
-				list-style-position: inside;
-			}
-		</style>
-	</SidebarContent>
+	{
+		sections.map((section, i) => (
+			<SidebarContent>
+				<div slot="sidebar">
+					<h3>{sidebarLabels[i]}</h3>
+				</div>
+				<div class="basic-text legal-body legal-body--spaced" set:html={section} />
+			</SidebarContent>
+		))
+	}
 </Layout>

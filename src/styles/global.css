@@ -94,6 +94,25 @@ main a {
 	@apply text-lg leading-relaxed [&_blockquote]:text-xl [&_blockquote]:leading-loose;
 }
 
+/*
+ * Pagine legali (statuto, regolamento, privacy): il testo è iniettato via `set:html`
+ * a partire da Markdown, quindi gli stili scoped del componente non lo raggiungono.
+ * Queste regole globali replicano la spaziatura/marker delle liste che prima erano
+ * definiti in un <style> scoped in ciascuna pagina, così il rendering resta identico.
+ */
+.legal-body :is(ul, ol) {
+	margin: 1em;
+}
+.legal-body li {
+	display: list-item;
+	list-style-position: inside;
+}
+/* La privacy policy spaziava i paragrafi (prima: `.paragraph { margin-bottom: 1.5em }`),
+ * a differenza di statuto/regolamento. Applicare solo dove serve. */
+.legal-body--spaced p {
+	margin-bottom: 1.5em;
+}
+
 /* Scroll animations */
 /* To disable scroll animations remove the class "sroll-animation" from root html in the layout file */
 .scroll-animation .col {
