@@ -6,7 +6,7 @@
 // - title: The page title
 // - description: The page description
 // - ogImage: The page image for Open Graph
-// - canonical: Whether to use the canonical URL
+// - canonical: Whether to emit a self-referencing <link rel="canonical"> (one per page)
 // - noindex: Whether to add noindex and nofollow meta tags
 
 // Props
@@ -34,7 +34,6 @@ const { title, description, ogImage, canonical, noindex } = Astro.props
 	<meta property="twitter:title" content={title} />
 	<meta property="twitter:description" content={description} />
 	<meta property="twitter:image" content={ogImage} />
-	<link rel="canonical" href={Astro.url} />
-	{canonical && <link rel="canonical" href={Astro.url} item-prop="url" />}
+	{canonical && <link rel="canonical" href={Astro.url} />}
 	{noindex && <meta name="robots" content="noindex,nofollow" />}
 </Fragment>
