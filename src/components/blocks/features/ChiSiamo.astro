@@ -27,6 +27,9 @@ import { schoolsData } from '../../../data/json-files/schoolsData.js'
 			</p>
 		</Col>
 	</Row>
+	{/* Stato Alpine `open`: su desktop (>=1024px) le colonne 2-3 sono sempre aperte; su
+	    mobile partono chiuse e il pulsante "Mostra Altro" le mostra/nasconde (toggle).
+	    Il listener di resize riallinea `open` quando si supera il breakpoint. */}
 	<div
 		x-data="{open : window.innerWidth >= 1024,
 				toggle() {
