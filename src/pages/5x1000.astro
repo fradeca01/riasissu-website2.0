@@ -23,8 +23,6 @@ const header = {
 import Row from '../components/ui/Row.astro'
 import Col from '../components/ui/Col.astro'
 import Section from '../components/ui/Section.astro'
-import { Image } from 'astro:assets'
-import Logo from '../assets/2riasissu.svg'
 
 const back = {
 	src: '/5x1000.webp',
@@ -38,7 +36,9 @@ const back = {
 	<!-- <Hero classes="h-full" title={header.title} text={header.text} /> -->
 	<Section bg={back} padding="none" classes="h-screen">
 		<div class="flex h-screen flex-col items-start justify-between gap-4 py-24">
-			<Image src={Logo} loading="eager" alt="RIASISSU Logo" class="h-64 w-64" />
+			{/* Logo servito come file statico da public/2riasissu.svg (unica copia): stessa
+			    sorgente dei config stringa e della favicon, quindi qui niente astro:assets. */}
+			<img src="/2riasissu.svg" loading="eager" alt="RIASISSU Logo" class="h-64 w-64" />
 			<h1 class="text-left" set:html={header.title} />
 			<Row>
 				<Col span="12" align="" classes="max-w-4xl mx-auto">

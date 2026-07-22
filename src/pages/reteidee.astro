@@ -9,8 +9,6 @@ import Col from '../components/ui/Col.astro'
 import Spacer from '../components/ui/Spacer.astro'
 import Button from '../components/ui/Button.astro'
 import { Icon } from 'astro-icon/components'
-import Logo from '../assets/2riasissu.svg'
-import { Image } from 'astro:assets'
 
 // Content
 // - SEO
@@ -26,7 +24,10 @@ const SEO = {
 		<Row flex classes="text-center mb-20">
 			<Col span="2" />
 			<Col span="8">
-				<Image src={Logo} loading="eager" alt="RIASISSU Logo" class="mx-auto h-64 w-64" />
+				{/* Logo servito come file statico da public/2riasissu.svg (unica copia): è la
+				    stessa sorgente usata dai config stringa e dalla favicon, quindi qui non
+				    passa da astro:assets. */}
+				<img src="/2riasissu.svg" loading="eager" alt="RIASISSU Logo" class="mx-auto h-64 w-64" />
 				<h1>Work in progress...</h1>
 			</Col>
 			<Col span="2" />
