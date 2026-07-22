@@ -20,7 +20,8 @@ type Props = {
 	bgPosition?: 'left' | 'right' | 'center'
 }
 const {
-	blockquote = 'Foxi is like a rocket boost for our productivity! Its sleek design and out-of-this-world features make managing projects and team communication a breeze.',
+	// Valore di fallback neutro: il blockquote è sempre passato dal chiamante quando usato.
+	blockquote = 'Testo della citazione.',
 	figcaption = 'Sheryl Sandberg',
 	cite = 'CEO, Facebook',
 	bg,

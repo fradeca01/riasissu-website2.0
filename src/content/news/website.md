@@ -7,7 +7,7 @@ image: ''
 tags: ['IT']
 ---
 
-<!-- ![Foxi is here.](/blog/post-06.png) -->
+<!-- ![RIASISSU is here.](/blog/post-06.png) -->
 
 ### Nuova sezione News
 
