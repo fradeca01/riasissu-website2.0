@@ -83,7 +83,7 @@ export const footerNavigationData: FooterData = {
 				},
 				{
 					subCategory: 'News',
-					subCategoryLink: '/blog',
+					subCategoryLink: '/news',
 					subCategoryTarget: '_self'
 				},
 
