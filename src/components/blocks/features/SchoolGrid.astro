@@ -1,0 +1,46 @@
+---
+// SchoolGrid: una colonna della griglia "Le Scuole".
+// Renderizza le CardScuola per una fascia (slice) di scuole; ChiSiamo lo usa tre volte
+// per comporre il layout a 3 colonne. La fascia di dati arriva già affettata dal chiamante.
+
+// Components
+import Col from '../../ui/Col.astro'
+import CardScuola from './CardScuola.astro'
+
+// I dati scuola arrivano da schoolsData.js (immagini importate via astro:assets), quindi
+// `image` è un asset e non una stringa; il resto dei campi è testo.
+type School = {
+	id: string
+	scuola: string
+	luogo: string
+	link?: string
+	image: unknown
+}
+
+type Props = {
+	schools: School[]
+	// firstColumn cambia lo stile della card (e nella prima colonna disattiva la
+	// transizione x-show/x-transition, sempre visibile su desktop).
+	firstColumn?: boolean
+	// Ritardo iniziale (ms) dell'animazione di ingresso; le card successive della colonna
+	// sono sfalsate di 75ms l'una dall'altra.
+	baseDelay?: number
+}
+const { schools, firstColumn = false, baseDelay = 0 } = Astro.props
+---
+
+<Col span="4" classes="mx-12 lg:m-0 flex flex-col justify-between gap-6">
+	{
+		schools.map((school, i) => (
+			<CardScuola
+				firstColumn={firstColumn}
+				schoolId={school.id}
+				title={school.scuola}
+				link={school.link}
+				subtitle={`Città: ${school.luogo}`}
+				image={school.image}
+				delay={baseDelay + 75 * i}
+			/>
+		))
+	}
+</Col>

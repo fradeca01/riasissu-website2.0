@@ -9,32 +9,11 @@ import Section from '../../ui/Section.astro'
 import Row from '../../ui/Row.astro'
 import Col from '../../ui/Col.astro'
 // - UI
-import Card from '../../ui/cards/FeatureCard.astro'
-import CardScuola from './CardScuola.astro'
+import SchoolGrid from './SchoolGrid.astro'
 import Button from '../../ui/Button.astro'
 import SchoolModal from '../modal/SchoolModal.astro'
 
 // Content
-// - Cards
-// import feature01 from '../../../assets/cards/iuss-pavia-logo.png'
-// import feature02 from '../../../assets/cards/3Logo3.svg'
-// import feature03 from '../../../assets/cards/feature-03.svg'
-// import feature04 from '../../../assets/cards/feature-04.svg'
-// import feature05 from '../../../assets/cards/feature-05.svg'
-
-// import toppo from '../../../assets/cards/3ddtw.svg'
-// import iuss from '../../../assets/cards/4iuss.svg'
-// import santanna from '../../../assets/cards/5santanna.svg'
-// import bologna from '../../../assets/cards/6bologna.svg'
-// import roma from '../../../assets/cards/7roma.svg'
-// import lecce from '../../../assets/cards/8lecce.svg'
-// import sns from '../../../assets/cards/9sns.svg'
-// import galileiana from '../../../assets/cards/10galileiana.svg'
-// import circ from '../../../assets/cards/11circ.svg'
-// import catania from '../../../assets/cards/12catania.svg'
-// import torino from '../../../assets/cards/13torino.svg'
-// import macerata from '../../../assets/cards/14macerata.svg'
-
 import { schoolsData } from '../../../data/json-files/schoolsData.js'
 ---
 
@@ -55,13 +34,13 @@ import { schoolsData } from '../../../data/json-files/schoolsData.js'
 					return this.close()
 					}
 					this.open = true
-						
+
 						},
 						close(focusAfter) {
 							if (! this.open) return
-			
+
 							this.open = false
-			
+
 							focusAfter && focusAfter.focus()
 						},
 				init() {
@@ -72,182 +51,20 @@ import { schoolsData } from '../../../data/json-files/schoolsData.js'
             }"
 		x-init="init()"
 	>
+		{/* Le 12 scuole sono divise in 3 colonne da 4. La prima colonna è sempre visibile
+		    su desktop (firstColumn); le altre due compaiono al toggle "Mostra Altro". */}
 		<Row classes="lg:mx-12">
-			<Col span="4" classes="mx-12 lg:m-0 flex flex-col justify-between gap-6 ">
-				{
-					schoolsData
-						.slice(0, 4)
-						.map((school) => (
-							<CardScuola
-								firstColumn={true}
-								schoolId={school.id}
-								title={school.scuola}
-								link={school.link}
-								subtitle={`Città: ${school.luogo}`}
-								image={school.image}
-								delay={0}
-							/>
-						))
-				}
-				<!-- <CardScuola
-					firstColumn={true}
-					schoolId="venezia"
-					title="Collegio Internazionale di Venezia"
-					subtitle="Città: Venezia"
-					image={schoolsData}
-					delay={0}
-				/>
-
-				<CardScuola
-					firstColumn={true}
-					schoolId="pisa_normale"
-					title="Scuola Normale Superiore di Pisa"
-					subtitle="Città: Pisa"
-					image={sns}
-					delay={0}
-				/>
-
-				<CardScuola
-					firstColumn={true}
-					schoolId="pavia"
-					title="IUSS Scuola Universitaria Superiore di Pavia"
-					subtitle="Città: Pavia"
-					image={iuss}
-					delay={0}
-				/>
-
-				<CardScuola
-					firstColumn={true}
-					schoolId="camerino"
-					title="Scuola Superiore Universitaria Di Toppo Wassermann"
-					subtitle="Città: Udine"
-					image={toppo}
-					delay={0}
-				/> -->
-			</Col>
-
-			<Col span="4" classes="mx-12 lg:m-0 flex flex-col justify-between  gap-6">
-				<!-- <CardScuola
-					firstColumn={false}
-					schoolId="bologna"
-					title="Collegio Superiore di Bologna"
-					subtitle="Città: Bologna"
-					image={bologna}
-					delay={0}
-				/>
-
-				<CardScuola
-					firstColumn={false}
-					schoolId="lecce"
-					title="Scuola superiore ISUFI di Lecce"
-					subtitle="Città: Lecce"
-					image={lecce}
-					delay={75}
-				/>
-
-				<CardScuola
-					firstColumn={false}
-					schoolId="macerata"
-					title="Scuola di Studi Superiori 'Giacomo Leopardi' di Macerata"
-					subtitle="Città: Macerata"
-					image={macerata}
-					delay={150}
-				/>
-
-				<CardScuola
-					firstColumn={false}
-					schoolId="torino"
-					title="Scuola di Studi Superiori Ferdinando Rossi di Torino"
-					subtitle="Città: Torino"
-					image={torino}
-					delay={225}
-				/> -->
-				{
-					schoolsData
-						.slice(4, 8)
-						.map((school) => (
-							<CardScuola
-								firstColumn={false}
-								schoolId={school.id}
-								title={school.scuola}
-								link={school.link}
-								subtitle={`Città: ${school.luogo}`}
-								image={school.image}
-								delay={75 * schoolsData.slice(4, 8).indexOf(school)}
-							/>
-						))
-				}
-			</Col>
-
-			<!-- x-show="open"
-			x-transition:enter="transition ease-out duration-300"
-			x-transition:enter-start="opacity-0 transform translate-x-4"
-			x-transition:enter-end="opacity-100 transform translate-x-0"
-			x-transition:leave="transition ease-in duration-200"
-			x-transition:leave-start="opacity-100 transform translate-x-0"
-			x-transition:leave-end="opacity-0 transform translate-x-4" -->
-			<Col span="4" classes="mx-12 lg:m-0 flex flex-col justify-between  gap-6">
-				<!-- <CardScuola
-					firstColumn={false}
-					schoolId="santanna"
-					title="Scuola Superiore Sant'Anna di Pisa"
-					subtitle="Città: Pisa"
-					image={santanna}
-					delay={75}
-				/>
-
-				<CardScuola
-					firstColumn={false}
-					schoolId="padova"
-					title="Scuola Galileiana di Studi Superiori di Padova"
-					subtitle="Città: Padova"
-					image={galileiana}
-					delay={150}
-				/>
-
-				<CardScuola
-					firstColumn={false}
-					schoolId="catania"
-					title="Scuola Superiore di Catania"
-					subtitle="Città: Catania"
-					image={catania}
-					delay={225}
-				/>
-
-				<CardScuola
-					firstColumn={false}
-					schoolId="roma"
-					title="Scuola di Studi Superiori della Sapienza"
-					subtitle="Città: Roma"
-					image={roma}
-					delay={300}
-				/> -->
-				{
-					schoolsData
-						.slice(8, 12)
-						.map((school) => (
-							<CardScuola
-								firstColumn={false}
-								schoolId={school.id}
-								title={school.scuola}
-								link={school.link}
-								subtitle={`Città: ${school.luogo}`}
-								image={school.image}
-								delay={75 * (schoolsData.slice(4, 8).indexOf(school) + 4)}
-							/>
-						))
-				}
-			</Col>
+			<SchoolGrid schools={schoolsData.slice(0, 4)} firstColumn={true} />
+			<SchoolGrid schools={schoolsData.slice(4, 8)} />
+			<SchoolGrid schools={schoolsData.slice(8, 12)} />
 		</Row>
 
 		<Row classes="">
 			<Col span="12" classes="text-center">
 				<div class="mt-6 flex justify-center lg:hidden">
-					<!-- <my-button> -->
 					<Button onClick="toggle()" style="primary" size="lg">
 						<span x-text="open ? 'Mostra Meno' : 'Mostra Altro'"></span>
 					</Button>
-					<!-- </my-button> -->
 				</div>
 			</Col>
 		</Row>
