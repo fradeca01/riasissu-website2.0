@@ -28,3 +28,6 @@ pnpm-debug.log*
 
 # .firebaserc
 # firebase.json
+
+CLAUDE.md
+REFACTOR_PLAN.md

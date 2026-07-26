@@ -5,15 +5,8 @@ import Layout from '../layouts/Layout.astro'
 // - UI
 import Hero from '../components/blocks/hero/MyHome.astro'
 import ChiSiamo from '../components/blocks/features/ChiSiamo.astro'
-import Testimonial from '../components/blocks/testimonials/BasicDark.astro'
-import HighlightBlocks from '../components/blocks/highlights/HightlightRows.astro'
 import CTA from '../components/blocks/CTA/Dona.astro'
-import Modal from '../components/ui/Modal.astro'
-import BlogPosts from '../components/blocks/blog/BlogPosts.astro'
 // Content
-// - Testimonial background
-import testimonialBackground from '../assets/testimonial-bg-01.webp'
-import { getCollection } from 'astro:content'
 import HomepageBlog from '../components/blocks/blog/HomepageBlog.astro'
 // - SEO
 const SEO = {
@@ -29,7 +22,5 @@ const SEO = {
 	<Hero />
 	<HomepageBlog classes="bg-slate-50 dark:bg-neutral-900/40" />
 	<ChiSiamo />
-	<!-- <Testimonial bg={testimonialBackground} bgPosition="right" /> -->
-	<!-- <HighlightBlocks /> -->
 	<CTA />
 </Layout>
