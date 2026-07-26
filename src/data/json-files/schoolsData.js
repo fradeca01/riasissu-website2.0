@@ -44,14 +44,14 @@ export const schoolsData = [
         "description": "",
         "data": [
             {
-                "nome": "Marcello",
-                "cognome": "Zeni",
-                "email": "marcello.zeni@riasissu.it"
+                "nome": "",
+                "cognome": "",
+                "email": ""
             },
             {
-                "nome": "Alessio",
-                "cognome": "Casalini",
-                "email": "alessio.casalini@riasissu.it"
+                "nome": "",
+                "cognome": "",
+                "email": ""
             }
         ]
     },
@@ -154,9 +154,9 @@ export const schoolsData = [
                 "email": "barbara.perellomoscetti@riasissu.it"
             },
             {
-                "nome": "Serena",
-                "cognome": "Cinquepalmi",
-                "email": "serena.cinquepalmi@riasissu.it"
+                "nome": "",
+                "cognome": "",
+                "email": ""
             }
         ]
     },
@@ -191,9 +191,9 @@ export const schoolsData = [
         "description": "",
         "data": [
             {
-                "nome": "Giovanni",
-                "cognome": "Papi",
-                "email": "giovanni.papi@riasissu.it"
+                "nome": "",
+                "cognome": "",
+                "email": ""
             },
                         {
                 "nome":"",
@@ -234,14 +234,14 @@ export const schoolsData = [
         "description": "La Scuola Galileiana nasce nel 2004 ed è composta da student* che frequentano corsi di Laurea presso l’Università degli Studi di Padova. La Scuola è divisa in tre classi: Scienze Naturali (14 posti), Scienze Morali (8 posti) e Scienze Sociali (8 posti). Inoltre, da quest’anno sono aperte le iscrizioni per la magistrale. La vita della Scuola è scandita da corsi interni inerenti alle aree disciplinari delle tre classi e da eventi - spesso estesi al pubblico - come seminari e conferenze. Valore fondante della Scuola è la collegialità: all’interno della residenza, l* student* intessono legami di amicizia che resistono nel tempo. Coloro i quali concludano il proprio percorso quinquennale all’interno della Scuola ricevono un diploma, comparato a Master di secondo livello. L* student* hanno diritto ad un bonus mobilità, bonus acquisto libri e a vitto e alloggio gratuiti per tutta la durata del loro percorso; infine, sono seguiti da un* tutor cui possono rivolgersi per ogni eventualità.",
         "data": [
             {
-                "nome": "Vittorio",
-                "cognome": "Magnaguagno",
-                "email": "vittorio.magnaguagno@riasissu.it"
+                "nome": "Demetrio",
+                "cognome": "Campolo",
+                "email": "demetrio.campolo@riasissu.it"
             },
             {
-                "nome": "Chiara",
-                "cognome": "Novelli",
-                "email": "chiara.novelli@riasissu.it"
+                "nome": "Giulia",
+                "cognome": "Mossoni",
+                "email": "giulia.mossoni@riasissu.it"
             }
         ]
     },
