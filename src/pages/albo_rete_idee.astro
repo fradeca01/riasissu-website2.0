@@ -1,0 +1,75 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import SimpleFeed from '../components/blocks/feeds/BasicFeed.astro'
+import Section from '../components/ui/Section.astro'
+import Row from '../components/ui/Row.astro'
+import Col from '../components/ui/Col.astro'
+
+// Data
+import giunteData from '../data/json-files/alboReteIdeeData.json'
+
+// Content
+// - SEO
+const SEO = {
+	title: "RIASISSU | Scuole d'eccellenza in Italia",
+	description:
+		"Esplora la storia delle giunte della RIASISSU, con dettagli sui coordinatori, vice, tesorieri e segretari che hanno guidato l'associazione nel corso degli anni."
+}
+// - Page Header
+const header = {
+	title: 'Albo della <strong>Rete d\'Idee</strong> della RIASISSU',
+	text: ''
+}
+
+const processData = giunteData.map((item) => {
+	return {
+		title: '',
+		date: `${item.year}`,
+		text: `<ul>${
+			item.school
+				? `<li><strong>Scuola Organizzatrice:</strong> ${item.school}</li>`
+				: ''
+		}
+		${
+			item.schools
+				? `<li><strong>Scuole Organizzatrici:</strong> ${item.schools}</li>`
+				: ''
+		}
+		${
+			item.place
+				? `<li><strong>Luogo:</strong> ${item.place}</li>`
+				: ''
+		}
+		${
+			item.website
+				? `<li><strong>Sito dell'evento:</strong> <a href="${item.website}" target="_blank">${item.website}</a></li>`
+				: ''
+		}	
+		${
+			item.report
+				? `<li><strong>Atti dell'evento:</strong> <a href="${item.report}" target="_blank">Atti ${item.year}</a></li>`
+				: ''
+		}		
+		
+		</ul>`,
+		image: ''
+	}
+})
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={header.title} text={header.text} />
+	<Section stickyCol={true}>
+	<Row>
+		<Col span="12" align="center" classes="max-w-4xl mx-auto">
+			<p class="pb-0 text-lg">Sezione iniziale con la descrizione</p>
+		</Col>
+	</Row>
+	</Section>
+	<SimpleFeed data={processData} />
+	<!-- <CTA /> -->
+</Layout>

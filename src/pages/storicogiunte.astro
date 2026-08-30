@@ -30,23 +30,43 @@ const processData = giunteData.map((item) => {
 		title: '',
 		date: `${item.year}`,
 		text: `<ul>${
-			item.roles.coordinatore
-				? `<li><strong>Coordinatore:</strong> ${item.roles.coordinatore.firstName} ${item.roles.coordinatore.lastName}</li>`
+			item.roles.coordinatoreM
+				? `<li><strong>Coordinatore:</strong> ${item.roles.coordinatoreM.firstName} ${item.roles.coordinatoreM.lastName}</li>`
 				: ''
 		}
 		${
-			item.roles.vice
-				? `<li><strong>Coordinatore Vicario:</strong> ${item.roles.vice.firstName} ${item.roles.vice.lastName}</li>`
+			item.roles.coordinatoreF
+				? `<li><strong>Coordinatrice:</strong> ${item.roles.coordinatoreF.firstName} ${item.roles.coordinatoreF.lastName}</li>`
 				: ''
 		}
 		${
-			item.roles.tesoriere
-				? `<li><strong>Tesoriere:</strong> ${item.roles.tesoriere.firstName} ${item.roles.tesoriere.lastName}</li>`
+			item.roles.viceM
+				? `<li><strong>Coordinatore Vicario:</strong> ${item.roles.viceM.firstName} ${item.roles.viceM.lastName}</li>`
 				: ''
 		}
 		${
-			item.roles.segretario
-				? `<li><strong>Segretario:</strong> ${item.roles.segretario.firstName} ${item.roles.segretario.lastName}</li>`
+			item.roles.viceF
+				? `<li><strong>Coordinatrice Vicaria:</strong> ${item.roles.viceF.firstName} ${item.roles.viceF.lastName}</li>`
+				: ''
+		}
+		${
+			item.roles.tesoriereM
+				? `<li><strong>Tesoriere:</strong> ${item.roles.tesoriereM.firstName} ${item.roles.tesoriereM.lastName}</li>`
+				: ''
+		}
+		${
+			item.roles.tesoriereF
+				? `<li><strong>Tesoriere:</strong> ${item.roles.tesoriereF.firstName} ${item.roles.tesoriereF.lastName}</li>`
+				: ''
+		}
+		${
+			item.roles.segretarioM
+				? `<li><strong>Segretario:</strong> ${item.roles.segretarioM.firstName} ${item.roles.segretarioM.lastName}</li>`
+				: ''
+		}
+				
+		${item.roles.segretarioF
+				? `<li><strong>Segretaria:</strong> ${item.roles.segretarioF.firstName} ${item.roles.segretarioF.lastName}</li>`
 				: ''
 		}
 		

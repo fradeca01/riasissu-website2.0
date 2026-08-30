@@ -2,19 +2,19 @@
     {
         "year": 2026,
         "roles": {
-            "coordinatore": {
+            "coordinatoreM": {
                 "firstName": "Vittorio",
                 "lastName": "Magnaguagno"
             },
-            "vice": {
+            "viceF": {
                 "firstName": "Lara",
                 "lastName": "Guglielmucci"
             },
-            "tesoriere": {
+            "tesoriereM": {
                 "firstName": "Paride",
                 "lastName": "Brogiolo"
             },
-            "segretario": {
+            "segretarioM": {
                 "firstName": "Niccolò",
                 "lastName": "Gaspari"
             }
@@ -23,19 +23,19 @@
     {
         "year": 2025,
         "roles": {
-            "coordinatore": {
+            "coordinatoreF": {
                 "firstName": "Maddalena",
                 "lastName": "Feltrin"
             },
-            "vice": {
+            "viceM": {
                 "firstName": "Giovanni",
                 "lastName": "Papi"
             },
-            "tesoriere": {
+            "tesoriereM": {
                 "firstName": "Vittorio",
                 "lastName": "Magnaguagno"
             },
-            "segretario": {
+            "segretarioF": {
                 "firstName": "Giorgia",
                 "lastName": "Pazzi"
             }
@@ -44,20 +44,20 @@
     {
         "year": 2024,
         "roles": {
-            "coordinatore": {
+            "coordinatoreM": {
                 "firstName": "Antonio",
                 "lastName": "Cariola"
             },
-            "vice": {
+            "viceM": {
                 "firstName": "Alessandro",
                 "lastName": "Augelli"
             },
-            "tesoriere": {
+            "tesoriereF": {
                 "firstName": "Ginevra",
                 "lastName": "Barbato",
                 "note": "con riserva"
             },
-            "segretario": {
+            "segretarioF": {
                 "firstName": "Giorgia",
                 "lastName": "Pazzi"
             }
@@ -66,16 +66,16 @@
     {
         "year": 2023,
         "roles": {
-            "coordinatore": {
+            "coordinatoreM": {
                 "firstName": "Lorenzo",
                 "lastName": "Massarenti"
             },
-            "vice": null,
-            "tesoriere": {
+            "viceM": null,
+            "tesoriereF": {
                 "firstName": "Teresa",
                 "lastName": "Guarino"
             },
-            "segretario": {
+            "segretarioM": {
                 "firstName": "Giulio",
                 "lastName": "D'Arrigo"
             }
@@ -84,13 +84,13 @@
     {
         "year": 2022,
         "roles": {
-            "coordinatore": {
+            "coordinatoreM": {
                 "firstName": "Lorenzo",
                 "lastName": "Massarenti"
             },
-            "vice": null,
-            "tesoriere": null,
-            "segretario": {
+            "viceM": null,
+            "tesoriereM": null,
+            "segretarioM": {
                 "firstName": "Luigi",
                 "lastName": "Zanta Platamone"
             }
@@ -99,16 +99,16 @@
     {
         "year": 2021,
         "roles": {
-            "coordinatore": {
+            "coordinatoreM": {
                 "firstName": "Giulio",
                 "lastName": "D'Arrigo"
             },
-            "vice": null,
-            "tesoriere": {
+            "viceM": null,
+            "tesoriereM": {
                 "firstName": "Emanuele",
                 "lastName": "Staropoli"
             },
-            "segretario": {
+            "segretarioM": {
                 "firstName": "Marco",
                 "lastName": "Collatuzzo"
             }
@@ -117,16 +117,16 @@
     {
         "year": 2020,
         "roles": {
-            "coordinatore": {
+            "coordinatoreM": {
                 "firstName": "Alessandra",
                 "lastName": "Mattoscio"
             },
-            "vice": null,
-            "tesoriere": {
+            "viceM": null,
+            "tesoriereM": {
                 "firstName": "Francesco",
                 "lastName": "Petronio"
             },
-            "segretario": {
+            "segretarioM": {
                 "firstName": "Giulio",
                 "lastName": "D'Arrigo"
             }
@@ -135,16 +135,16 @@
     {
         "year": 2019,
         "roles": {
-            "coordinatore": {
+            "coordinatoreM": {
                 "firstName": "Francesco",
                 "lastName": "Petronio"
             },
-            "vice": null,
-            "tesoriere": {
+            "viceM": null,
+            "tesoriereM": {
                 "firstName": "Alberto",
                 "lastName": "Galasso"
             },
-            "segretario": {
+            "segretarioM": {
                 "firstName": "Simone",
                 "lastName": "Cataldo"
             }
@@ -153,16 +153,16 @@
     {
         "year": 2018,
         "roles": {
-            "coordinatore": {
+            "coordinatoreM": {
                 "firstName": "Vittorio",
                 "lastName": "Danovi"
             },
-            "vice": null,
-            "tesoriere": {
+            "viceM": null,
+            "tesoriereM": {
                 "firstName": "Andrea",
                 "lastName": "Dal Zotto"
             },
-            "segretario": {
+            "segretarioM": {
                 "firstName": "Piero",
                 "lastName": "Lafiosca"
             }
@@ -171,32 +171,32 @@
     {
         "year": 2017,
         "roles": {
-            "coordinatore": {
+            "coordinatoreM": {
                 "firstName": "Alvise",
                 "lastName": "Renier"
             },
-            "vice": null,
-            "tesoriere": null,
-            "segretario": null
+            "viceM": null,
+            "tesoriereM": null,
+            "segretarioM": null
         }
     },
     {
         "year": 2016,
         "roles": {
-            "coordinatore": {
+            "coordinatoreM": {
                 "firstName": "Luca",
                 "lastName": "Mattarolo"
             },
-            "vice": null,
-            "tesoriere": null,
-            "segretario": null
+            "viceM": null,
+            "tesoriereM": null,
+            "segretarioM": null
         }
     },
     {
         "year": 2015,
         "roles": {
             "coordinator": null,
-            "vice": null,
+            "viceM": null,
             "Tesorier": null,
             "Segretar": null
         }
@@ -204,52 +204,52 @@
     {
         "year": 2014,
         "roles": {
-            "coordinatore": null,
-            "vice": null,
-            "tesoriere": null,
-            "segretario": null
+            "coordinatoreM": null,
+            "viceM": null,
+            "tesoriereM": null,
+            "segretarioM": null
         }
     },
     {
         "year": 2013,
         "roles": {
-            "coordinatore": null,
-            "vice": null,
-            "tesoriere": null,
-            "segretario": null
+            "coordinatoreM": null,
+            "viceM": null,
+            "tesoriereM": null,
+            "segretarioM": null
         }
     },
     {
         "year": 2012,
         "roles": {
-            "coordinatore": null,
-            "vice": null,
-            "tesoriere": null,
-            "segretario": null
+            "coordinatoreM": null,
+            "viceM": null,
+            "tesoriereM": null,
+            "segretarioM": null
         }
     },
     {
         "year": 2011,
         "roles": {
-            "coordinatore": {
+            "coordinatoreM": {
                 "firstName": "Giacomo",
                 "lastName": "Ragni"
             },
-            "vice": null,
-            "tesoriere": null,
-            "segretario": null
+            "viceM": null,
+            "tesoriereM": null,
+            "segretarioM": null
         }
     },
     {
         "year": 2010,
         "roles": {
-            "coordinatore": {
+            "coordinatoreM": {
                 "firstName": "Alessandro",
                 "lastName": "Maserati"
             },
-            "vice": null,
-            "tesoriere": null,
-            "segretario": {
+            "viceM": null,
+            "tesoriereM": null,
+            "segretarioM": {
                 "firstName": "Leone",
                 "lastName": "Cimetta"
             }
